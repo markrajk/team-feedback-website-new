@@ -46,7 +46,7 @@ $text-color-primary: #1c1c1c;
   }
 
   @if $breakpoint == desktop-xl {
-    @media (max-width: 1379px) {
+    @media (max-width: 1279px) {
       @content;
     }
   }
@@ -90,16 +90,28 @@ html {
     // }
 
     @include respond(desktop-xl) {
-      font-size: 60%;
-    }
-
-    @include respond(desktop-lg) {
       font-size: 57.5%;
     }
 
-    @include respond(desktop-md) {
+    @include respond(desktop-lg) {
       font-size: 55%;
     }
+
+    @include respond(desktop-xsm) {
+      font-size: 52.5%;
+    }
+
+    // @include respond(desktop-xl) {
+    //   font-size: 60%;
+    // }
+
+    // @include respond(desktop-lg) {
+    //   font-size: 57.5%;
+    // }
+
+    // @include respond(desktop-md) {
+    //   font-size: 55%;
+    // }
 
     // @include respond(desktop-sm) {
     //   font-size: 50%;
@@ -692,7 +704,7 @@ body {
 }
 
 //=====================================
-//FEATURES SECTION
+//INFO SECTION
 //=====================================
 .main-overview .section-info {
   display: flex;
@@ -702,7 +714,7 @@ body {
 
   @include respond(desktop-xl) {
     max-width: 144rem;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   @include respond(desktop-md) {

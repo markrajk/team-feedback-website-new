@@ -8,15 +8,15 @@
 html {
   min-width: 100vw;
   font-size: 62.5%; }
-  @media (max-width: 1379px) {
-    html {
-      font-size: 60%; } }
-  @media (max-width: 1199px) {
+  @media (max-width: 1279px) {
     html {
       font-size: 57.5%; } }
-  @media (max-width: 991px) {
+  @media (max-width: 1199px) {
     html {
       font-size: 55%; } }
+  @media (max-width: 575px) {
+    html {
+      font-size: 52.5%; } }
 
 body {
   box-sizing: border-box;
@@ -382,10 +382,10 @@ body {
   align-items: baseline;
   justify-content: space-between;
   max-width: 130rem; }
-  @media (max-width: 1379px) {
+  @media (max-width: 1279px) {
     .main-overview .section-info {
       max-width: 144rem;
-      justify-content: space-between; } }
+      justify-content: space-evenly; } }
   @media (max-width: 991px) {
     .main-overview .section-info {
       flex-direction: column;
