@@ -538,7 +538,7 @@ body {
 //=====================================
 //HERO SECTION
 //=====================================
-.section-hero {
+.main-overview .section-hero {
   padding-top: 6.95rem;
   display: flex;
   flex-direction: column;
@@ -682,6 +682,168 @@ body {
   }
 }
 
+//=====================================
+//FEATURES SECTION
+//=====================================
+.main-overview .section-info {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  max-width: 130rem;
+
+  @include respond(desktop-xl) {
+    max-width: 144rem;
+    justify-content: space-between;
+  }
+
+  @include respond(desktop-lg) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-card {
+    padding-top: 7.3rem;
+    max-width: 31.6rem;
+    text-align: center;
+
+    @include respond(desktop-lg) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    @include respond(desktop-sm) {
+      justify-content: space-between;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    @include respond(desktop-xsm) {
+      flex-direction: column!important;
+      align-items: flex-start;
+      padding-left: 3%;
+      padding-right: 3%;
+      margin-left: 0!important;
+      margin-right: 0!important;
+    }
+
+    &-img {
+      margin-bottom: 3.82rem;
+      max-height: 42.5rem;
+      border-radius: 1.2rem;
+      border: 7px solid #F6F6F6;
+
+      @include respond(desktop-lg) {
+        height: 39rem;
+      }
+
+      @include respond(desktop-xsm) {
+        align-self: center;
+      }
+    }
+
+    &-body {
+
+      @include respond(desktop-xsm) {
+        max-width: 90%!important;
+        margin-left: 0!important;
+        margin-right: 0!important;
+      }
+
+      &-title {
+        margin-bottom: 1.6rem;
+        font-size: 2.2rem;
+        font-weight: 600;
+        line-height: 1.36;
+        color: #000000;
+      }
+
+      &-text {
+        margin-bottom: 2.7rem;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #5f6368;
+      }
+
+      & .btn {
+
+      }
+    }
+
+    &.card-01 {
+      
+      @include respond(desktop-lg) {
+
+        & .section-info-card-body {
+          //margin-left: 8.5%;
+          margin-left: 6.62rem;
+          max-width: 31.5rem;
+          text-align: left;
+        }
+      }
+
+      @include respond(desktop-sm) {
+        
+        & .section-info-card-body {
+          margin-left: 2rem;
+        }
+      }
+    }
+
+    &.card-02 {
+      
+      @include respond(desktop-lg) {
+        flex-direction: row-reverse;
+
+        & .section-info-card-body {
+          margin-right: 10.9rem;
+          max-width: 29.6rem;
+          text-align: left;
+        }
+      }
+
+      @include respond(desktop-sm) {
+        
+        & .section-info-card-body {
+          margin-right: 2rem;
+        }
+      }
+    }
+
+    &.card-03 {
+      
+      @include respond(desktop-lg) {
+
+        & .section-info-card-body {
+          margin-left: 10.9rem;
+          max-width: 29.6rem;
+          text-align: left;
+        }
+      }
+
+      @include respond(desktop-sm) {
+        
+        & .section-info-card-body {
+          margin-left: 2rem;
+        }
+      }
+    }
+
+    // &.card-02 {
+    //   margin-left: 1.5rem;
+    //   margin-right: 3.5rem;
+    // }
+
+    // &.card-03 {
+    //   align-self: flex-end;
+    // }
+  }
+}
 
 //ADDITIONAL CLASSE
 .menu-open {
