@@ -31,25 +31,9 @@ body {
 
 .container {
   margin: 0 auto;
-  padding-left: 8rem;
-  padding-right: 8rem;
-  max-width: 144rem; }
-  @media (max-width: 1199px) {
-    .container {
-      padding-left: 6rem;
-      padding-right: 6rem; } }
-  @media (max-width: 991px) {
-    .container {
-      padding-left: 4rem;
-      padding-right: 4rem; } }
-  @media (max-width: 769px) {
-    .container {
-      padding-left: 1.7rem;
-      padding-right: 1.7rem; } }
-  @media (max-width: 575px) {
-    .container {
-      padding-left: 1.7rem;
-      padding-right: 1.7rem; } }
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
+  max-width: 131.4rem; }
 
 .container-fluid {
   margin: 0 auto;
