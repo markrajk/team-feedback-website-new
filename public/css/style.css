@@ -7,10 +7,10 @@
 
 html {
   min-width: 100vw;
-  font-size: 62.5%; }
-  @media (max-width: 379px) {
+  font-size: 67.5%; }
+  @media (max-width: 1720px) {
     html {
-      font-size: 50%; } }
+      font-size: 62.5%; } }
 
 body {
   box-sizing: border-box;
