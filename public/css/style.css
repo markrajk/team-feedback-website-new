@@ -203,10 +203,12 @@ body {
     .header .nav-buttons {
       margin-left: 5%;
       white-space: nowrap; }
+      @media (max-width: 991px) {
+        .header .nav-buttons {
+          margin-left: auto; } }
       .header .nav-buttons .btn-link {
         margin-right: 2.4rem; }
     .header .nav .nav-menu-toggle {
-      margin-left: auto;
       font-size: 2.5rem;
       cursor: pointer; }
     .header .nav-menu {
@@ -230,7 +232,7 @@ body {
         justify-content: space-between;
         border-bottom: 1.5px solid #f1f1f1; }
         .header .nav-menu-header img {
-          height: 2.7rem; }
+          height: 2.95rem; }
         .header .nav-menu-header .nav-menu-toggle {
           margin-left: auto;
           font-size: 2.5rem;

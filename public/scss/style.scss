@@ -385,13 +385,16 @@ body {
       margin-left: 5%;
       white-space: nowrap;
 
+      @include respond(desktop-md) {
+        margin-left: auto;
+      }
+
       & .btn-link {
         margin-right: 2.4rem;
       }
     }
 
     & .nav-menu-toggle {
-      margin-left: auto;
       font-size: 2.5rem;
       cursor: pointer;
     }
@@ -422,7 +425,7 @@ body {
         border-bottom: 1.5px solid #f1f1f1;
 
         img {
-          height: 2.7rem;
+          height: 2.95rem;
         }
 
         & .nav-menu-toggle {
