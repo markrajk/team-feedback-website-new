@@ -86,12 +86,14 @@
 // }
 
 var menu = document.querySelector('.nav-menu');
-var menuOpen = document.querySelector('.nav-menu-toggle.open');
+var menuOpen = document.querySelectorAll('.nav-menu-toggle.open');
 var menuClose = document.querySelector('.nav-menu-toggle.close');
 
-menuOpen.addEventListener('click', function () {
-  menu.classList.add('menu-open');
-});
+for (var i = 0; i < menuOpen.length; i++) {
+  menuOpen[i].addEventListener('click', function () {
+    menu.classList.add('menu-open');
+  });
+}
 
 menuClose.addEventListener('click', function () {
   menu.classList.remove('menu-open');

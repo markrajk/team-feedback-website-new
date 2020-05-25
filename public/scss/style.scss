@@ -30,7 +30,7 @@ $text-color-primary: #1c1c1c;
     }
   }
   @if $breakpoint == desktop-sm {
-    @media (max-width: 767px) {
+    @media (max-width: 769px) {
       @content;
     }
   }
@@ -84,21 +84,21 @@ html {
   min-width: 100vw;
     font-size: 62.5%;   //1rem = 10px 10px/16 62.5%
 
-    @include respond(desktop-xl) {
-      font-size: 60%;
-    }
+    // @include respond(desktop-xl) {
+    //   font-size: 60%;
+    // }
 
-    @include respond(desktop-lg) {
-      font-size: 57.5%;
-    }
+    // @include respond(desktop-lg) {
+    //   font-size: 57.5%;
+    // }
 
-    @include respond(desktop-md) {
-      font-size: 55%;
-    }
+    // @include respond(desktop-md) {
+    //   font-size: 55%;
+    // }
 
-    @include respond(desktop-sm) {
-      font-size: 50%;
-    }
+    // @include respond(desktop-sm) {
+    //   font-size: 50%;
+    // }
 
     // @include respond(desktop-xsm) {
     //   font-size: 62.5%;
@@ -145,9 +145,14 @@ body {
     padding-right: 4rem;
   }
 
+  @include respond(desktop-sm) {
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+  }
+
   @include respond(desktop-xsm) {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
   }
 }
 
@@ -167,10 +172,10 @@ body {
     padding-right: 4rem;
   }
 
-  @include respond(desktop-xsm) {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
+  // @include respond(desktop-xsm) {
+  //   padding-left: 5%;
+  //   padding-right: 5%;
+  // }
 }
 
 
@@ -178,12 +183,12 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: .9rem 1.8rem;
+  padding: .93rem 1.65rem;
   font-size: 1.8rem;
   font-weight: 600;
   text-decoration: none;
   border: solid 1.75px transparent;
-  border-radius: 2px;
+  border-radius: 4px;
   transition: all .2s ease-in-out;
   transition-property: background-color, color, border-color;
 
@@ -261,6 +266,14 @@ body {
   }
 }
 
+.show-xsm-inline-block {
+  display: none;
+
+  @include respond(desktop-xsm) {
+    display: inline-block;
+  }
+}
+
 .show-md-inline-flex {
   display: none;
 
@@ -331,12 +344,19 @@ body {
 
   & .nav {
     // padding: 1.8rem 8rem;
+    padding-bottom: .3rem;
     height: 6.9rem;
     display: flex;
     align-items: center;
    
+    &.container {
+      @include respond(desktop-xsm) {
+        padding-right: 3rem;
+      }
+    }
 
     &-brand {
+      margin-bottom: -.5rem;
       margin-right: 4%;
       &-img {
         height: 2.95rem;
@@ -383,20 +403,36 @@ body {
 
     &-buttons {
       margin-left: 5%;
+      margin-right: .3rem;
       white-space: nowrap;
 
       @include respond(desktop-md) {
+        margin-right: -.5rem;
         margin-left: auto;
       }
 
       & .btn-link {
-        margin-right: 2.4rem;
+        margin-right: 2.2rem;
+
+        @include respond(desktop-md) {
+          font-size: 1.7rem;
+          margin-right: 1.5rem;
+        }
+      }
+
+      & .btn-primary {
+        padding: .8rem 1.8rem;
       }
     }
 
     & .nav-menu-toggle {
-      font-size: 2.5rem;
+      margin-left: auto;
       cursor: pointer;
+
+      & svg {
+        color: #232324;
+        font-size: 2.5rem;
+      }
     }
 
     //MENU
@@ -413,6 +449,12 @@ body {
 
       @include respond(desktop-md) {
         display: block;
+      }
+
+      & .container {
+        @include respond(desktop-xsm) {
+          padding-right: 3rem;
+        }
       }
       
       &-header {
@@ -431,6 +473,7 @@ body {
         & .nav-menu-toggle {
           margin-left: auto;
           font-size: 2.5rem;
+          color: #232324;
           cursor: pointer;
         }
       }
