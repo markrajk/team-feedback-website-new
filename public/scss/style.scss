@@ -82,24 +82,24 @@ $text-color-primary: #1c1c1c;
 
 html {
   min-width: 100vw;
-    //font-size: 62.5%;   //1rem = 10px 10px/16 62.5%
-    font-size: 67.5%;   //1rem = 10px 10px/16 62.5%
+    font-size: 62.5%;   //1rem = 10px 10px/16 62.5%
+    //font-size: 67.5%;   //1rem = 10px 10px/16 62.5%
 
-    @include respond(desktop-xxl) {
-      font-size: 62.5%;
+    // @include respond(desktop-xxl) {
+    //   font-size: 62.5%;
+    // }
+
+    @include respond(desktop-xl) {
+      font-size: 60%;
     }
 
-    // @include respond(desktop-xl) {
-    //   font-size: 60%;
-    // }
+    @include respond(desktop-lg) {
+      font-size: 57.5%;
+    }
 
-    // @include respond(desktop-lg) {
-    //   font-size: 57.5%;
-    // }
-
-    // @include respond(desktop-md) {
-    //   font-size: 55%;
-    // }
+    @include respond(desktop-md) {
+      font-size: 55%;
+    }
 
     // @include respond(desktop-sm) {
     //   font-size: 50%;
@@ -707,6 +707,8 @@ body {
     justify-content: center;
   }
 
+  
+
   &-card {
     padding-top: 7.3rem;
     max-width: 31.6rem;
@@ -720,8 +722,14 @@ body {
       max-width: 100%;
     }
 
+    //TABLET
+    @include respond(desktop-md) {
+      //margin-left: 7rem;
+      padding-top: 6.37rem;
+    }
+
     @include respond(desktop-sm) {
-      justify-content: space-between;
+      //justify-content: space-between;
       padding-left: 5%;
       padding-right: 5%;
     }
@@ -736,7 +744,7 @@ body {
     }
 
     &-img {
-      margin-bottom: 3.82rem;
+      margin-bottom: 3.5rem;
       max-height: 42.5rem;
       border-radius: 1.2rem;
       border: 7px solid #F6F6F6;
@@ -759,7 +767,7 @@ body {
       }
 
       &-title {
-        margin-bottom: 1.6rem;
+        margin-bottom: 1.9rem;
         font-size: 2.2rem;
         font-weight: 600;
         line-height: 1.36;
@@ -781,72 +789,60 @@ body {
     }
 
     &.card-01 {
-      
-      @include respond(desktop-lg) {
 
-        & .section-info-card-body {
-          //margin-left: 8.5%;
+      & .section-info-card-body {
+
+        @include respond(desktop-lg) {
           margin-left: 6.62rem;
           max-width: 31.5rem;
           text-align: left;
         }
-      }
 
-      @include respond(desktop-sm) {
-        
-        & .section-info-card-body {
+        //TABLET
+        @include respond(desktop-lg) {
+          margin-left: 6.62rem;
+          max-width: 31.5rem;
+          text-align: left;
+        }
+
+        @include respond(desktop-sm) {
           margin-left: 2rem;
         }
       }
     }
 
     &.card-02 {
-      
-      @include respond(desktop-lg) {
-        flex-direction: row-reverse;
+      flex-direction: row-reverse;
 
-        & .section-info-card-body {
+      & .section-info-card-body {
+
+        @include respond(desktop-lg) {
           margin-right: 10.9rem;
           max-width: 29.6rem;
           text-align: left;
         }
-      }
 
-      @include respond(desktop-sm) {
-        
-        & .section-info-card-body {
+        @include respond(desktop-sm) {
           margin-right: 2rem;
         }
       }
     }
 
     &.card-03 {
-      
-      @include respond(desktop-lg) {
 
-        & .section-info-card-body {
+      & .section-info-card-body {
+
+        @include respond(desktop-lg) {
           margin-left: 10.9rem;
           max-width: 29.6rem;
           text-align: left;
         }
-      }
 
-      @include respond(desktop-sm) {
-        
-        & .section-info-card-body {
+        @include respond(desktop-sm) {
           margin-left: 2rem;
         }
       }
     }
-
-    // &.card-02 {
-    //   margin-left: 1.5rem;
-    //   margin-right: 3.5rem;
-    // }
-
-    // &.card-03 {
-    //   align-self: flex-end;
-    // }
   }
 }
 

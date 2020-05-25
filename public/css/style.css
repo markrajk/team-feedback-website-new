@@ -7,10 +7,16 @@
 
 html {
   min-width: 100vw;
-  font-size: 67.5%; }
-  @media (max-width: 1720px) {
+  font-size: 62.5%; }
+  @media (max-width: 1379px) {
     html {
-      font-size: 62.5%; } }
+      font-size: 60%; } }
+  @media (max-width: 1199px) {
+    html {
+      font-size: 57.5%; } }
+  @media (max-width: 991px) {
+    html {
+      font-size: 55%; } }
 
 body {
   box-sizing: border-box;
@@ -412,9 +418,11 @@ body {
         justify-content: center;
         width: 100%;
         max-width: 100%; } }
+    @media (max-width: 991px) {
+      .main-overview .section-info-card {
+        padding-top: 6.37rem; } }
     @media (max-width: 769px) {
       .main-overview .section-info-card {
-        justify-content: space-between;
         padding-left: 5%;
         padding-right: 5%; } }
     @media (max-width: 575px) {
@@ -426,7 +434,7 @@ body {
         margin-left: 0 !important;
         margin-right: 0 !important; } }
     .main-overview .section-info-card-img {
-      margin-bottom: 3.82rem;
+      margin-bottom: 3.5rem;
       max-height: 42.5rem;
       border-radius: 1.2rem;
       border: 7px solid #F6F6F6; }
@@ -442,7 +450,7 @@ body {
         margin-left: 0 !important;
         margin-right: 0 !important; } }
     .main-overview .section-info-card-body-title {
-      margin-bottom: 1.6rem;
+      margin-bottom: 1.9rem;
       font-size: 2.2rem;
       font-weight: 600;
       line-height: 1.36;
@@ -459,19 +467,24 @@ body {
         margin-left: 6.62rem;
         max-width: 31.5rem;
         text-align: left; } }
+    @media (max-width: 1199px) {
+      .main-overview .section-info-card.card-01 .section-info-card-body {
+        margin-left: 6.62rem;
+        max-width: 31.5rem;
+        text-align: left; } }
     @media (max-width: 769px) {
       .main-overview .section-info-card.card-01 .section-info-card-body {
         margin-left: 2rem; } }
-    @media (max-width: 1199px) {
-      .main-overview .section-info-card.card-02 {
-        flex-direction: row-reverse; }
+    .main-overview .section-info-card.card-02 {
+      flex-direction: row-reverse; }
+      @media (max-width: 1199px) {
         .main-overview .section-info-card.card-02 .section-info-card-body {
           margin-right: 10.9rem;
           max-width: 29.6rem;
           text-align: left; } }
-    @media (max-width: 769px) {
-      .main-overview .section-info-card.card-02 .section-info-card-body {
-        margin-right: 2rem; } }
+      @media (max-width: 769px) {
+        .main-overview .section-info-card.card-02 .section-info-card-body {
+          margin-right: 2rem; } }
     @media (max-width: 1199px) {
       .main-overview .section-info-card.card-03 .section-info-card-body {
         margin-left: 10.9rem;
