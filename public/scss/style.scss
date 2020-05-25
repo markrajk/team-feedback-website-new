@@ -1,0 +1,499 @@
+// ==================================
+// VARIABLES
+// ==================================
+$green-bleak: #c3e2b9;
+$green-light: #76dd53;
+$green-primary: #48bc20;
+$green-dark: #268008;
+$text-color-primary: #1c1c1c;
+
+// ==================================
+// MIXINS & FUNCTIONS
+// ==================================
+@mixin flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == desktop-xxsm {
+    @media (max-width: 379px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-xsm {
+    @media (max-width: 575px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-sm {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-md {
+    @media (max-width: 991px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-lg {
+    @media (max-width: 1199px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop-xl {
+    @media (max-width: 1379px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-xxl {
+    @media (max-width: 1720px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop-xxxl {
+    @media (max-width: 1900px) {
+      @content;
+    }
+  }
+}
+
+@function resize($base, $value) {
+  $result: $base * $value;
+  @return $result;
+}
+
+// ==================================
+// GENERAL SETTINGS
+// ==================================
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+  min-width: 100vw;
+    font-size: 62.5%;   //1rem = 10px 10px/16 62.5%
+
+    @include respond(desktop-xl) {
+      font-size: 60%;
+    }
+
+    @include respond(desktop-lg) {
+      font-size: 57.5%;
+    }
+
+    @include respond(desktop-md) {
+      font-size: 55%;
+    }
+
+    @include respond(desktop-sm) {
+      font-size: 50%;
+    }
+
+    // @include respond(desktop-xsm) {
+    //   font-size: 62.5%;
+    // }
+
+    // @include respond(desktop-xxsm) {
+    //   font-size: 50%;
+    // }
+}
+
+body {
+
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: $text-color-primary;
+    overflow-x: hidden;
+
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar { 
+      width: 0 !important;
+  }
+}
+
+// ==================================
+// UTLITIES
+// ==================================
+.container {
+  margin: 0 auto;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  max-width: 144rem;
+  
+
+  @include respond(desktop-lg) {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  @include respond(desktop-md) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  @include respond(desktop-xsm) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.container-fluid {
+  margin: 0 auto;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  
+
+  @include respond(desktop-lg) {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  @include respond(desktop-md) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  @include respond(desktop-xsm) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .9rem 1.8rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: solid 1.75px transparent;
+  border-radius: 2px;
+  transition: all .2s ease-in-out;
+  transition-property: background-color, color, border-color;
+
+  &-link {
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #404040;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+ 
+  &-primary {
+   color: #FFF;
+   background-color: $green-primary;
+   border-color: $green-primary;
+
+   &:hover,
+   &:focus {
+     background-color: $green-light;
+     border-color: $green-light;
+   }
+ 
+   &-outlined {
+    background-color: transparent;
+    color: $green-primary;
+    border-color: $green-primary;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: $green-light;
+      border-color: $green-light;
+    }
+   }
+  }
+
+  &-secondary {
+
+    &-outlined {
+      background-color: #FFF;
+      color: #2678e5;
+      border: solid 2px #2678e5;
+
+      &:hover,
+      &:focus {
+        background-color: #2678e5;
+        color: #fff;
+      }
+    }
+  }
+
+  &-white {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1.4rem 3.35rem;
+    border-radius: 4px;
+    border: solid 1px #dadce0;
+    background-color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #2376e5;
+  }
+ }
+
+
+
+.show-xsm-block {
+  display: none;
+
+  @include respond(desktop-xsm) {
+    display: block;
+  }
+}
+
+.show-md-inline-flex {
+  display: none;
+
+  @include respond(desktop-md) {
+    display: inline-flex;
+  }
+}
+
+.show-md-inline-block {
+  display: none;
+
+  @include respond(desktop-md) {
+    display: inline-block;
+  }
+}
+
+.show-xsm-inline-flex {
+  display: none;
+
+  @include respond(desktop-xsm) {
+    display: inline-flex;
+  }
+}
+
+.hide-md {
+  @include respond(desktop-md) {
+    display: none!important;
+  }
+}
+
+.hide-sm {
+  @include respond(desktop-sm) {
+    display: none!important;
+  }
+}
+
+.hide-xsm {
+  @include respond(desktop-xsm) {
+    display: none!important;
+  }
+}
+
+.hide-xxsm {
+  @include respond(desktop-xxsm) {
+    display: none!important;
+  }
+}
+
+.invisible {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.onscreen {
+  transform: translate(0,0)!important;
+}
+
+
+
+// ==================================
+// LAYOUT
+// ==================================
+.header {
+  position: relative;
+  background-color: #FFF;
+  border-bottom: 1.5px solid #f1f1f1;
+  z-index: 1000;
+
+  & .nav {
+    // padding: 1.8rem 8rem;
+    height: 6.9rem;
+    display: flex;
+    align-items: center;
+   
+
+    &-brand {
+      margin-right: 4%;
+      &-img {
+        height: 2.95rem;
+      }
+    }
+
+    &-list {
+      margin-right: auto;
+      max-width: 46rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      list-style: none;
+      justify-content: space-between;
+
+      &-item {
+
+        &-link {
+          font-size: 1.7rem;
+          font-weight: 400;
+          color: #2f2f2f;
+          text-decoration: none;
+
+          &:hover,
+          &:focus {
+            text-decoration: underline;
+          }
+
+          &.active {
+            font-weight: 600;
+            color: #070707;
+          }
+        }
+
+        &:not(:first-of-type) {
+          margin-left: 2rem;
+        }
+      }
+
+      & > * {
+        white-space: nowrap;
+      }
+    }
+
+    &-buttons {
+      margin-left: 5%;
+      white-space: nowrap;
+
+      & .btn-link {
+        margin-right: 2.4rem;
+      }
+    }
+
+    & .nav-menu-toggle {
+      margin-left: auto;
+      font-size: 2.5rem;
+      cursor: pointer;
+    }
+
+    //MENU
+    &-menu {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      transform: translate(100%, 0);
+      transition: all .5s ease-in-out;
+      background-color: #FFF;
+      z-index: 1500;
+
+      @include respond(desktop-md) {
+        display: block;
+      }
+      
+      &-header {
+        // padding: 1.8rem 8rem;
+        height: calc(6.9rem + 1.5px);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1.5px solid #f1f1f1;
+
+        img {
+          height: 2.7rem;
+        }
+
+        & .nav-menu-toggle {
+          margin-left: auto;
+          font-size: 2.5rem;
+          cursor: pointer;
+        }
+      }
+
+      &-body {
+
+        &-list {
+          list-style: none;
+
+          &-item {
+            
+            &-link {
+              padding-top: 1.8rem;
+              padding-bottom: 1.8rem;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              font-size: 1.7rem;
+              font-weight: 400;
+              color: #2f2f2f;
+              text-decoration: none;
+
+              &.active {
+                font-weight: 600;
+                color: #070707;
+              }
+
+              &:hover,
+              &:focus {
+                background-color: #f1f1f1;
+              }
+            }
+          }
+        }
+      }
+
+      &-footer {
+        padding-top: 1.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .btn {
+          width: 49%;
+
+          @include respond(desktop-xsm) {
+            width: 100%;
+
+            &:not(:first-of-type) {
+              margin-top: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//ADDITIONAL CLASSE
+.menu-open {
+  transform: translate(0,0)!important;
+}
+
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Source Sans Pro', sans-serif;
+// font-family: 'Roboto', sans-serif;
+//FORCE GIT UPDATE
