@@ -135,9 +135,9 @@ body {
 // ==================================
 .container {
   margin: 0 auto;
-  padding-left: 1.7rem;
-  padding-right: 1.7rem;
-  max-width: 131.4rem;
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
+  max-width: 132.4rem;
   
   // @include respond(desktop-xg) {
   //   padding-left: 5rem;
@@ -705,7 +705,7 @@ body {
     justify-content: space-between;
   }
 
-  @include respond(desktop-lg) {
+  @include respond(desktop-md) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -718,7 +718,8 @@ body {
     max-width: 31.6rem;
     text-align: center;
 
-    @include respond(desktop-lg) {
+    @include respond(desktop-md) {
+      padding-top: 6.37rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -729,7 +730,7 @@ body {
     //TABLET
     @include respond(desktop-md) {
       //margin-left: 7rem;
-      padding-top: 6.37rem;
+      
     }
 
     @include respond(desktop-sm) {
@@ -796,14 +797,14 @@ body {
 
       & .section-info-card-body {
 
-        @include respond(desktop-lg) {
+        @include respond(desktop-md) {
           margin-left: 6.62rem;
           max-width: 31.5rem;
           text-align: left;
         }
 
         //TABLET
-        @include respond(desktop-lg) {
+        @include respond(desktop-md) {
           margin-left: 6.62rem;
           max-width: 31.5rem;
           text-align: left;
@@ -820,7 +821,7 @@ body {
 
       & .section-info-card-body {
 
-        @include respond(desktop-lg) {
+        @include respond(desktop-md) {
           margin-right: 10.9rem;
           max-width: 29.6rem;
           text-align: left;
@@ -836,7 +837,7 @@ body {
 
       & .section-info-card-body {
 
-        @include respond(desktop-lg) {
+        @include respond(desktop-md) {
           margin-left: 10.9rem;
           max-width: 29.6rem;
           text-align: left;
