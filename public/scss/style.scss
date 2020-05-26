@@ -92,17 +92,17 @@ html {
 
 
 
-    // @include respond(desktop-xl) {
-    //   font-size: 57.5%;
-    // }
+    @include respond(desktop-xl) {
+      font-size: 57.5%;
+    }
 
-    // @include respond(desktop-lg) {
-    //   font-size: 55%;
-    // }
+    @include respond(desktop-lg) {
+      font-size: 55%;
+    }
 
-    // @include respond(desktop-xsm) {
-    //   font-size: 52.5%;
-    // }
+    @include respond(desktop-xsm) {
+      font-size: 52.5%;
+    }
 
 
 
@@ -1119,12 +1119,65 @@ body {
     display: flex;
     align-items: baseline;
 
+    @include respond(desktop-lg) {
+      justify-content: space-evenly;
+    }
+
+    @include respond(desktop-md) {
+      justify-content: space-between;
+    }
+
+    //TABLET
+    @include respond(desktop-sm) {
+      max-width: 64.6rem;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+
+    //MOBILE
+    @include respond(desktop-xsm) {
+      padding-top: 4.6rem;
+      padding-bottom: 5.1rem;
+      justify-content: space-evenly;
+    }
+
+    @include respond(desktop-xxsm) {
+      justify-content: space-between;
+    }
+
     &-list {
       width: 100%;
       max-width: 23rem;
       list-style: none;
 
+      @include respond(desktop-lg) {
+        width: auto;
+        max-width: auto;
+      }
+  
+      //TABLET
+      @include respond(desktop-sm) {
+        width: 100%;
+        max-width: 20rem;
+
+        &:nth-of-type(2) {
+          margin-bottom: 5.7rem;
+        }
+      }
+
+      //MOBILE
+      @include respond(desktop-xsm) {
+        width: 40%;
+        max-width: 40%;
+      }
+
+      @include respond(desktop-xxsm) {
+        width: 45%;
+        max-width: 45%;
+      }
+
       &-item {
+        white-space: nowrap;
 
         &:not(:last-of-type) {
           margin-bottom: 1rem;
@@ -1164,7 +1217,31 @@ body {
       justify-content: space-between;
       height: 7.1rem;
 
+      //MOBILE
+      @include respond(desktop-xsm) {
+        height: 10rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      @include respond(desktop-xxsm) {
+        height: 15.1rem;
+      }
+
       &-links {
+
+      //MOBILE
+      @include respond(desktop-xsm) {
+        width: 100%;
+        text-align: center;
+      }
+
+      & > *:not(:first-of-type) {
+        //MOBILE
+      @include respond(desktop-xxsm) {
+        margin-right: 0!important;
+      }
+      }
 
         & .btn-link {
           margin-right: 2.9rem;
@@ -1195,9 +1272,23 @@ body {
             text-decoration: underline;
           }
         }
+
+        & .show-inline-block {
+          //MOBILE
+          @include respond(desktop-xxsm) {
+            margin-top: 2.5rem;
+            display: block!important;
+          }
+        }
       }
 
       &-social {
+
+        // //MOBILE
+        // @include respond(desktop-xsm) {
+        //   display: flex;
+        //   justify-content: center;
+        // }
 
         &-icon {
           font-size: 2.2rem;
@@ -1225,11 +1316,28 @@ body {
       display: flex;
       align-items: center;
       height: 4.5rem;
-
       font-size: 1.2rem;
       font-weight: 400;
       line-height: 1.83;
       color: #454545;
+
+      @include respond(desktop-xsm) {
+        height: 9.3rem;
+        text-align: center;
+      }
+
+      & .big {
+        @include respond(desktop-xsm) {
+          display: none;
+        }
+      }
+
+      & .small {
+        display: none;
+        @include respond(desktop-xsm) {
+          display: inline-block;
+        }
+      }
     }
   }
 }
