@@ -284,6 +284,8 @@ body {
 
 .subheader {
   position: fixed;
+  top: calc(6.9rem + 1.5px);
+  left: 0;
   width: 100%;
   background-color: #FFF;
   border-bottom: 1.5px solid #F4F4F4; }
