@@ -1485,6 +1485,9 @@ body {
     padding-bottom: 4.5rem; } }
 #main-feedback-lead .section-hero-main-title {
   max-width: 38.3rem; }
+  @media (max-width: 769px) {
+    #main-feedback-lead .section-hero-main-title {
+      max-width: 50rem; } }
 #main-feedback-lead .section-hero-main-text {
   max-width: 50.1rem; }
 #main-feedback-lead .section-hero-img {
