@@ -100,8 +100,12 @@ html {
       font-size: 55%;
     }
 
-    @include respond(desktop-xsm) {
+    @include respond(desktop-md) {
       font-size: 52.5%;
+    }
+
+    @include respond(desktop-xsm) {
+      font-size: 50%;
     }
 
 
