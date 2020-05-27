@@ -250,8 +250,8 @@ body {
     &:hover,
     &:focus {
       color: #fff;
-      background-color: $green-light;
-      border-color: $green-light;
+      background-color: $green-primary;
+      border-color: $green-primary;
     }
    }
   }
@@ -2064,6 +2064,11 @@ body {
 #main-feedback-lead {
   & .section-hero {
 
+    @include respond(desktop-sm) {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
     &-main {
 
       &-title {
@@ -2090,6 +2095,12 @@ body {
     padding-bottom: 10.7rem;
     max-width: 97.15rem;
 
+
+    @include respond(desktop-sm) {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
     &-img {
       max-width: 37.7rem;
     }
@@ -2098,6 +2109,11 @@ body {
   & .section-feat {
 
     &-card {
+
+      @include respond(desktop-sm) {
+        padding-top: 4rem!important;
+        padding-bottom: 4rem!important;
+      }
 
       &-img {
         max-width: 50.1rem;

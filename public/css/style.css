@@ -81,8 +81,8 @@ body {
       border-color: #48bc20; }
       .btn-primary-outlined:hover, .btn-primary-outlined:focus {
         color: #fff;
-        background-color: #76dd53;
-        border-color: #76dd53; }
+        background-color: #48bc20;
+        border-color: #48bc20; }
   .btn-secondary-outlined {
     background-color: #FFF;
     color: #2678e5;
@@ -1476,6 +1476,10 @@ body {
   #main-feedback-giving .section-feat .card-01.section-feat-card img {
     max-width: 37.1rem; }
 
+@media (max-width: 769px) {
+  #main-feedback-lead .section-hero {
+    padding-top: 4rem;
+    padding-bottom: 4rem; } }
 #main-feedback-lead .section-hero-main-title {
   max-width: 38.3rem; }
 #main-feedback-lead .section-hero-main-text {
@@ -1490,8 +1494,16 @@ body {
   padding-top: 11.3rem;
   padding-bottom: 10.7rem;
   max-width: 97.15rem; }
+  @media (max-width: 769px) {
+    #main-feedback-lead .section-stats {
+      padding-top: 4rem;
+      padding-bottom: 4rem; } }
   #main-feedback-lead .section-stats-img {
     max-width: 37.7rem; }
+@media (max-width: 769px) {
+  #main-feedback-lead .section-feat-card {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important; } }
 #main-feedback-lead .section-feat-card-img {
   max-width: 50.1rem; }
   @media (max-width: 769px) {
