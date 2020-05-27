@@ -2131,12 +2131,17 @@ body {
         .section-feat-card {
 
           &-main {
+            margin-right: 5rem;
 
+            @include respond(desktop-sm) {
+              margin-right: 0;
+            }
             &-title {
               max-width: 26.4rem;
             }
 
             &-text {
+              margin-right: 0rem;
               max-width: 48.7rem;
             }
           }
@@ -2147,6 +2152,17 @@ body {
         padding: 0 calc((100% - 104rem) / 2);//@@@
         padding-top: 3.2rem;//@@@
         padding-bottom: 7.9rem;//@@@
+
+        .section-feat-card {
+
+          &-main {
+            margin-left: 5rem;
+
+            @include respond(desktop-sm) {
+              margin-left: 0;
+            }
+          }
+        }
       }
     }
   }

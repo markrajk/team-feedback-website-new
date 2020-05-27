@@ -1513,14 +1513,25 @@ body {
   padding: 0 calc((100% - 107rem) / 2);
   padding-top: 3.5rem;
   padding-bottom: 3rem; }
-  #main-feedback-lead .section-feat-card.card-01 .section-feat-card-main-title {
-    max-width: 26.4rem; }
-  #main-feedback-lead .section-feat-card.card-01 .section-feat-card-main-text {
-    max-width: 48.7rem; }
+  #main-feedback-lead .section-feat-card.card-01 .section-feat-card-main {
+    margin-right: 5rem; }
+    @media (max-width: 769px) {
+      #main-feedback-lead .section-feat-card.card-01 .section-feat-card-main {
+        margin-right: 0; } }
+    #main-feedback-lead .section-feat-card.card-01 .section-feat-card-main-title {
+      max-width: 26.4rem; }
+    #main-feedback-lead .section-feat-card.card-01 .section-feat-card-main-text {
+      margin-right: 0rem;
+      max-width: 48.7rem; }
 #main-feedback-lead .section-feat-card.card-02 {
   padding: 0 calc((100% - 104rem) / 2);
   padding-top: 3.2rem;
   padding-bottom: 7.9rem; }
+  #main-feedback-lead .section-feat-card.card-02 .section-feat-card-main {
+    margin-left: 5rem; }
+    @media (max-width: 769px) {
+      #main-feedback-lead .section-feat-card.card-02 .section-feat-card-main {
+        margin-left: 0; } }
 
 #main-feedback-dash .section-hero-img {
   max-width: 58.9rem; }
