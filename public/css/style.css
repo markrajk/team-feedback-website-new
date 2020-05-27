@@ -1291,9 +1291,19 @@ body {
     max-width: 23.7rem; }
 
 .main-feedback-giving .section-feat .card-01 {
+  padding: 0 calc((100% - 97.5rem) / 2);
   padding-top: 9.45rem;
   padding-bottom: 13.2rem; }
-  .main-feedback-giving .section-feat .card-01 .section-feat-card-main-img {
+  @media (max-width: 769px) {
+    .main-feedback-giving .section-feat .card-01 {
+      padding-top: 2.4rem;
+      padding-bottom: 5.4rem; } }
+  @media (max-width: 575px) {
+    .main-feedback-giving .section-feat .card-01 {
+      padding-top: 3.4rem;
+      padding-bottom: 3.6rem; } }
+  .main-feedback-giving .section-feat .card-01.section-feat-card img {
+    border-radius: 1rem;
     max-width: 37.1rem; }
 
 .menu-open {
