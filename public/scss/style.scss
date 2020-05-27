@@ -1484,6 +1484,11 @@ body {
       line-height: 1.94;
       color: #222426;
 
+      //TEAM LEAD PAGE TESTING
+      @include respond(desktop-md) {
+        font-size: 1.65rem;//@@@
+      }
+
       //TABLET
       @include respond(desktop-sm) {
         margin-bottom: .8rem;
@@ -1507,6 +1512,11 @@ body {
       line-height: 1.2;
       color: #000000;
 
+      //TEAM LEAD PAGE TESTING
+      @include respond(desktop-md) {
+        font-size: 3.7rem;//@@@
+      }
+
       //TABLET
       @include respond(desktop-sm) {
         margin: 0 auto;
@@ -1528,11 +1538,16 @@ body {
       margin-right: 2rem;
       margin-bottom: 2.4rem;
       max-width: 46rem;
-      min-width: 44rem;
-      font-size: 18px;
+      min-width: 37.7rem;
+      font-size: 1.8rem;
       font-weight: 400;
       line-height: 1.44;
       color: #5f6368;
+
+      //TEAM LEAD PAGE TESTING
+      @include respond(desktop-md) {
+        font-size: 1.7rem;//@@@
+      }
 
       //TABLET
       @include respond(desktop-sm) {
@@ -1635,6 +1650,14 @@ body {
       @include respond(desktop-sm) {
         margin-bottom: 1.4rem;
       }
+
+      //MOBILE
+      @include respond(desktop-xsm) {
+        margin-bottom: 2rem;
+        max-width: 23.5rem;
+        font-size: 2.2rem;
+        line-height: 1.36;
+      }
     }
 
     &-text {
@@ -1656,6 +1679,13 @@ body {
         min-width: 0;
         font-size: 1.7rem;
         line-height: 1.29;
+      }
+
+      //MOBILE
+      @include respond(desktop-xsm) {
+        margin: 0;
+        font-size: 1.55rem;
+        line-height: 1.61;
       }
     }
   }
@@ -1738,8 +1768,7 @@ body {
         //MOBILE
         @include respond(desktop-xsm) {
           margin: 0;
-          max-width: 100%;
-          font-family: Roboto;
+          max-width: 44rem!important;
           font-size: 1.55rem;
           line-height: 1.61;
         }
@@ -1969,8 +1998,8 @@ body {
 .main-feedback-giving .section-cards,
 .main-feedback-lead .section-cards,
 .main-feedback-dash .section-cards {
-  padding-top: 6.8rem;
-  padding-bottom: 9.6rem;
+  padding-top: 5.8rem;
+  padding-bottom: 7.6rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1989,7 +2018,7 @@ body {
   }
 
   &-card {
-    padding: 6.2rem 0;
+    padding: 4.2rem 0;
     text-align: center;
 
     &:nth-of-type(2) {
@@ -2131,6 +2160,7 @@ body {
       padding-top: 4.5rem;
       padding-bottom: 4.5rem;
     }
+    
 
     &-img {
       max-width: 37.7rem;

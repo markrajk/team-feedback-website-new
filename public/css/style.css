@@ -895,6 +895,12 @@ body {
       font-weight: 600;
       line-height: 1.94;
       color: #222426; }
+      @media (max-width: 991px) {
+        .main-feedback-received .section-hero-main-subtitle,
+        .main-feedback-giving .section-hero-main-subtitle,
+        .main-feedback-lead .section-hero-main-subtitle,
+        .main-feedback-dash .section-hero-main-subtitle {
+          font-size: 1.65rem; } }
       @media (max-width: 769px) {
         .main-feedback-received .section-hero-main-subtitle,
         .main-feedback-giving .section-hero-main-subtitle,
@@ -921,6 +927,12 @@ body {
       font-weight: 600;
       line-height: 1.2;
       color: #000000; }
+      @media (max-width: 991px) {
+        .main-feedback-received .section-hero-main-title,
+        .main-feedback-giving .section-hero-main-title,
+        .main-feedback-lead .section-hero-main-title,
+        .main-feedback-dash .section-hero-main-title {
+          font-size: 3.7rem; } }
       @media (max-width: 769px) {
         .main-feedback-received .section-hero-main-title,
         .main-feedback-giving .section-hero-main-title,
@@ -946,11 +958,17 @@ body {
       margin-right: 2rem;
       margin-bottom: 2.4rem;
       max-width: 46rem;
-      min-width: 44rem;
-      font-size: 18px;
+      min-width: 37.7rem;
+      font-size: 1.8rem;
       font-weight: 400;
       line-height: 1.44;
       color: #5f6368; }
+      @media (max-width: 991px) {
+        .main-feedback-received .section-hero-main-text,
+        .main-feedback-giving .section-hero-main-text,
+        .main-feedback-lead .section-hero-main-text,
+        .main-feedback-dash .section-hero-main-text {
+          font-size: 1.7rem; } }
       @media (max-width: 769px) {
         .main-feedback-received .section-hero-main-text,
         .main-feedback-giving .section-hero-main-text,
@@ -1058,6 +1076,15 @@ body {
       .main-feedback-lead .section-stats-main-title,
       .main-feedback-dash .section-stats-main-title {
         margin-bottom: 1.4rem; } }
+    @media (max-width: 575px) {
+      .main-feedback-received .section-stats-main-title,
+      .main-feedback-giving .section-stats-main-title,
+      .main-feedback-lead .section-stats-main-title,
+      .main-feedback-dash .section-stats-main-title {
+        margin-bottom: 2rem;
+        max-width: 23.5rem;
+        font-size: 2.2rem;
+        line-height: 1.36; } }
   .main-feedback-received .section-stats-main-text,
   .main-feedback-giving .section-stats-main-text,
   .main-feedback-lead .section-stats-main-text,
@@ -1083,6 +1110,14 @@ body {
         min-width: 0;
         font-size: 1.7rem;
         line-height: 1.29; } }
+    @media (max-width: 575px) {
+      .main-feedback-received .section-stats-main-text,
+      .main-feedback-giving .section-stats-main-text,
+      .main-feedback-lead .section-stats-main-text,
+      .main-feedback-dash .section-stats-main-text {
+        margin: 0;
+        font-size: 1.55rem;
+        line-height: 1.61; } }
 
 .main-feedback-received .section-feat-card,
 .main-feedback-giving .section-feat-card,
@@ -1165,8 +1200,7 @@ body {
       .main-feedback-lead .section-feat-card-main-text,
       .main-feedback-dash .section-feat-card-main-text {
         margin: 0;
-        max-width: 100%;
-        font-family: Roboto;
+        max-width: 44rem !important;
         font-size: 1.55rem;
         line-height: 1.61; } }
   .main-feedback-received .section-feat-card-img,
@@ -1396,8 +1430,8 @@ body {
 .main-feedback-giving .section-cards,
 .main-feedback-lead .section-cards,
 .main-feedback-dash .section-cards {
-  padding-top: 6.8rem;
-  padding-bottom: 9.6rem;
+  padding-top: 5.8rem;
+  padding-bottom: 7.6rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1420,7 +1454,7 @@ body {
   .main-feedback-giving .section-cards-card,
   .main-feedback-lead .section-cards-card,
   .main-feedback-dash .section-cards-card {
-    padding: 6.2rem 0;
+    padding: 4.2rem 0;
     text-align: center; }
     .main-feedback-received .section-cards-card:nth-of-type(2),
     .main-feedback-giving .section-cards-card:nth-of-type(2),
