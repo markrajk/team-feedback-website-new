@@ -100,12 +100,12 @@ html {
       font-size: 55%;
     }
 
-    @include respond(desktop-md) {
-      font-size: 52.5%;
-    }
+    // @include respond(desktop-md) {
+    //   font-size: 52.5%;
+    // }
 
     @include respond(desktop-xsm) {
-      font-size: 50%;
+      font-size: 52.5%;
     }
 
 
@@ -1625,6 +1625,12 @@ body {
       line-height: 1.4;
       color: #1d1d1d;
 
+      //TEAM LEAD PAGE TESTING
+      @include respond(desktop-md) {
+        font-size: 2.85rem;//@@@
+        margin-bottom: 2.4rem;
+      }
+
       //TABLET
       @include respond(desktop-sm) {
         margin-bottom: 1.4rem;
@@ -1638,6 +1644,11 @@ body {
       font-weight: 400;
       line-height: 1.44;
       color: #1d1d1d;
+
+      //TEAM LEAD PAGE TESTING
+      @include respond(desktop-md) {
+        font-size: 1.7rem;//@@@
+      }
 
       //TABLET
       @include respond(desktop-sm) {
@@ -1678,11 +1689,18 @@ body {
     &-main {
 
       &-title {
-        margin-bottom: 2.8rem;
+        //margin-bottom: 2.8rem;
+        margin-bottom: 2.8rem;//@@@
         font-size: 3rem;
         font-weight: 600;
         line-height: 1.4;
         color: #1d1d1d;
+
+        //TEAM LEAD PAGE TESTING
+        @include respond(desktop-md) {
+          margin-bottom: 2.4rem;
+          font-size: 2.85rem;//@@@
+        }
 
         //TABLET
         @include respond(desktop-sm) {
@@ -1704,6 +1722,11 @@ body {
         font-weight: 400;
         line-height: 1.44;
         color: #1d1d1d;
+
+        //TEAM LEAD PAGE TESTING
+        @include respond(desktop-md) {
+          font-size: 1.7rem;//@@@
+        }
 
         //TABLET
         @include respond(desktop-sm) {

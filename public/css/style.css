@@ -14,12 +14,9 @@ html {
   @media (max-width: 1199px) {
     html {
       font-size: 55%; } }
-  @media (max-width: 991px) {
-    html {
-      font-size: 52.5%; } }
   @media (max-width: 575px) {
     html {
-      font-size: 50%; } }
+      font-size: 52.5%; } }
 
 body {
   padding-top: calc(6.9rem + 1.5px);
@@ -1048,6 +1045,13 @@ body {
     font-weight: 600;
     line-height: 1.4;
     color: #1d1d1d; }
+    @media (max-width: 991px) {
+      .main-feedback-received .section-stats-main-title,
+      .main-feedback-giving .section-stats-main-title,
+      .main-feedback-lead .section-stats-main-title,
+      .main-feedback-dash .section-stats-main-title {
+        font-size: 2.85rem;
+        margin-bottom: 2.4rem; } }
     @media (max-width: 769px) {
       .main-feedback-received .section-stats-main-title,
       .main-feedback-giving .section-stats-main-title,
@@ -1064,6 +1068,12 @@ body {
     font-weight: 400;
     line-height: 1.44;
     color: #1d1d1d; }
+    @media (max-width: 991px) {
+      .main-feedback-received .section-stats-main-text,
+      .main-feedback-giving .section-stats-main-text,
+      .main-feedback-lead .section-stats-main-text,
+      .main-feedback-dash .section-stats-main-text {
+        font-size: 1.7rem; } }
     @media (max-width: 769px) {
       .main-feedback-received .section-stats-main-text,
       .main-feedback-giving .section-stats-main-text,
@@ -1104,6 +1114,13 @@ body {
     font-weight: 600;
     line-height: 1.4;
     color: #1d1d1d; }
+    @media (max-width: 991px) {
+      .main-feedback-received .section-feat-card-main-title,
+      .main-feedback-giving .section-feat-card-main-title,
+      .main-feedback-lead .section-feat-card-main-title,
+      .main-feedback-dash .section-feat-card-main-title {
+        margin-bottom: 2.4rem;
+        font-size: 2.85rem; } }
     @media (max-width: 769px) {
       .main-feedback-received .section-feat-card-main-title,
       .main-feedback-giving .section-feat-card-main-title,
@@ -1128,6 +1145,12 @@ body {
     font-weight: 400;
     line-height: 1.44;
     color: #1d1d1d; }
+    @media (max-width: 991px) {
+      .main-feedback-received .section-feat-card-main-text,
+      .main-feedback-giving .section-feat-card-main-text,
+      .main-feedback-lead .section-feat-card-main-text,
+      .main-feedback-dash .section-feat-card-main-text {
+        font-size: 1.7rem; } }
     @media (max-width: 769px) {
       .main-feedback-received .section-feat-card-main-text,
       .main-feedback-giving .section-feat-card-main-text,
