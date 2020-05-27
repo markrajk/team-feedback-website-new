@@ -610,7 +610,13 @@ body {
     &::-webkit-scrollbar { /* WebKit */
       width: 0;
       height: 0;
-  }
+    }
+
+    & .pad {
+      display: inline-block;
+      height: 100%;
+      min-width: .5rem;
+    }
 
     &-item {
       &:not(:last-of-type) {
@@ -1411,14 +1417,18 @@ body {
 
 //FEATURES FEEDBACK RECEIVED
 .main-feedback-received,
-.main-feedback-giving {
+.main-feedback-giving,
+.main-feedback-lead,
+.main-feedback-dash {
   padding-top: 5.6rem;
 }
 //=====================================
 //HERO SECTION
 //=====================================
 .main-feedback-received .section-hero,
-.main-feedback-giving .section-hero {
+.main-feedback-giving .section-hero,
+.main-feedback-lead .section-hero,
+.main-feedback-dash .section-hero {
   // padding-top: 8rem;//!!!
   // padding-bottom: 9.2rem;//!!!
   display: flex;
@@ -1554,7 +1564,9 @@ body {
 //STATS SECTION
 //=====================================
 .main-feedback-received .section-stats,
-.main-feedback-giving .section-stats {
+.main-feedback-giving .section-stats,
+.main-feedback-lead .section-stats,
+.main-feedback-dash .section-stats {
   padding-top: 12.55rem;
   padding-bottom: 11.2rem;
   display: flex;
@@ -1586,6 +1598,7 @@ body {
 
     //TABLET
     @include respond(desktop-sm) {
+      margin-right: 0;
       margin-bottom: 2.5rem;
       max-width: 43.3rem;
     }
@@ -1635,7 +1648,9 @@ body {
 //FEATURES SECTION
 //=====================================
 .main-feedback-received .section-feat,
-.main-feedback-giving .section-feat {
+.main-feedback-giving .section-feat,
+.main-feedback-lead .section-feat,
+.main-feedback-dash .section-feat {
 
   &-card {
     margin: 0 auto;
@@ -1849,7 +1864,9 @@ body {
 //BANNER SECTION
 //=====================================
 .main-feedback-received .section-banner,
-.main-feedback-giving .section-banner {
+.main-feedback-giving .section-banner,
+.main-feedback-lead .section-banner,
+.main-feedback-dash .section-banner {
   padding: 8.3rem 0;
   display: flex;
   align-items: center;
@@ -1920,7 +1937,9 @@ body {
 //CARDS SECTION
 //=====================================
 .main-feedback-received .section-cards,
-.main-feedback-giving .section-cards {
+.main-feedback-giving .section-cards,
+.main-feedback-lead .section-cards,
+.main-feedback-dash .section-cards {
   padding-top: 6.8rem;
   padding-bottom: 9.6rem;
   margin: 0 auto;
@@ -2021,6 +2040,190 @@ body {
   }
 }
 
+///////////////////////////////
+////////FEEDBACK LEAD////////
+///////////////////////////////
+#main-feedback-lead {
+  & .section-hero {
+
+    &-main {
+
+      &-title {
+        max-width: 38.3rem;
+      }
+
+      &-text {
+        max-width: 50.1rem;
+      }
+    }
+    
+    &-img {
+      margin-right: 4rem;
+      max-width: 52rem;
+
+      @include respond(desktop-md) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  & .section-stats {
+    padding-top: 11.3rem;
+    padding-bottom: 10.7rem;
+    max-width: 97.15rem;
+
+    &-img {
+      max-width: 37.7rem;
+    }
+  }
+
+  & .section-feat {
+
+    &-card {
+
+      &-img {
+        max-width: 50.1rem;
+
+        @include respond(desktop-sm) {
+          max-width: 37rem;
+        }
+      }
+
+      &.card-01 {
+        padding: 0 calc((100% - 107rem) / 2);//@@@
+        padding-top: 3.5rem;//@@@
+        padding-bottom: 3rem;//@@@
+
+        .section-feat-card {
+
+          &-main {
+
+            &-title {
+              max-width: 26.4rem;
+            }
+
+            &-text {
+              max-width: 48.7rem;
+            }
+          }
+        }
+      }
+
+      &.card-02 {
+        padding: 0 calc((100% - 104rem) / 2);//@@@
+        padding-top: 3.2rem;//@@@
+        padding-bottom: 7.9rem;//@@@
+      }
+    }
+  }
+}
+
+///////////////////////////////
+////////FEEDBACK DASH////////
+///////////////////////////////
+#main-feedback-dash {
+  & .section-hero {
+    
+    &-img {
+      max-width: 58.9rem;
+    }
+
+    &-main {
+
+      &-title {
+        max-width: 40.4rem;
+
+        @include respond(desktop-sm) {
+          max-width: 45rem;
+        }
+      }
+
+      &-text {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  & .section-stats {
+    max-width: 112.8rem;
+    &-img {
+      max-width: 54rem;
+
+      @include respond(desktop-sm) {
+        max-width: 43rem;
+      }
+    }
+
+    &-main {
+
+      &-title {
+        max-width: 32.7rem;
+
+        @include respond(desktop-sm) {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
+      &-text {
+        max-width: 46.8rem;
+      }
+    }
+  }
+
+  & .section-feat {
+
+    &-card {
+      &-img {
+      }
+    }
+
+    & .card-01 {
+      padding-top: 10.3rem;
+      padding-bottom: 9.76rem;
+      .section-feat-card {
+
+        &-img {
+          max-width: 54rem;
+
+          @include respond(desktop-sm) {
+            max-width: 43rem;
+          }
+        }
+
+        &-main {
+
+          &-title {
+           max-width: 32.7rem;
+          }
+        }
+      }
+    }
+
+    & .card-02 {
+      padding-left: calc((100% - 105rem) / 2);
+      padding-right: calc((100% - 105rem) / 2);
+      .section-feat-card {
+
+        &-img {
+          max-width: 46.2rem;
+
+          @include respond(desktop-sm) {
+            max-width: 43rem;
+          }
+        }
+
+        &-main {
+
+          &-title {
+           max-width: 32.7rem;
+          }
+        }
+      }
+    }
+  }
+}
 
 //ADDITIONAL CLASSES
 .menu-open {
