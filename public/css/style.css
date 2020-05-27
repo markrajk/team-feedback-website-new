@@ -987,7 +987,7 @@ body {
         .main-feedback-dash .section-hero-main-text {
           margin-bottom: 2rem;
           max-width: 35.8rem;
-          font-size: 1.4rem; } }
+          font-size: 1.55rem; } }
   .main-feedback-received .section-hero-img,
   .main-feedback-giving .section-hero-img,
   .main-feedback-lead .section-hero-img,
@@ -1106,7 +1106,7 @@ body {
       .main-feedback-giving .section-stats-main-text,
       .main-feedback-lead .section-stats-main-text,
       .main-feedback-dash .section-stats-main-text {
-        max-width: 44rem;
+        max-width: 46rem;
         min-width: 0;
         font-size: 1.7rem;
         line-height: 1.29; } }
@@ -1200,7 +1200,7 @@ body {
       .main-feedback-lead .section-feat-card-main-text,
       .main-feedback-dash .section-feat-card-main-text {
         margin: 0;
-        max-width: 44rem !important;
+        max-width: 46rem !important;
         font-size: 1.55rem;
         line-height: 1.61; } }
   .main-feedback-received .section-feat-card-img,

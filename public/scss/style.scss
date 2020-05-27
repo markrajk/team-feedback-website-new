@@ -1563,7 +1563,7 @@ body {
       @include respond(desktop-xsm) {
         margin-bottom: 2rem;
         max-width: 35.8rem;
-        font-size: 1.4rem;
+        font-size: 1.55rem;
       }
     }
   }
@@ -1675,7 +1675,7 @@ body {
 
       //TABLET
       @include respond(desktop-sm) {
-        max-width: 44rem;
+        max-width: 46rem;
         min-width: 0;
         font-size: 1.7rem;
         line-height: 1.29;
@@ -1768,7 +1768,7 @@ body {
         //MOBILE
         @include respond(desktop-xsm) {
           margin: 0;
-          max-width: 44rem!important;
+          max-width: 46rem!important;
           font-size: 1.55rem;
           line-height: 1.61;
         }
