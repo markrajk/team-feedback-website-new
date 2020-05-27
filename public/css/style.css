@@ -1428,6 +1428,23 @@ body {
       font-weight: 600;
       line-height: 1.35;
       color: #000000; }
+      .main-feedback-received .section-cards-card-title::first-letter,
+      .main-feedback-giving .section-cards-card-title::first-letter,
+      .main-feedback-lead .section-cards-card-title::first-letter,
+      .main-feedback-dash .section-cards-card-title::first-letter {
+        text-transform: uppercase; }
+      @media (max-width: 991px) {
+        .main-feedback-received .section-cards-card-title span,
+        .main-feedback-giving .section-cards-card-title span,
+        .main-feedback-lead .section-cards-card-title span,
+        .main-feedback-dash .section-cards-card-title span {
+          display: none; } }
+      @media (max-width: 769px) {
+        .main-feedback-received .section-cards-card-title span,
+        .main-feedback-giving .section-cards-card-title span,
+        .main-feedback-lead .section-cards-card-title span,
+        .main-feedback-dash .section-cards-card-title span {
+          display: inline; } }
     .main-feedback-received .section-cards-card-text,
     .main-feedback-giving .section-cards-card-text,
     .main-feedback-lead .section-cards-card-text,

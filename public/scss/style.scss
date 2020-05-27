@@ -1991,6 +1991,22 @@ body {
       font-weight: 600;
       line-height: 1.35;
       color: #000000;
+
+      &::first-letter {
+        text-transform: uppercase;
+      }
+
+      & span {
+        @include respond(desktop-md) {
+          display: none;
+        }
+
+        @include respond(desktop-sm) {
+          display: inline;
+        }
+      }
+
+      
     }
 
     &-text {
