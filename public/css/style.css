@@ -1478,8 +1478,8 @@ body {
 
 @media (max-width: 769px) {
   #main-feedback-lead .section-hero {
-    padding-top: 4rem;
-    padding-bottom: 4rem; } }
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem; } }
 #main-feedback-lead .section-hero-main-title {
   max-width: 38.3rem; }
 #main-feedback-lead .section-hero-main-text {
@@ -1496,14 +1496,14 @@ body {
   max-width: 97.15rem; }
   @media (max-width: 769px) {
     #main-feedback-lead .section-stats {
-      padding-top: 4rem;
-      padding-bottom: 4rem; } }
+      padding-top: 4.5rem;
+      padding-bottom: 4.5rem; } }
   #main-feedback-lead .section-stats-img {
     max-width: 37.7rem; }
 @media (max-width: 769px) {
   #main-feedback-lead .section-feat-card {
-    padding-top: 4rem !important;
-    padding-bottom: 4rem !important; } }
+    padding-top: 4.5rem !important;
+    padding-bottom: 4.5rem !important; } }
 #main-feedback-lead .section-feat-card-img {
   max-width: 50.1rem; }
   @media (max-width: 769px) {

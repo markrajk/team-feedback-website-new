@@ -2065,8 +2065,8 @@ body {
   & .section-hero {
 
     @include respond(desktop-sm) {
-      padding-top: 4rem;
-      padding-bottom: 4rem;
+      padding-top: 4.5rem;
+      padding-bottom: 4.5rem;
     }
 
     &-main {
@@ -2097,8 +2097,8 @@ body {
 
 
     @include respond(desktop-sm) {
-      padding-top: 4rem;
-      padding-bottom: 4rem;
+      padding-top: 4.5rem;
+      padding-bottom: 4.5rem;
     }
 
     &-img {
@@ -2111,8 +2111,8 @@ body {
     &-card {
 
       @include respond(desktop-sm) {
-        padding-top: 4rem!important;
-        padding-bottom: 4rem!important;
+        padding-top: 4.5rem!important;
+        padding-bottom: 4.5rem!important;
       }
 
       &-img {
