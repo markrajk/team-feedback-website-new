@@ -1290,11 +1290,10 @@ body {
   .main-feedback-giving .section-stats-img {
     max-width: 23.7rem; }
 
-.main-feedback-giving .section-feat.card-01 {
-  padding: 0 calc((100% - 97.5rem) / 2);
+.main-feedback-giving .section-feat .card-01 {
   padding-top: 9.45rem;
   padding-bottom: 13.2rem; }
-  .main-feedback-giving .section-feat.card-01 .section-feat-card-main-img {
+  .main-feedback-giving .section-feat .card-01 .section-feat-card-main-img {
     max-width: 37.1rem; }
 
 .menu-open {
