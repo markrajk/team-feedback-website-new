@@ -17,10 +17,10 @@ html {
   -webkit-text-size-adjust: none; }
   @media (max-width: 1379px) {
     html {
-      font-size: 57.5%; } }
+      font-size: 56.5%; } }
   @media (max-width: 1199px) {
     html {
-      font-size: 55%; } }
+      font-size: 54%; } }
   @media (max-width: 575px) {
     html {
       font-size: 52.5%; } }
@@ -542,12 +542,12 @@ body {
     @media (max-width: 991px) {
       .main-overview .section-info-card.card-01 .section-info-card-body {
         margin-left: 6.62rem;
-        max-width: 31.5rem;
+        max-width: 32rem;
         text-align: left; } }
     @media (max-width: 991px) {
       .main-overview .section-info-card.card-01 .section-info-card-body {
         margin-left: 6.62rem;
-        max-width: 31.5rem;
+        max-width: 32rem;
         text-align: left; } }
     @media (max-width: 769px) {
       .main-overview .section-info-card.card-01 .section-info-card-body {
@@ -559,10 +559,12 @@ body {
           max-width: 100%; } }
     .main-overview .section-info-card.card-02 {
       max-width: 41.6rem;
-      margin-left: auto;
-      margin-right: auto; }
+      margin-left: 3rem;
+      margin-right: 3rem; }
       @media (max-width: 991px) {
         .main-overview .section-info-card.card-02 {
+          margin-left: 0;
+          margin-right: 0;
           max-width: 100%; } }
       .main-overview .section-info-card.card-02 .section-info-card-body {
         order: -1; }

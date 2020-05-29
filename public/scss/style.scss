@@ -105,13 +105,13 @@ html {
     // }
 
     @include respond(desktop-xl) {
-      font-size: 57.5%;
+      font-size: 56.5%;
       // font-size: 9px;
       // -webkit-text-size-adjust:none;
     }
 
     @include respond(desktop-lg) {
-      font-size: 55%;
+      font-size: 54%;
       // font-size: 8px;
       // -webkit-text-size-adjust:none;
     }
@@ -970,14 +970,14 @@ body {
 
         @include respond(desktop-md) {
           margin-left: 6.62rem;
-          max-width: 31.5rem;
+          max-width: 32rem;
           text-align: left;
         }
 
         //TABLET
         @include respond(desktop-md) {
           margin-left: 6.62rem;
-          max-width: 31.5rem;
+          max-width: 32rem;
           text-align: left;
         }
 
@@ -997,10 +997,12 @@ body {
 
     &.card-02 {
       max-width: 41.6rem;
-      margin-left: auto;
-      margin-right: auto;
+      margin-left: 3rem;
+      margin-right: 3rem;
 
       @include respond(desktop-md) {
+        margin-left: 0;
+        margin-right: 0;
         max-width: 100%;
       }
 
