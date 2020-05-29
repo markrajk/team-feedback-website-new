@@ -105,10 +105,12 @@ html {
 
     @include respond(desktop-xl) {
       font-size: 57.5%;
+      -webkit-text-size-adjust:none;
     }
 
     @include respond(desktop-lg) {
       font-size: 55%;
+      -webkit-text-size-adjust:none;
     }
 
     // @include respond(desktop-md) {
@@ -117,6 +119,7 @@ html {
 
     @include respond(desktop-xsm) {
       font-size: 52.5%;
+      -webkit-text-size-adjust:none;
     }
 
 

@@ -17,13 +17,16 @@ html {
   -webkit-text-size-adjust: none; }
   @media (max-width: 1379px) {
     html {
-      font-size: 57.5%; } }
+      font-size: 57.5%;
+      -webkit-text-size-adjust: none; } }
   @media (max-width: 1199px) {
     html {
-      font-size: 55%; } }
+      font-size: 55%;
+      -webkit-text-size-adjust: none; } }
   @media (max-width: 575px) {
     html {
-      font-size: 52.5%; } }
+      font-size: 52.5%;
+      -webkit-text-size-adjust: none; } }
 
 body {
   padding-top: calc(6.9rem + 1.5px);
