@@ -7,6 +7,14 @@ $green-primary: #48bc20;
 $green-dark: #268008;
 $text-color-primary: #1c1c1c;
 
+
+// ==================================
+// FONTS
+// ==================================
+@font-face {
+  font-family: CircularStd-Book;
+  src: url(../fonts/CircularStd-Book.ttf);
+}
 // ==================================
 // MIXINS & FUNCTIONS
 // ==================================
@@ -287,6 +295,12 @@ body {
   }
  }
 
+ .b-b {
+   display: block;
+   width: 100%;
+   border-bottom: 1.5px solid #F2F0F2;
+ }
+
 .hide {
   display: none;
 }
@@ -369,6 +383,21 @@ body {
 // ==================================
 // LAYOUT
 // ==================================
+//GENERAL STYLES
+.section {
+  &-title {
+    font-family: Arial!important;
+    font-weight: bold!important;
+  }
+
+  &-text {
+    font-family: CircularStd-Book!important;
+  }
+
+  // &-info {
+
+  // }
+}
 .header {
   position: fixed;
   top: 0;
@@ -392,16 +421,16 @@ body {
     }
 
     &-brand {
-      margin-bottom: -.5rem;
-      margin-right: 4%;
+      margin-bottom: -.2rem;
+      margin-right: 3.5%;
       &-img {
-        height: 2.95rem;
+        height: 3.35rem;
       }
     }
 
     &-list {
       margin-right: auto;
-      max-width: 46rem;
+      max-width: 48.8rem;
       width: 100%;
       display: flex;
       align-items: center;
@@ -411,8 +440,9 @@ body {
       &-item {
 
         &-link {
+          font-family: CircularStd-Book;
           font-size: 1.7rem;
-          font-weight: 400;
+          // font-weight: 400;
           color: #2f2f2f;
           text-decoration: none;
 
@@ -422,7 +452,7 @@ body {
           }
 
           &.active {
-            font-weight: 600;
+            // font-weight: 600;
             color: #070707;
           }
         }
@@ -448,7 +478,8 @@ body {
       }
 
       & .btn-link {
-        margin-right: 2.2rem;
+        font-family: CircularStd-Book;
+        margin-right:  1.9rem;
 
         @include respond(desktop-md) {
           font-size: 1.7rem;
@@ -457,7 +488,8 @@ body {
       }
 
       & .btn-primary {
-        padding: .8rem 1.8rem;
+        font-size: 2rem;
+        padding: 1rem 1.7rem;
       }
     }
 
@@ -655,7 +687,8 @@ body {
 //HERO SECTION
 //=====================================
 .main-overview .section-hero {
-  padding-top: 6.95rem;
+  padding-top: 9.6rem;
+  padding-bottom: 7.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -673,7 +706,7 @@ body {
   &-logo {
 
     &-img {
-      margin-bottom: 2.8rem;
+      margin-bottom: 3.2rem;
       height: 5.5rem;
 
       //TABLET
@@ -690,12 +723,12 @@ body {
   }
 
   &-title {
-    margin-bottom: 2.8rem;
-    max-width: 79.8rem;
-    font-size: 5.4rem;
-    font-weight: 600;
-    line-height: 1.19;
-    color: #202124;
+    margin-bottom: 4.2rem;
+    max-width: 85.6rem;
+    height: 117px;
+    font-size: 5.2rem;
+    line-height: 1.13;
+    color: #000000;
     text-align: center;
 
     //TABLET
@@ -720,10 +753,11 @@ body {
   }
 
   &-text {
-    margin-bottom: 2.8rem;
-    font-size: 2.1rem;
-    font-weight: 400;
-    color: #5f6368;
+    margin-bottom: 4.4rem;
+    max-width: 74.8rem;
+    font-size: 2rem;
+    line-height: 1.45;
+    color: #1d1d1d;
     text-align: center;
 
     //TABLET
@@ -745,8 +779,9 @@ body {
 
   & .btn {
     padding: 1.05rem 2.7rem;
-    font-size: 1.9rem;
-    margin-bottom: 2.1rem;
+    font-size: 1.95rem;
+    margin-bottom: 2.72rem;
+    letter-spacing: 0.39px;
 
     //TABLET
     @include respond(desktop-md) {
@@ -778,39 +813,23 @@ body {
       font-size: 1.4rem;
     }
   }
-  
-  & .b-b {
-    display: block;
-    margin-top: 8.2rem;
-    width: 100%;
-    height: 1.75px;
-    background-color: #F2F0F2;
-
-    //TABLET
-    @include respond(desktop-md) {
-      margin-top: 6.4rem;
-    }
-
-    //MOBILE
-    @include respond(desktop-xsm) {
-      margin-top: 3.95rem;
-    }
-  }
 }
 
 //=====================================
 //INFO SECTION
 //=====================================
 .main-overview .section-info {
+  padding-top: 7.5rem;
+  padding-bottom: 10.45rem;
+  max-width: 134.3rem;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  max-width: 130rem;
 
-  @include respond(desktop-xl) {
-    max-width: 144rem;
-    justify-content: space-evenly;
-  }
+  // @include respond(desktop-xl) {
+  //   max-width: 144rem;
+  //   justify-content: space-evenly;
+  // }
 
   @include respond(desktop-md) {
     flex-direction: column;
@@ -821,12 +840,10 @@ body {
   
 
   &-card {
-    padding-top: 7.3rem;
-    max-width: 31.6rem;
+    max-width: 38.3rem;
     text-align: center;
 
     @include respond(desktop-md) {
-      padding-top: 6.37rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -856,7 +873,7 @@ body {
     }
 
     &-img {
-      margin-bottom: 3.5rem;
+      margin-bottom: 3.7rem;
       max-height: 42.5rem;
       border-radius: 1.2rem;
       border: 7px solid #F6F6F6;
@@ -871,6 +888,10 @@ body {
     }
 
     &-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
       @include respond(desktop-xsm) {
         max-width: 90%!important;
@@ -880,23 +901,26 @@ body {
 
       &-title {
         margin-bottom: 1.9rem;
-        font-size: 2.2rem;
-        font-weight: 600;
-        line-height: 1.36;
+        font-size: 2.3rem;
+        font-weight: bold;
+        line-height: 1.3;
         color: #000000;
       }
 
       &-text {
-        margin-bottom: 2.7rem;
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.6rem;
-        font-weight: 400;
-        line-height: 1.5;
+        margin-bottom: 2.3rem;
+        font-size: 1.75rem;
+        line-height: 1.49;
         color: #5f6368;
       }
 
       & .btn {
-
+        padding: .8rem 2.65rem;
+        font-family: CircularStd-Book;
+        font-size: 1.7rem;
+        font-weight: 500;
+        line-height: 1.65;
+        letter-spacing: 0.32px;
       }
     }
 
@@ -920,10 +944,16 @@ body {
         @include respond(desktop-sm) {
           margin-left: 2rem;
         }
+
+        &-text {
+          max-width: 33.5rem;
+        }
       }
     }
 
     &.card-02 {
+      max-width: 41.6rem;
+      margin: 0 auto;
       flex-direction: row-reverse;
 
       & .section-info-card-body {
@@ -936,6 +966,10 @@ body {
 
         @include respond(desktop-sm) {
           margin-right: 2rem;
+        }
+
+        &-text {
+          max-width: 34.8rem;
         }
       }
     }
@@ -952,6 +986,10 @@ body {
 
         @include respond(desktop-sm) {
           margin-left: 2rem;
+        }
+
+        &-text {
+          max-width: 32.2rem;
         }
       }
     }
@@ -980,12 +1018,12 @@ body {
 //DASHBOARD SECTION
 //=====================================
 .main-overview .section-dash {
-  padding-top: 9.35rem;
-  padding-bottom: 9.75rem;
+  padding-top: 8.75rem;
+  padding-bottom: 8.95rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 106.4rem;
+  max-width: 111.1rem;
 
   //TABLET
   @include respond(desktop-md) {
@@ -1024,8 +1062,6 @@ body {
   }
 
   &-body {
-    max-width: 37rem;
-    margin-right: -1.4rem;
 
     //MOBILE
     @include respond(desktop-xsm) {
@@ -1033,11 +1069,10 @@ body {
     }
 
     &-title {
-      max-width: 31.1rem;
       margin-bottom: 2.3rem;
+      max-width: 34.7rem;
       font-size: 3rem;
-      font-weight: 600;
-      line-height: 1.3;
+      line-height: 1.17;
       color: #000000;
 
       //TABLET
@@ -1054,11 +1089,10 @@ body {
     }
   
     &-text {
-      margin-bottom: 1.5rem;
-      font-family: 'Roboto', sans-serif;
-      font-size: 1.6rem;
-      font-weight: 400;
-      line-height: 1.6;
+      margin-bottom: 2rem;
+      max-width: 40.6rem;
+      font-size: 1.75rem;
+      line-height: 1.49;
       color: #5f6368;
 
       //TABLET
@@ -1073,6 +1107,15 @@ body {
         max-width: 90%;
       }
     }
+
+    & .btn {
+      padding: .8rem 2.65rem;
+      font-family: CircularStd-Book;
+      font-size: 1.7rem;
+      font-weight: 500;
+      line-height: 1.65;
+      letter-spacing: 0.32px;
+    }
   }
 }
 
@@ -1081,7 +1124,7 @@ body {
 //=====================================
 .main-overview .section-banner {
   max-width: 100%;
-  padding-top: 6.85rem;
+  padding-top: 7.9rem;
   padding-bottom: 7.15rem;
   background-color: #fafafa;
   text-align: center;
@@ -1116,11 +1159,10 @@ body {
   }
 
   &-title {
-    margin-bottom: 1.4rem;
+    margin-bottom: 3.2rem;
     font-size: 4.2rem;
     font-weight: 600;
     line-height: 1.19;
-    letter-spacing: -0.29px;
     color: #000000;
 
     //TABLET
@@ -1142,10 +1184,10 @@ body {
 
   &-text {
     margin: 0 auto;
-    margin-bottom: 2.8rem;
-    max-width: 65.4rem;
+    margin-bottom: 3.8rem;
+
+    max-width: 706px;
     font-size: 1.9rem;
-    font-weight: 400;
     line-height: 1.47;
     color: #2f2f2f;
 
@@ -1165,7 +1207,7 @@ body {
   }
 
   & .btn {
-    margin-bottom: 1.4rem;
+    margin-bottom: .8rem;
 
     //TABLET
     @include respond(desktop-md) {
@@ -1180,9 +1222,9 @@ body {
   }
 
   &-info {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 600;
-    line-height: 2.8;
+    line-height: 2.63;
     color: #6f6f6f;
 
     //TABLET
@@ -1199,7 +1241,7 @@ body {
   border-top: 1.5px solid #F2F0F2;
 
   &-top {
-    padding-top: 5.45rem;
+    padding-top: 8.8rem;
     padding-bottom: 6.4rem;
     display: flex;
     align-items: baseline;
