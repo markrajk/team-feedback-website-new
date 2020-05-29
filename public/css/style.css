@@ -196,11 +196,11 @@ body {
       .header .nav.container {
         padding-right: 3rem; } }
     .header .nav-brand {
-      margin-bottom: -.2rem;
       margin-right: 3.5%; }
       .header .nav-brand-img {
         height: 3.35rem; }
     .header .nav-list {
+      margin-bottom: -.2rem;
       margin-right: auto;
       max-width: 48.8rem;
       width: 100%;
@@ -233,10 +233,9 @@ body {
         margin-right: 1.9rem; }
         @media (max-width: 991px) {
           .header .nav-buttons .btn-link {
-            font-size: 1.7rem;
             margin-right: 1.5rem; } }
       .header .nav-buttons .btn-primary {
-        font-size: 2rem;
+        font-size: 1.9rem;
         padding: 1rem 1.7rem; }
     .header .nav .nav-menu-toggle {
       margin-left: auto;
@@ -1714,7 +1713,7 @@ body {
   font-family: CircularStd-Book !important; }
 @media (max-width: 991px) {
   .section-small {
-    font-size: 1.4rem; } }
+    font-size: 1.4rem !important; } }
 
 .menu-open {
   transform: translate(0, 0) !important; }
