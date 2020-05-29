@@ -481,7 +481,8 @@ body {
         align-items: center;
         justify-content: center;
         width: 100%;
-        max-width: 100%; }
+        max-width: 100%;
+        text-align: left; }
         .main-overview .section-info-card:not(:last-of-type) {
           margin-bottom: 6rem; } }
     @media (max-width: 769px) {
@@ -496,7 +497,8 @@ body {
         padding-left: 3%;
         padding-right: 3%;
         margin-left: 0 !important;
-        margin-right: 0 !important; } }
+        margin-right: 0 !important;
+        text-align: center; } }
     .main-overview .section-info-card-img {
       margin-bottom: 3.7rem;
       max-height: 42.5rem;
@@ -549,13 +551,11 @@ body {
     @media (max-width: 991px) {
       .main-overview .section-info-card.card-01 .section-info-card-body {
         margin-left: 6.62rem;
-        max-width: 32rem;
-        text-align: left; } }
+        max-width: 32rem; } }
     @media (max-width: 991px) {
       .main-overview .section-info-card.card-01 .section-info-card-body {
         margin-left: 6.62rem;
-        max-width: 32rem;
-        text-align: left; } }
+        max-width: 32rem; } }
     @media (max-width: 769px) {
       .main-overview .section-info-card.card-01 .section-info-card-body {
         margin-left: 4rem; } }
@@ -577,8 +577,7 @@ body {
         @media (max-width: 991px) {
           .main-overview .section-info-card.card-02 .section-info-card-body {
             margin-right: 10.9rem;
-            max-width: 31.5rem;
-            text-align: left; } }
+            max-width: 31.5rem; } }
         @media (max-width: 769px) {
           .main-overview .section-info-card.card-02 .section-info-card-body {
             margin-right: 4rem; } }
@@ -594,8 +593,7 @@ body {
     @media (max-width: 991px) {
       .main-overview .section-info-card.card-03 .section-info-card-body {
         margin-left: 10.9rem;
-        max-width: 29.6rem;
-        text-align: left; } }
+        max-width: 29.6rem; } }
     @media (max-width: 769px) {
       .main-overview .section-info-card.card-03 .section-info-card-body {
         margin-left: 4rem; } }
@@ -624,7 +622,8 @@ body {
       padding-bottom: 7.1rem;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start; } }
+      align-items: center;
+      text-align: center; } }
   .main-overview .section-dash-img {
     margin-right: 6.67rem;
     max-width: 61.2rem; }
@@ -657,7 +656,8 @@ body {
         max-width: 27rem; } }
     @media (max-width: 575px) {
       .main-overview .section-dash-body-title {
-        max-width: 100%; } }
+        max-width: 100%;
+        text-align: center; } }
   .main-overview .section-dash-body-text {
     margin-bottom: 2rem;
     max-width: 40.6rem;

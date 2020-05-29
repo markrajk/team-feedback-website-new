@@ -884,6 +884,7 @@ body {
       justify-content: center;
       width: 100%;
       max-width: 100%;
+      text-align: left;
 
       &:not(:last-of-type) {
         margin-bottom: 6rem;
@@ -905,6 +906,7 @@ body {
       padding-right: 3%;
       margin-left: 0!important;
       margin-right: 0!important;
+      text-align: center;
     }
 
     &-img {
@@ -979,14 +981,12 @@ body {
         @include respond(desktop-md) {
           margin-left: 6.62rem;
           max-width: 32rem;
-          text-align: left;
         }
 
         //TABLET
         @include respond(desktop-md) {
           margin-left: 6.62rem;
           max-width: 32rem;
-          text-align: left;
         }
 
         @include respond(desktop-sm) {
@@ -1020,7 +1020,6 @@ body {
         @include respond(desktop-md) {
           margin-right: 10.9rem;
           max-width: 31.5rem;
-          text-align: left;
         }
 
         @include respond(desktop-sm) {
@@ -1049,7 +1048,6 @@ body {
         @include respond(desktop-md) {
           margin-left: 10.9rem;
           max-width: 29.6rem;
-          text-align: left;
         }
 
         @include respond(desktop-sm) {
@@ -1111,7 +1109,8 @@ body {
     padding-bottom: 7.1rem;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
   }
 
   &-img {
@@ -1161,6 +1160,7 @@ body {
        //MOBILE
        @include respond(desktop-xsm) {
         max-width: 100%;
+        text-align: center;
       }
     }
   
