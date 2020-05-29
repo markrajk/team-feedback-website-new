@@ -695,7 +695,8 @@ body {
 
   //TABLET
   @include respond(desktop-md) {
-    padding-top: 6.4rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
   //MOBILE
@@ -842,6 +843,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
   @include respond(desktop-xsm) {
@@ -863,7 +866,7 @@ body {
       max-width: 100%;
 
       &:not(:last-of-type) {
-        margin-bottom: 7rem;
+        margin-bottom: 6rem;
       }
     }
 
@@ -1066,8 +1069,8 @@ body {
 
   //TABLET
   @include respond(desktop-md) {
-    padding-top: 8.8rem;
-    padding-bottom: 6.35rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     flex-direction: row-reverse;
     justify-content: center;
   }
@@ -1174,8 +1177,8 @@ body {
 
   //TABLET
   @include respond(desktop-md) {
-    padding-top: 4.25rem;
-    padding-bottom: 4.7rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
   //MOBILE

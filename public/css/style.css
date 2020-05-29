@@ -358,7 +358,8 @@ body {
   align-items: center; }
   @media (max-width: 991px) {
     .main-overview .section-hero {
-      padding-top: 6.4rem; } }
+      padding-top: 6rem;
+      padding-bottom: 6rem; } }
   @media (max-width: 575px) {
     .main-overview .section-hero {
       padding-top: 3.95rem; } }
@@ -455,7 +456,9 @@ body {
     .main-overview .section-info {
       flex-direction: column;
       align-items: center;
-      justify-content: center; } }
+      justify-content: center;
+      padding-top: 6rem;
+      padding-bottom: 6rem; } }
   @media (max-width: 575px) {
     .main-overview .section-info {
       align-items: flex-start; } }
@@ -470,7 +473,7 @@ body {
         width: 100%;
         max-width: 100%; }
         .main-overview .section-info-card:not(:last-of-type) {
-          margin-bottom: 7rem; } }
+          margin-bottom: 6rem; } }
     @media (max-width: 769px) {
       .main-overview .section-info-card {
         padding-left: 5%;
@@ -594,8 +597,8 @@ body {
   max-width: 111.1rem; }
   @media (max-width: 991px) {
     .main-overview .section-dash {
-      padding-top: 8.8rem;
-      padding-bottom: 6.35rem;
+      padding-top: 6rem;
+      padding-bottom: 6rem;
       flex-direction: row-reverse;
       justify-content: center; } }
   @media (max-width: 575px) {
@@ -668,8 +671,8 @@ body {
   text-align: center; }
   @media (max-width: 991px) {
     .main-overview .section-banner {
-      padding-top: 4.25rem;
-      padding-bottom: 4.7rem; } }
+      padding-top: 6rem;
+      padding-bottom: 6rem; } }
   @media (max-width: 575px) {
     .main-overview .section-banner {
       padding-top: 5.55rem;
