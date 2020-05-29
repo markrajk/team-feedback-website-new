@@ -96,6 +96,7 @@ $text-color-primary: #1c1c1c;
 html {
   min-width: 100vw;
     font-size: 62.5%;   //1rem = 10px 10px/16 62.5%
+    -webkit-text-size-adjust:none;
     //font-size: 67.5%;   //1rem = 10px 10px/16 62.5%
 
     // @include respond(desktop-xxl) {
@@ -144,8 +145,6 @@ html {
     // @include respond(desktop-xxsm) {
     //   font-size: 50%;
     // }
-
-    -webkit-text-size-adjust:none;
 }
 
 body {
