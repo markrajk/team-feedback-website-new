@@ -737,7 +737,6 @@ body {
         line-height: 1.6; } }
     @media (max-width: 575px) {
       .main-overview .section-banner-text {
-        max-width: 31.8rem;
         margin-bottom: 2rem; } }
   .main-overview .section-banner .btn {
     margin-bottom: .8rem; }

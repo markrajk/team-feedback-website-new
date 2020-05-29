@@ -1276,7 +1276,6 @@ body {
 
     //MOBILE
     @include respond(desktop-xsm) {
-      max-width: 31.8rem;
       margin-bottom: 2rem;
     }
   }
