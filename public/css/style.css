@@ -1,6 +1,9 @@
 @font-face {
   font-family: CircularStd-Book;
   src: url(../fonts/CircularStd-Book.ttf); }
+@font-face {
+  font-family: CircularStd-Medium;
+  src: url(../fonts/CircularStd-Medium.ttf); }
 *,
 *::after,
 *::before {
@@ -123,11 +126,23 @@ body {
     .show-xsm-inline-block {
       display: inline-block; } }
 
+.show-sm-block {
+  display: none; }
+  @media (max-width: 769px) {
+    .show-sm-block {
+      display: block; } }
+
 .show-md-inline-flex {
   display: none; }
   @media (max-width: 991px) {
     .show-md-inline-flex {
       display: inline-flex; } }
+
+.show-md-block {
+  display: none; }
+  @media (max-width: 991px) {
+    .show-md-block {
+      display: block; } }
 
 .show-md-inline-block {
   display: none; }
@@ -163,12 +178,6 @@ body {
 
 .onscreen {
   transform: translate(0, 0) !important; }
-
-.section-title {
-  font-family: Arial !important;
-  font-weight: bold !important; }
-.section-text {
-  font-family: CircularStd-Book !important; }
 
 .header {
   position: fixed;
@@ -207,6 +216,7 @@ body {
         .header .nav-list-item-link:hover, .header .nav-list-item-link:focus {
           text-decoration: underline; }
         .header .nav-list-item-link.active {
+          font-family: CircularStd-Medium;
           color: #070707; }
       .header .nav-list-item:not(:first-of-type) {
         margin-left: 2rem; }
@@ -220,7 +230,6 @@ body {
           margin-right: -.5rem;
           margin-left: auto; } }
       .header .nav-buttons .btn-link {
-        font-family: CircularStd-Book;
         margin-right: 1.9rem; }
         @media (max-width: 991px) {
           .header .nav-buttons .btn-link {
@@ -438,12 +447,6 @@ body {
     font-size: 1.6rem;
     font-weight: 600;
     color: #888888; }
-    @media (max-width: 991px) {
-      .main-overview .section-hero-info {
-        font-size: 1.3rem; } }
-    @media (max-width: 575px) {
-      .main-overview .section-hero-info {
-        font-size: 1.4rem; } }
 
 .main-overview .section-info {
   padding-top: 7.5rem;
@@ -1703,6 +1706,12 @@ body {
         max-width: 43rem; } }
   #main-feedback-dash .section-feat .card-02 .section-feat-card-main-title {
     max-width: 32.7rem; }
+
+.section-title {
+  font-family: Arial !important;
+  font-weight: bold !important; }
+.section-text {
+  font-family: CircularStd-Book !important; }
 
 .menu-open {
   transform: translate(0, 0) !important; }

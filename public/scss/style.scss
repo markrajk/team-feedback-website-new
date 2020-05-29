@@ -15,6 +15,11 @@ $text-color-primary: #1c1c1c;
   font-family: CircularStd-Book;
   src: url(../fonts/CircularStd-Book.ttf);
 }
+
+@font-face {
+  font-family: CircularStd-Medium;
+  src: url(../fonts/CircularStd-Medium.ttf);
+}
 // ==================================
 // MIXINS & FUNCTIONS
 // ==================================
@@ -318,11 +323,27 @@ body {
   }
 }
 
+.show-sm-block {
+  display: none;
+
+  @include respond(desktop-sm) {
+    display: block;
+  }
+}
+
 .show-md-inline-flex {
   display: none;
 
   @include respond(desktop-md) {
     display: inline-flex;
+  }
+}
+
+.show-md-block {
+  display: none;
+
+  @include respond(desktop-md) {
+    display: block;
   }
 }
 
@@ -380,21 +401,7 @@ body {
 // ==================================
 // LAYOUT
 // ==================================
-//GENERAL STYLES
-.section {
-  &-title {
-    font-family: Arial!important;
-    font-weight: bold!important;
-  }
 
-  &-text {
-    font-family: CircularStd-Book!important;
-  }
-
-  // &-info {
-
-  // }
-}
 .header {
   position: fixed;
   top: 0;
@@ -449,7 +456,7 @@ body {
           }
 
           &.active {
-            // font-weight: 600;
+            font-family: CircularStd-Medium;
             color: #070707;
           }
         }
@@ -475,7 +482,6 @@ body {
       }
 
       & .btn-link {
-        font-family: CircularStd-Book;
         margin-right:  1.9rem;
 
         @include respond(desktop-md) {
@@ -808,15 +814,15 @@ body {
     font-weight: 600;
     color: #888888;
 
-    //TABLET
-    @include respond(desktop-md) {
-      font-size: 1.3rem;
-    }
+    // //TABLET
+    // @include respond(desktop-md) {
+    //   font-size: 1.3rem;
+    // }
 
-    //MOBILE
-    @include respond(desktop-xsm) {
-      font-size: 1.4rem;
-    }
+    // //MOBILE
+    // @include respond(desktop-xsm) {
+    //   font-size: 1.4rem;
+    // }
   }
 }
 
@@ -2425,6 +2431,22 @@ body {
         }
       }
     }
+  }
+}
+
+//GENERAL STYLES
+.section {
+  &-title {
+    font-family: Arial!important;
+    font-weight: bold!important;
+  }
+
+  &-text {
+    font-family: CircularStd-Book!important;
+  }
+
+  &-small {
+    //font-size: 1.7rem!important;
   }
 }
 
