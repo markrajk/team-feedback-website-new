@@ -433,7 +433,7 @@ body {
     }
 
     &-brand {
-      //margin-bottom: -.2rem;
+      margin-bottom: -.1rem;
       margin-right: 3.5%;
       &-img {
         height: 3.35rem;
@@ -674,6 +674,7 @@ body {
       }
 
       &-link {
+        font-family: CircularStd-Book;
         white-space: nowrap;
         font-size: 1.6rem;
         font-weight: 400;
@@ -682,7 +683,7 @@ body {
         text-decoration: none;
 
         &.active {
-          font-weight: 600;
+          font-family: CircularStd-Medium;
           color: #222426;
         }
 

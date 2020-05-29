@@ -197,6 +197,7 @@ body {
       .header .nav.container {
         padding-right: 3rem; } }
     .header .nav-brand {
+      margin-bottom: -.1rem;
       margin-right: 3.5%; }
       .header .nav-brand-img {
         height: 3.35rem; }
@@ -347,6 +348,7 @@ body {
     .subheader-list-item:not(:last-of-type) {
       margin-right: 2.8rem; }
     .subheader-list-item-link {
+      font-family: CircularStd-Book;
       white-space: nowrap;
       font-size: 1.6rem;
       font-weight: 400;
@@ -354,7 +356,7 @@ body {
       color: #5f6368;
       text-decoration: none; }
       .subheader-list-item-link.active {
-        font-weight: 600;
+        font-family: CircularStd-Medium;
         color: #222426; }
       .subheader-list-item-link:focus, .subheader-list-item-link:hover {
         text-decoration: underline; }
