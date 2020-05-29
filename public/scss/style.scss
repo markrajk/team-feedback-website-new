@@ -95,7 +95,7 @@ $text-color-primary: #1c1c1c;
 
 html {
   min-width: 100vw;
-    font-size: 62.5%;   //1rem = 10px 10px/16 62.5%
+    font-size: 10px;   //1rem = 10px 10px/16 62.5%
     -webkit-text-size-adjust:none;
     //font-size: 67.5%;   //1rem = 10px 10px/16 62.5%
 
@@ -103,24 +103,24 @@ html {
     //   font-size: 62.5%;
     // }
 
-    @include respond(desktop-xl) {
-      font-size: 57.5%;
-      -webkit-text-size-adjust:none;
-    }
-
-    @include respond(desktop-lg) {
-      font-size: 55%;
-      -webkit-text-size-adjust:none;
-    }
-
-    // @include respond(desktop-md) {
-    //   font-size: 52.5%;
+   // @include respond(desktop-xl) {
+    //   font-size: 57.5%;
+    //   -webkit-text-size-adjust:none;
     // }
 
-    @include respond(desktop-xsm) {
-      font-size: 52.5%;
-      -webkit-text-size-adjust:none;
-    }
+    // @include respond(desktop-lg) {
+    //   font-size: 55%;
+    //   -webkit-text-size-adjust:none;
+    // }
+
+    // // @include respond(desktop-md) {
+    // //   font-size: 52.5%;
+    // // }
+
+    // @include respond(desktop-xsm) {
+    //   font-size: 52.5%;
+    //   -webkit-text-size-adjust:none;
+    // }
 
 
 
