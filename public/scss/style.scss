@@ -2447,6 +2447,11 @@ body {
 
   &-small {
     //font-size: 1.7rem!important;
+
+    //TABLET
+    @include respond(desktop-md) {
+      font-size: 1.4rem;
+    }
   }
 }
 

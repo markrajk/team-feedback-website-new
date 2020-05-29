@@ -1712,6 +1712,9 @@ body {
   font-weight: bold !important; }
 .section-text {
   font-family: CircularStd-Book !important; }
+@media (max-width: 991px) {
+  .section-small {
+    font-size: 1.4rem; } }
 
 .menu-open {
   transform: translate(0, 0) !important; }
