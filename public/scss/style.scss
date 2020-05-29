@@ -725,7 +725,6 @@ body {
   &-title {
     margin-bottom: 4.2rem;
     max-width: 85.6rem;
-    height: 117px;
     font-size: 5.2rem;
     line-height: 1.13;
     color: #000000;
@@ -734,7 +733,7 @@ body {
     //TABLET
     @include respond(desktop-md) {
       margin-bottom: 2rem;
-      max-width: 59rem;
+      max-width: 70rem;
       font-size: 4rem;
       font-weight: 600;
       line-height: 1.25;
@@ -743,12 +742,17 @@ body {
     //MOBILE
     @include respond(desktop-xsm) {
       margin-bottom: 2.4rem;
-      max-width: 31.8rem;
+      max-width: 60rem;
       font-size: 2.9rem;
       font-weight: 600;
       line-height: 1.18;
       letter-spacing: -0.58px;
       color: #1c1c1c;
+    }
+
+    //EXTRA SMALL
+    @include respond(desktop-xxsm) {
+      font-size: 2.4rem;
     }
   }
 
@@ -770,11 +774,14 @@ body {
     @include respond(desktop-xsm) {
       margin-bottom: 2.8rem;
       max-width: 30rem;
+      max-width: 60rem;
       font-size: 1.5rem;
       line-height: 1.47;
       letter-spacing: 0.15px;
       color: #65696d;
     }
+
+    
   }
 
   & .btn {
@@ -837,33 +844,38 @@ body {
     justify-content: center;
   }
 
+  @include respond(desktop-xsm) {
+    align-items: flex-start;
+  }
+
   
 
   &-card {
     max-width: 38.3rem;
     text-align: center;
 
+    //TABLET
     @include respond(desktop-md) {
       display: flex;
       align-items: center;
       justify-content: center;
       width: 100%;
       max-width: 100%;
+
+      &:not(:last-of-type) {
+        margin-bottom: 7rem;
+      }
     }
 
-    //TABLET
-    @include respond(desktop-md) {
-      //margin-left: 7rem;
-      
-    }
+
 
     @include respond(desktop-sm) {
-      //justify-content: space-between;
       padding-left: 5%;
       padding-right: 5%;
     }
 
     @include respond(desktop-xsm) {
+      width: auto;
       flex-direction: column!important;
       align-items: flex-start;
       padding-left: 3%;
@@ -878,11 +890,16 @@ body {
       border-radius: 1.2rem;
       border: 7px solid #F6F6F6;
 
+      @include respond(desktop-md) {
+        margin-bottom: 0;
+      }
+
       @include respond(desktop-lg) {
         height: 39rem;
       }
 
       @include respond(desktop-xsm) {
+        margin-bottom: 3.7rem;
         align-self: center;
       }
     }
@@ -894,7 +911,7 @@ body {
       justify-content: center;
 
       @include respond(desktop-xsm) {
-        max-width: 90%!important;
+        max-width: 100%!important;
         margin-left: 0!important;
         margin-right: 0!important;
       }
@@ -942,34 +959,52 @@ body {
         }
 
         @include respond(desktop-sm) {
-          margin-left: 2rem;
+          margin-left: 4rem;
         }
 
         &-text {
           max-width: 33.5rem;
+
+          @include respond(desktop-xsm) {
+           max-width: 100%;
+          }
         }
       }
     }
 
     &.card-02 {
       max-width: 41.6rem;
-      margin: 0 auto;
-      flex-direction: row-reverse;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include respond(desktop-md) {
+        max-width: 100%;
+      }
+
 
       & .section-info-card-body {
-
+        order: -1;
         @include respond(desktop-md) {
           margin-right: 10.9rem;
-          max-width: 29.6rem;
+          max-width: 31.5rem;
           text-align: left;
         }
 
         @include respond(desktop-sm) {
-          margin-right: 2rem;
+          margin-right: 4rem;
         }
 
         &-text {
           max-width: 34.8rem;
+
+          @include respond(desktop-xsm) {
+            max-width: 100%;
+           }
+        }
+
+        @include respond(desktop-xsm) {
+          order: 2;
+          max-width: 100%;
         }
       }
     }
@@ -985,11 +1020,15 @@ body {
         }
 
         @include respond(desktop-sm) {
-          margin-left: 2rem;
+          margin-left: 4rem;
         }
 
         &-text {
           max-width: 32.2rem;
+
+          @include respond(desktop-xsm) {
+            max-width: 100%;
+           }
         }
       }
     }
@@ -1030,7 +1069,7 @@ body {
     padding-top: 8.8rem;
     padding-bottom: 6.35rem;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
+    justify-content: center;
   }
   
   //MOBILE
@@ -1043,14 +1082,18 @@ body {
   }
 
   &-img {
-    margin-right: 2rem;
+    margin-right: 6.67rem;
     max-width: 61.2rem;
 
     //TABLET
     @include respond(desktop-md) {
       margin-right: 0;
-      margin-left: 2rem;
+      margin-left: 6.67rem;
       max-width: 32.6rem;
+    }
+
+    @include respond(desktop-sm) {
+      margin-left: 4rem;
     }
 
     //MOBILE
@@ -1065,7 +1108,7 @@ body {
 
     //MOBILE
     @include respond(desktop-xsm) {
-      max-width: 100%!important;
+      max-width: 50rem!important;
     }
 
     &-title {
@@ -1084,7 +1127,7 @@ body {
 
        //MOBILE
        @include respond(desktop-xsm) {
-        max-width: 70%;
+        max-width: 100%;
       }
     }
   
@@ -1104,7 +1147,7 @@ body {
 
       //MOBILE
       @include respond(desktop-xsm) {
-        max-width: 90%;
+        max-width: 100%;
       }
     }
 
