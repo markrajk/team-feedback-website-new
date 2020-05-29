@@ -455,6 +455,9 @@ body {
   display: flex;
   align-items: baseline;
   justify-content: space-between; }
+  @media (max-width: 1199px) {
+    .main-overview .section-info {
+      justify-content: space-evenly; } }
   @media (max-width: 991px) {
     .main-overview .section-info {
       flex-direction: column;
@@ -468,6 +471,11 @@ body {
   .main-overview .section-info-card {
     max-width: 38.3rem;
     text-align: center; }
+    .main-overview .section-info-card:not(:last-of-type) {
+      margin-right: 2.2rem; }
+    @media (max-width: 1199px) {
+      .main-overview .section-info-card {
+        max-width: 33.5rem; } }
     @media (max-width: 991px) {
       .main-overview .section-info-card {
         display: flex;
@@ -558,13 +566,12 @@ body {
         .main-overview .section-info-card.card-01 .section-info-card-body-text {
           max-width: 100%; } }
     .main-overview .section-info-card.card-02 {
-      max-width: 41.6rem;
-      margin-left: 3rem;
-      margin-right: 3rem; }
+      max-width: 41.6rem; }
+      @media (max-width: 1199px) {
+        .main-overview .section-info-card.card-02 {
+          max-width: 34.8rem; } }
       @media (max-width: 991px) {
         .main-overview .section-info-card.card-02 {
-          margin-left: 0;
-          margin-right: 0;
           max-width: 100%; } }
       .main-overview .section-info-card.card-02 .section-info-card-body {
         order: -1; }

@@ -846,10 +846,9 @@ body {
   align-items: baseline;
   justify-content: space-between;
 
-  // @include respond(desktop-xl) {
-  //   max-width: 144rem;
-  //   justify-content: space-evenly;
-  // }
+  @include respond(desktop-lg) {
+    justify-content: space-evenly;
+  }
 
   @include respond(desktop-md) {
     flex-direction: column;
@@ -869,6 +868,14 @@ body {
     max-width: 38.3rem;
     text-align: center;
 
+
+    &:not(:last-of-type) {
+      margin-right: 2.2rem;
+    }
+
+    @include respond(desktop-lg) {
+      max-width: 33.5rem;
+    }
     //TABLET
     @include respond(desktop-md) {
       display: flex;
@@ -997,12 +1004,12 @@ body {
 
     &.card-02 {
       max-width: 41.6rem;
-      margin-left: 3rem;
-      margin-right: 3rem;
+
+      @include respond(desktop-lg) {
+        max-width: 34.8rem;
+      }
 
       @include respond(desktop-md) {
-        margin-left: 0;
-        margin-right: 0;
         max-width: 100%;
       }
 
