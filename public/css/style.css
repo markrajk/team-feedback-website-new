@@ -15,6 +15,18 @@ html {
   min-width: 100vw;
   font-size: 10px;
   -webkit-text-size-adjust: none; }
+  @media (max-width: 1379px) {
+    html {
+      font-size: 9px;
+      -webkit-text-size-adjust: none; } }
+  @media (max-width: 1199px) {
+    html {
+      font-size: 8px;
+      -webkit-text-size-adjust: none; } }
+  @media (max-width: 575px) {
+    html {
+      font-size: 7px;
+      -webkit-text-size-adjust: none; } }
 
 body {
   padding-top: calc(6.9rem + 1.5px);
