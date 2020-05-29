@@ -13,7 +13,8 @@
 
 html {
   min-width: 100vw;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  -webkit-text-size-adjust: none; }
   @media (max-width: 1379px) {
     html {
       font-size: 57.5%; } }

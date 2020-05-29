@@ -144,6 +144,8 @@ html {
     // @include respond(desktop-xxsm) {
     //   font-size: 50%;
     // }
+
+    -webkit-text-size-adjust:none;
 }
 
 body {
