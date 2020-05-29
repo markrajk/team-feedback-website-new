@@ -530,6 +530,12 @@ body {
         font-weight: 500;
         line-height: 1.65;
         letter-spacing: 0.32px; }
+        @media (max-width: 991px) {
+          .main-overview .section-info-card-body .btn {
+            margin-right: auto; } }
+        @media (max-width: 575px) {
+          .main-overview .section-info-card-body .btn {
+            margin-right: 0; } }
     @media (max-width: 991px) {
       .main-overview .section-info-card.card-01 .section-info-card-body {
         margin-left: 6.62rem;
@@ -635,9 +641,9 @@ body {
     color: #000000; }
     @media (max-width: 991px) {
       .main-overview .section-dash-body-title {
+        font-size: 2.3rem;
         margin-bottom: 2.2rem;
-        max-width: 22.8rem;
-        font-size: 2.2rem; } }
+        max-width: 27rem; } }
     @media (max-width: 575px) {
       .main-overview .section-dash-body-title {
         max-width: 100%; } }
@@ -650,8 +656,7 @@ body {
     @media (max-width: 991px) {
       .main-overview .section-dash-body-text {
         max-width: 32rem;
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.4rem; } }
+        font-family: 'Roboto', sans-serif; } }
     @media (max-width: 575px) {
       .main-overview .section-dash-body-text {
         max-width: 100%; } }
