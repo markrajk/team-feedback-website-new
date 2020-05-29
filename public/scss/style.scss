@@ -844,11 +844,11 @@ body {
   max-width: 134.3rem;
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
-  @include respond(desktop-lg) {
-    justify-content: space-evenly;
-  }
+  // @include respond(desktop-lg) {
+  //   justify-content: space-evenly;
+  // }
 
   @include respond(desktop-md) {
     flex-direction: column;

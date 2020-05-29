@@ -454,10 +454,7 @@ body {
   max-width: 134.3rem;
   display: flex;
   align-items: baseline;
-  justify-content: space-between; }
-  @media (max-width: 1199px) {
-    .main-overview .section-info {
-      justify-content: space-evenly; } }
+  justify-content: space-evenly; }
   @media (max-width: 991px) {
     .main-overview .section-info {
       flex-direction: column;
