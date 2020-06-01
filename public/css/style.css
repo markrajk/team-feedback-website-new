@@ -1193,7 +1193,7 @@ body {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.44;
-    color: #1d1d1d; }
+    color: #5f6368; }
     @media (max-width: 991px) {
       .main-feedback-received .section-stats-main-text,
       .main-feedback-giving .section-stats-main-text,
@@ -1280,7 +1280,7 @@ body {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.44;
-    color: #1d1d1d; }
+    color: #5f6368; }
     @media (max-width: 991px) {
       .main-feedback-received .section-feat-card-main-text,
       .main-feedback-giving .section-feat-card-main-text,
