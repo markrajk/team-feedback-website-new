@@ -21,7 +21,7 @@ html {
   @media (max-width: 1199px) {
     html {
       font-size: 54%; } }
-  @media (max-width: 769px) {
+  @media (max-width: 991px) {
     html {
       font-size: 62.5%; } }
   @media (max-width: 575px) {

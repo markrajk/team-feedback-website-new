@@ -112,7 +112,7 @@ html {
       font-size: 54%;
     }
 
-    @include respond(desktop-sm) {
+    @include respond(desktop-md) {
       font-size: 62.5%;
     }
 
