@@ -437,6 +437,10 @@ body {
       margin-right: 3.5%;
       &-img {
         height: 3.35rem;
+
+        @include respond(desktop-md) {
+          height: 3.15rem;
+        }
       }
     }
 
@@ -714,7 +718,8 @@ body {
 
   //MOBILE
   @include respond(desktop-xsm) {
-    padding-top: 3.95rem;
+    padding-top: 4.5rem;
+    padding-bottom: 5rem;
   }
 
   &-logo {
@@ -731,7 +736,8 @@ body {
 
       //MOBILE
       @include respond(desktop-xsm) {
-        margin-bottom: .9rem;
+        height: 5.55rem;
+        margin-bottom: 1.3rem;
       }
     }
   }
@@ -755,13 +761,15 @@ body {
 
     //MOBILE
     @include respond(desktop-xsm) {
-      margin-bottom: 2.4rem;
-      max-width: 60rem;
-      font-size: 2.9rem;
+      margin-bottom: 2.9rem;
+      font-size: 3.2rem;
       font-weight: 600;
-      line-height: 1.18;
-      letter-spacing: -0.58px;
       color: #1c1c1c;
+
+      max-width: 40rem;
+      font-family: Arial;
+      line-height: 1.26;
+      letter-spacing: -0.54px;
     }
 
     //EXTRA SMALL
@@ -786,10 +794,10 @@ body {
 
     //MOBILE
     @include respond(desktop-xsm) {
-      margin-bottom: 2.8rem;
+      margin-bottom: 3.1rem;
       max-width: 30rem;
-      max-width: 60rem;
-      font-size: 1.5rem;
+      max-width: 40rem;
+      font-size: 1.8rem;
       line-height: 1.47;
       letter-spacing: 0.15px;
       color: #65696d;
@@ -813,9 +821,10 @@ body {
 
     //MOBILE
     @include respond(desktop-xsm) {
-      margin-bottom: 1.3rem;
+      padding: 1rem 1.65rem;
+      font-size: 2rem;
+      margin-bottom: 1.8rem;
       width: 90%;
-      font-size: 1.8rem;
     }
   }
 
@@ -860,6 +869,7 @@ body {
   }
 
   @include respond(desktop-xsm) {
+    padding-top: 4.2rem;
     align-items: flex-start;
   }
 
@@ -872,6 +882,10 @@ body {
 
     &:not(:last-of-type) {
       margin-right: 2.2rem;
+
+      @include respond(desktop-xsm) {
+        margin-right: auto;
+      }
     }
 
     @include respond(desktop-lg) {
@@ -902,11 +916,15 @@ body {
       width: auto;
       flex-direction: column!important;
       align-items: flex-start;
-      padding-left: 3%;
-      padding-right: 3%;
-      margin-left: 0!important;
-      margin-right: 0!important;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: auto;
+      margin-right:auto;
       text-align: center;
+
+      &:not(:last-of-type) {
+        margin-bottom: 7.3rem;
+      }
     }
 
     &-img {
@@ -924,7 +942,9 @@ body {
       }
 
       @include respond(desktop-xsm) {
-        margin-bottom: 3.7rem;
+        //max-height: 45rem;
+        height: 40rem;
+        margin-bottom: 4.5rem;
         align-self: center;
       }
     }
@@ -947,6 +967,10 @@ body {
         font-weight: bold;
         line-height: 1.3;
         color: #000000;
+
+        @include respond(desktop-xsm) {
+          font-size: 2.4rem;
+        }
       }
 
       &-text {
@@ -954,6 +978,10 @@ body {
         font-size: 1.75rem;
         line-height: 1.49;
         color: #5f6368;
+
+        // @include respond(desktop-xsm) {
+        //   font-size: 1.7rem;
+        // }
       }
 
       & .btn {
@@ -997,7 +1025,9 @@ body {
           max-width: 33.5rem;
 
           @include respond(desktop-xsm) {
-           max-width: 100%;
+           max-width: 35rem;
+           margin-left: auto;
+           margin-right: auto;
           }
         }
       }
@@ -1026,11 +1056,17 @@ body {
           margin-right: 4rem;
         }
 
+        @include respond(desktop-xsm) {
+          margin-right: 0;
+        }
+
         &-text {
           max-width: 34.8rem;
 
           @include respond(desktop-xsm) {
-            max-width: 100%;
+            max-width: 35rem;
+            margin-left: auto;
+            margin-right: auto;
            }
         }
 
@@ -1058,7 +1094,9 @@ body {
           max-width: 32.2rem;
 
           @include respond(desktop-xsm) {
-            max-width: 100%;
+            max-width: 35rem;
+            margin-left: auto;
+            margin-right: auto;
            }
         }
       }
@@ -1105,7 +1143,7 @@ body {
   
   //MOBILE
   @include respond(desktop-xsm) {
-    padding-top: 7rem;
+    padding-top: 2rem;
     padding-bottom: 7.1rem;
     flex-direction: column;
     justify-content: center;
@@ -1130,9 +1168,9 @@ body {
 
     //MOBILE
     @include respond(desktop-xsm) {
-      margin-bottom: 2.46rem;
+      margin-bottom: 4.46rem;
       margin-left: 0;
-      max-width: 100%;
+      max-width: 95%;
     }
   }
 
@@ -1159,7 +1197,12 @@ body {
 
        //MOBILE
        @include respond(desktop-xsm) {
-        max-width: 100%;
+         margin-bottom: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+         font-size: 2.4rem;
+        max-width: 30rem;
+        line-height: 1.5;
         text-align: center;
       }
     }
@@ -1179,7 +1222,7 @@ body {
 
       //MOBILE
       @include respond(desktop-xsm) {
-        max-width: 100%;
+        max-width: 42rem;
       }
     }
 
@@ -1621,8 +1664,10 @@ body {
     }
 
     &-title {
+      font-family: Arial;
+      //font-family: CircularStd-Book!important;
       margin-bottom: 2.7rem;
-      max-width: 37.7rem;
+      max-width: 43rem;
       font-size: 4rem;
       font-weight: 600;
       line-height: 1.2;
@@ -1677,6 +1722,7 @@ body {
 
       //MOBILE
       @include respond(desktop-xsm) {
+        font-family: CircularStd-Book;
         margin-bottom: 2rem;
         max-width: 35.8rem;
         font-size: 1.55rem;
@@ -1750,6 +1796,7 @@ body {
   &-main {
 
     &-title {
+      font-family: Arial;
       margin-bottom: 2.8rem;
       font-size: 3rem;
       font-weight: 600;
@@ -1777,6 +1824,7 @@ body {
     }
 
     &-text {
+      font-family: CircularStd-Book!important;
       max-width: 46.6rem;
       min-width: 42.6rem;
       font-size: 1.8rem;
@@ -1835,6 +1883,7 @@ body {
     &-main {
 
       &-title {
+        font-family: Arial;
         //margin-bottom: 2.8rem;
         margin-bottom: 2.8rem;//@@@
         font-size: 3rem;
@@ -1864,6 +1913,7 @@ body {
       }
 
       &-text {
+        font-family: CircularStd-Book!important;
         font-size: 1.8rem;
         font-weight: 400;
         line-height: 1.44;
@@ -1925,7 +1975,7 @@ body {
         &-main {
 
           &-title {
-            max-width: 32.1rem;
+            max-width: 35.1rem;
 
             //TABLET
             @include respond(desktop-sm) {
@@ -1994,7 +2044,7 @@ body {
         &-main {
           
           &-title {
-            max-width: 32rem;
+            max-width: 36rem;
 
             //TABLET
             @include respond(desktop-sm) {
@@ -2062,6 +2112,7 @@ body {
   }
 
   &-title {
+    font-family: Arial;
     margin-bottom: 2.2rem;
     font-size: 3.9rem;
     font-weight: 600;
@@ -2084,6 +2135,7 @@ body {
   }
 
   &-text {
+    font-family: CircularStd-Book;
     padding: 0 2.2rem;
     max-width: 66.4rem;
     font-size: 2rem;
@@ -2469,6 +2521,10 @@ body {
     //TABLET
     @include respond(desktop-md) {
       font-size: 1.4rem!important;
+    }
+
+    @include respond(desktop-xsm) {
+      font-size: 1.7rem!important;
     }
   }
 }
