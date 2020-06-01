@@ -1601,6 +1601,7 @@ body {
   justify-content: space-between;
   max-width: 120.8rem ;
   height: 54.6rem;//!!!
+  border-bottom: 1.5px solid #F2F0F2;
 
   //TABLET
   @include respond(desktop-sm) {
@@ -1618,15 +1619,6 @@ body {
     padding-bottom: 5.4rem;
   }
 
-  &-wrapper {
-    background-color: rgba(235, 235, 235, 0.2);
-    border-bottom: 1.5px solid #F2F0F2;
-
-    //TABLET
-    @include respond(desktop-sm) {
-      background-color: #FFF;
-    }
-  }
 
   &-main {
     padding-top: 10.4rem;//!!!
@@ -1657,8 +1649,8 @@ body {
 
       //MOBILE
       @include respond(desktop-xsm) {
-        margin-bottom: 1rem;
-        font-size: 1.7rem;
+        margin-bottom: 2rem;
+        font-size: 2.1rem;
         line-height: 1.53;
       }
     }
@@ -1689,9 +1681,10 @@ body {
 
       //MOBILE
       @include respond(desktop-xsm) {
-        margin-bottom: 2rem;
-        max-width: 32rem;
+        margin-bottom: 2.8rem;
+        max-width: 100%;
         font-size: 3.4rem;
+        font-size: 4rem;
       }
     }
 
@@ -1703,7 +1696,7 @@ body {
       font-size: 1.8rem;
       font-weight: 400;
       line-height: 1.44;
-      color: #5f6368;
+      color: #414448;
 
       //TEAM LEAD PAGE TESTING
       @include respond(desktop-md) {
@@ -1722,10 +1715,12 @@ body {
 
       //MOBILE
       @include respond(desktop-xsm) {
+        margin-left: auto;
+        margin-right: auto;
         font-family: CircularStd-Book;
         margin-bottom: 2rem;
-        max-width: 35.8rem;
-        font-size: 1.55rem;
+        max-width: 100%;
+        font-size: 1.75rem;
       }
     }
   }
@@ -1768,8 +1763,8 @@ body {
 
   //MOBILE
   @include respond(desktop-xsm) {
-    padding-top: 3.45rem;
-    padding-bottom: 3.45rem;
+    padding-top: 5.45rem;
+    padding-bottom: 5.45rem;
     text-align: left;
   }
 
@@ -1788,8 +1783,8 @@ body {
 
     //MOBILE
     @include respond(desktop-xsm) {
-      margin-bottom: 2.5rem;
-        max-width: 35.1rem;
+      margin-bottom: 4.5rem;
+      max-width: 41rem;
     }
   }
 
@@ -1817,8 +1812,8 @@ body {
       //MOBILE
       @include respond(desktop-xsm) {
         margin-bottom: 2rem;
-        max-width: 23.5rem;
-        font-size: 2.2rem;
+        max-width: 32rem;
+        font-size: 2.6rem;
         line-height: 1.36;
       }
     }
@@ -1848,7 +1843,7 @@ body {
       //MOBILE
       @include respond(desktop-xsm) {
         margin: 0;
-        font-size: 1.55rem;
+        font-size: 1.75rem;
         line-height: 1.61;
       }
     }
@@ -1906,8 +1901,8 @@ body {
         //MOBILE
         @include respond(desktop-xsm) {
           margin-bottom: 2rem;
-          max-width: 23.5rem;
-          font-size: 2.2rem;
+          max-width: 27rem;
+          font-size: 2.6rem;
           line-height: 1.36;
         }
       }
@@ -1933,9 +1928,8 @@ body {
 
         //MOBILE
         @include respond(desktop-xsm) {
-          margin: 0;
           max-width: 46rem!important;
-          font-size: 1.55rem;
+          font-size: 1.75rem;
           line-height: 1.61;
         }
       }
@@ -1986,7 +1980,7 @@ body {
             @include respond(desktop-xsm) {
               margin-left: 0;
               margin-right: 0;
-              max-width: 23.5rem;
+              max-width: 32rem;
             }
           }
 
@@ -1997,7 +1991,7 @@ body {
 
             //TABLET
             @include respond(desktop-sm) {
-              margin-right: 0;
+              margin-right: auto;
               max-width: 43.2rem;
               min-width: 0;
             }
@@ -2055,7 +2049,7 @@ body {
             @include respond(desktop-xsm) {
               margin-left: 0;
               margin-right: 0;
-              max-width: 23.5rem;
+              max-width: 32rem;
             }
           }
 
@@ -2153,7 +2147,7 @@ body {
     //MOBILE
     @include respond(desktop-xsm) {
       max-width: 39.3rem;
-      font-size: 1.55rem;
+      font-size: 1.75rem;
       line-height: 1.61;
     }
   }
