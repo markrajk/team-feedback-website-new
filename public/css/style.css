@@ -21,6 +21,9 @@ html {
   @media (max-width: 1199px) {
     html {
       font-size: 54%; } }
+  @media (max-width: 769px) {
+    html {
+      font-size: 62.5%; } }
   @media (max-width: 575px) {
     html {
       font-size: 52.5%; } }
@@ -132,6 +135,12 @@ body {
   @media (max-width: 769px) {
     .show-sm-block {
       display: block; } }
+
+.show-md-inline {
+  display: none; }
+  @media (max-width: 991px) {
+    .show-md-inline {
+      display: inline; } }
 
 .show-md-inline-flex {
   display: none; }
@@ -467,31 +476,63 @@ body {
   justify-content: space-between;
   padding-left: 3.82%;
   padding-right: 3.82%; }
+  @media (max-width: 991px) {
+    .main-overview .section-info {
+      padding-top: 0;
+      padding-bottom: 0;
+      flex-direction: column;
+      align-items: center; } }
   .main-overview .section-info-card {
+    min-width: 33rem;
     width: 29.2%;
     text-align: center; }
+    @media (max-width: 991px) {
+      .main-overview .section-info-card {
+        padding-top: 6.2rem;
+        padding-bottom: 6.2rem;
+        width: 100%;
+        max-width: 55.1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; } }
     .main-overview .section-info-card-img {
       width: 58.6%;
       margin-bottom: 8.81%;
       border-radius: 2.86%;
       border: 7px solid #F6F6F6; }
+      @media (max-width: 991px) {
+        .main-overview .section-info-card-img {
+          margin-bottom: 0;
+          width: auto;
+          max-width: 22.78rem; } }
     .main-overview .section-info-card-body {
       width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center; }
+      @media (max-width: 991px) {
+        .main-overview .section-info-card-body {
+          max-width: 28rem;
+          text-align: left; } }
       .main-overview .section-info-card-body-title {
-        min-width: 100%;
+        font-family: Arial;
+        width: 100%;
         margin-bottom: 4.52%;
         font-size: 1.58vw;
         font-weight: bold;
         line-height: 1.3;
-        color: #000000;
-        white-space: nowrap; }
+        color: #000000; }
         @media (min-width: 1440px) {
           .main-overview .section-info-card-body-title {
             font-size: 2.3rem; } }
+        @media (max-width: 991px) {
+          .main-overview .section-info-card-body-title {
+            margin-bottom: 2rem;
+            font-size: 2.4rem;
+            font-weight: bold;
+            line-height: 1.25;
+            white-space: normal; } }
       .main-overview .section-info-card-body-text {
         margin-bottom: 5.48%;
         font-size: 1.22vw;
@@ -500,6 +541,11 @@ body {
         @media (min-width: 1440px) {
           .main-overview .section-info-card-body-text {
             font-size: 1.75rem; } }
+        @media (max-width: 991px) {
+          .main-overview .section-info-card-body-text {
+            margin-bottom: 2.5rem;
+            font-size: 1.4rem;
+            line-height: 1.57; } }
       .main-overview .section-info-card-body .btn {
         padding: .5em 1.5em;
         font-family: CircularStd-Book;
@@ -510,6 +556,13 @@ body {
         @media (min-width: 1440px) {
           .main-overview .section-info-card-body .btn {
             font-size: 1.7rem; } }
+        @media (max-width: 991px) {
+          .main-overview .section-info-card-body .btn {
+            align-self: flex-start;
+            font-size: 1.4rem; } }
+    @media (max-width: 991px) {
+      .main-overview .section-info-card.reversed {
+        flex-direction: row-reverse; } }
 
 .main-overview .section-dash {
   padding-top: 8.75rem;
