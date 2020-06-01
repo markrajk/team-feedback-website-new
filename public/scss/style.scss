@@ -687,8 +687,8 @@ body {
 
   //TABLET
   @include respond(desktop-md) {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 6.5rem;
+    padding-bottom: 6.5rem;
   }
 
   //MOBILE
@@ -705,7 +705,7 @@ body {
 
       //TABLET
       @include respond(desktop-md) {
-        margin-bottom: 2.22rem;
+        margin-bottom: 2.3rem;
         height: 4.4rem;
       }
 
@@ -718,6 +718,8 @@ body {
   }
 
   &-title {
+    font-family: Arial;
+    font-weight: bold;
     margin-bottom: 4.2rem;
     max-width: 85.6rem;
     font-size: 5.2rem;
@@ -727,11 +729,11 @@ body {
 
     //TABLET
     @include respond(desktop-md) {
-      margin-bottom: 2rem;
+      margin-bottom: 2.3rem;
       max-width: 70rem;
-      font-size: 4rem;
+      font-size: 3.7rem;
       font-weight: 600;
-      line-height: 1.25;
+      line-height: 1.3;
     }
 
     //MOBILE
@@ -754,6 +756,7 @@ body {
   }
 
   &-text {
+    font-family: CircularStd-Book;
     margin-bottom: 4.4rem;
     max-width: 74.8rem;
     font-size: 2rem;
@@ -763,8 +766,8 @@ body {
 
     //TABLET
     @include respond(desktop-md) {
-      margin-bottom: 2.5rem;
-      font-size: 1.7rem;
+      margin-bottom: 2.2rem;
+      font-size: 1.6rem;
     }
 
     //MOBILE
@@ -790,8 +793,9 @@ body {
     //TABLET
     @include respond(desktop-md) {
       margin-bottom: 1.6rem;
-      padding: .81rem 1.65rem;
+      padding: .78rem 1.65rem;
       font-size: 1.6rem;
+      letter-spacing: normal;
     }
 
     //MOBILE
@@ -808,10 +812,11 @@ body {
     font-weight: 600;
     color: #888888;
 
-    // //TABLET
-    // @include respond(desktop-md) {
-    //   font-size: 1.3rem;
-    // }
+    //TABLET
+    @include respond(desktop-md) {
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
 
     // //MOBILE
     // @include respond(desktop-xsm) {
@@ -1117,6 +1122,7 @@ body {
       justify-content: center;
 
       @include respond(desktop-md) {
+        margin-left: 4rem;
         max-width: 28rem;
         text-align: left;
       }
@@ -1185,6 +1191,11 @@ body {
 
       @include respond(desktop-md) {
         flex-direction: row-reverse;
+
+        .section-info-card-body {
+          margin-left: 0;
+          margin-right: 4rem;
+        }
       }
     }
   }
@@ -2575,30 +2586,30 @@ body {
   }
 }
 
-//GENERAL STYLES
-.section {
-  &-title {
-    font-family: Arial!important;
-    font-weight: bold!important;
-  }
+// //GENERAL STYLES
+// .section {
+//   &-title {
+//     font-family: Arial!important;
+//     font-weight: bold!important;
+//   }
 
-  &-text {
-    font-family: CircularStd-Book!important;
-  }
+//   &-text {
+//     font-family: CircularStd-Book!important;
+//   }
 
-  &-small {
-    //font-size: 1.7rem!important;
+//   &-small {
+//     //font-size: 1.7rem!important;
 
-    //TABLET
-    @include respond(desktop-md) {
-      font-size: 1.4rem!important;
-    }
+//     //TABLET
+//     @include respond(desktop-md) {
+//       font-size: 1.4rem!important;
+//     }
 
-    @include respond(desktop-xsm) {
-      font-size: 1.7rem!important;
-    }
-  }
-}
+//     @include respond(desktop-xsm) {
+//       font-size: 1.7rem!important;
+//     }
+//   }
+// }
 
 .main-feedback-received .card,
 .main-feedback-giving .card,

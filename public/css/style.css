@@ -381,8 +381,8 @@ body {
   align-items: center; }
   @media (max-width: 991px) {
     .main-overview .section-hero {
-      padding-top: 6rem;
-      padding-bottom: 6rem; } }
+      padding-top: 6.5rem;
+      padding-bottom: 6.5rem; } }
   @media (max-width: 575px) {
     .main-overview .section-hero {
       padding-top: 4.5rem;
@@ -392,13 +392,15 @@ body {
     height: 5.5rem; }
     @media (max-width: 991px) {
       .main-overview .section-hero-logo-img {
-        margin-bottom: 2.22rem;
+        margin-bottom: 2.3rem;
         height: 4.4rem; } }
     @media (max-width: 575px) {
       .main-overview .section-hero-logo-img {
         height: 5.55rem;
         margin-bottom: 1.3rem; } }
   .main-overview .section-hero-title {
+    font-family: Arial;
+    font-weight: bold;
     margin-bottom: 4.2rem;
     max-width: 85.6rem;
     font-size: 5.2rem;
@@ -407,11 +409,11 @@ body {
     text-align: center; }
     @media (max-width: 991px) {
       .main-overview .section-hero-title {
-        margin-bottom: 2rem;
+        margin-bottom: 2.3rem;
         max-width: 70rem;
-        font-size: 4rem;
+        font-size: 3.7rem;
         font-weight: 600;
-        line-height: 1.25; } }
+        line-height: 1.3; } }
     @media (max-width: 575px) {
       .main-overview .section-hero-title {
         margin-bottom: 2.9rem;
@@ -426,6 +428,7 @@ body {
       .main-overview .section-hero-title {
         font-size: 2.4rem; } }
   .main-overview .section-hero-text {
+    font-family: CircularStd-Book;
     margin-bottom: 4.4rem;
     max-width: 74.8rem;
     font-size: 2rem;
@@ -434,8 +437,8 @@ body {
     text-align: center; }
     @media (max-width: 991px) {
       .main-overview .section-hero-text {
-        margin-bottom: 2.5rem;
-        font-size: 1.7rem; } }
+        margin-bottom: 2.2rem;
+        font-size: 1.6rem; } }
     @media (max-width: 575px) {
       .main-overview .section-hero-text {
         margin-bottom: 3.1rem;
@@ -453,8 +456,9 @@ body {
     @media (max-width: 991px) {
       .main-overview .section-hero .btn {
         margin-bottom: 1.6rem;
-        padding: .81rem 1.65rem;
-        font-size: 1.6rem; } }
+        padding: .78rem 1.65rem;
+        font-size: 1.6rem;
+        letter-spacing: normal; } }
     @media (max-width: 575px) {
       .main-overview .section-hero .btn {
         padding: 1rem 1.65rem;
@@ -465,6 +469,10 @@ body {
     font-size: 1.6rem;
     font-weight: 600;
     color: #888888; }
+    @media (max-width: 991px) {
+      .main-overview .section-hero-info {
+        font-size: 1.3rem;
+        font-weight: 600; } }
 
 .main-overview .section-info {
   margin: 0 auto;
@@ -513,6 +521,7 @@ body {
       justify-content: center; }
       @media (max-width: 991px) {
         .main-overview .section-info-card-body {
+          margin-left: 4rem;
           max-width: 28rem;
           text-align: left; } }
       .main-overview .section-info-card-body-title {
@@ -563,7 +572,10 @@ body {
             font-size: 1.4rem; } }
     @media (max-width: 991px) {
       .main-overview .section-info-card.reversed {
-        flex-direction: row-reverse; } }
+        flex-direction: row-reverse; }
+        .main-overview .section-info-card.reversed .section-info-card-body {
+          margin-left: 0;
+          margin-right: 4rem; } }
 
 .main-overview .section-dash {
   padding-top: 8.75rem;
@@ -1728,18 +1740,6 @@ body {
       max-width: 43rem; } }
 #main-feedback-dash .section-feat .card-02 .section-feat-card-main-title {
   max-width: 32.7rem; }
-
-.section-title {
-  font-family: Arial !important;
-  font-weight: bold !important; }
-.section-text {
-  font-family: CircularStd-Book !important; }
-@media (max-width: 991px) {
-  .section-small {
-    font-size: 1.4rem !important; } }
-@media (max-width: 575px) {
-  .section-small {
-    font-size: 1.7rem !important; } }
 
 .main-feedback-received .card,
 .main-feedback-giving .card,
