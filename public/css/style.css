@@ -942,7 +942,8 @@ body {
 .main-feedback-received .section-hero,
 .main-feedback-giving .section-hero,
 .main-feedback-lead .section-hero,
-.main-feedback-dash .section-hero {
+.main-feedback-dash .section-hero,
+.main-feedback-test .section-hero {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -953,7 +954,8 @@ body {
     .main-feedback-received .section-hero,
     .main-feedback-giving .section-hero,
     .main-feedback-lead .section-hero,
-    .main-feedback-dash .section-hero {
+    .main-feedback-dash .section-hero,
+    .main-feedback-test .section-hero {
       padding-top: 6.8rem;
       padding-bottom: 6.3rem;
       flex-direction: column;
@@ -964,24 +966,28 @@ body {
     .main-feedback-received .section-hero,
     .main-feedback-giving .section-hero,
     .main-feedback-lead .section-hero,
-    .main-feedback-dash .section-hero {
+    .main-feedback-dash .section-hero,
+    .main-feedback-test .section-hero {
       padding-top: 5.4rem;
       padding-bottom: 5.4rem; } }
   .main-feedback-received .section-hero-main,
   .main-feedback-giving .section-hero-main,
   .main-feedback-lead .section-hero-main,
-  .main-feedback-dash .section-hero-main {
+  .main-feedback-dash .section-hero-main,
+  .main-feedback-test .section-hero-main {
     padding-top: 10.4rem; }
     @media (max-width: 769px) {
       .main-feedback-received .section-hero-main,
       .main-feedback-giving .section-hero-main,
       .main-feedback-lead .section-hero-main,
-      .main-feedback-dash .section-hero-main {
+      .main-feedback-dash .section-hero-main,
+      .main-feedback-test .section-hero-main {
         padding-top: 0; } }
     .main-feedback-received .section-hero-main-subtitle,
     .main-feedback-giving .section-hero-main-subtitle,
     .main-feedback-lead .section-hero-main-subtitle,
-    .main-feedback-dash .section-hero-main-subtitle {
+    .main-feedback-dash .section-hero-main-subtitle,
+    .main-feedback-test .section-hero-main-subtitle {
       margin-bottom: .5rem;
       font-size: 1.7rem;
       font-weight: 600;
@@ -991,13 +997,15 @@ body {
         .main-feedback-received .section-hero-main-subtitle,
         .main-feedback-giving .section-hero-main-subtitle,
         .main-feedback-lead .section-hero-main-subtitle,
-        .main-feedback-dash .section-hero-main-subtitle {
+        .main-feedback-dash .section-hero-main-subtitle,
+        .main-feedback-test .section-hero-main-subtitle {
           font-size: 1.65rem; } }
       @media (max-width: 769px) {
         .main-feedback-received .section-hero-main-subtitle,
         .main-feedback-giving .section-hero-main-subtitle,
         .main-feedback-lead .section-hero-main-subtitle,
-        .main-feedback-dash .section-hero-main-subtitle {
+        .main-feedback-dash .section-hero-main-subtitle,
+        .main-feedback-test .section-hero-main-subtitle {
           margin-bottom: .8rem;
           font-size: 1.9rem;
           line-height: 1.74; } }
@@ -1005,14 +1013,16 @@ body {
         .main-feedback-received .section-hero-main-subtitle,
         .main-feedback-giving .section-hero-main-subtitle,
         .main-feedback-lead .section-hero-main-subtitle,
-        .main-feedback-dash .section-hero-main-subtitle {
+        .main-feedback-dash .section-hero-main-subtitle,
+        .main-feedback-test .section-hero-main-subtitle {
           margin-bottom: 2rem;
           font-size: 2.1rem;
           line-height: 1.53; } }
     .main-feedback-received .section-hero-main-title,
     .main-feedback-giving .section-hero-main-title,
     .main-feedback-lead .section-hero-main-title,
-    .main-feedback-dash .section-hero-main-title {
+    .main-feedback-dash .section-hero-main-title,
+    .main-feedback-test .section-hero-main-title {
       font-family: Arial;
       margin-bottom: 2.7rem;
       max-width: 43rem;
@@ -1024,13 +1034,15 @@ body {
         .main-feedback-received .section-hero-main-title,
         .main-feedback-giving .section-hero-main-title,
         .main-feedback-lead .section-hero-main-title,
-        .main-feedback-dash .section-hero-main-title {
+        .main-feedback-dash .section-hero-main-title,
+        .main-feedback-test .section-hero-main-title {
           font-size: 3.7rem; } }
       @media (max-width: 769px) {
         .main-feedback-received .section-hero-main-title,
         .main-feedback-giving .section-hero-main-title,
         .main-feedback-lead .section-hero-main-title,
-        .main-feedback-dash .section-hero-main-title {
+        .main-feedback-dash .section-hero-main-title,
+        .main-feedback-test .section-hero-main-title {
           margin: 0 auto;
           margin-bottom: 2.2rem;
           max-width: 41.4rem;
@@ -1040,7 +1052,8 @@ body {
         .main-feedback-received .section-hero-main-title,
         .main-feedback-giving .section-hero-main-title,
         .main-feedback-lead .section-hero-main-title,
-        .main-feedback-dash .section-hero-main-title {
+        .main-feedback-dash .section-hero-main-title,
+        .main-feedback-test .section-hero-main-title {
           margin-bottom: 2.8rem;
           max-width: 100%;
           font-size: 3.4rem;
@@ -1048,7 +1061,8 @@ body {
     .main-feedback-received .section-hero-main-text,
     .main-feedback-giving .section-hero-main-text,
     .main-feedback-lead .section-hero-main-text,
-    .main-feedback-dash .section-hero-main-text {
+    .main-feedback-dash .section-hero-main-text,
+    .main-feedback-test .section-hero-main-text {
       margin-right: 2rem;
       margin-bottom: 2.4rem;
       max-width: 46rem;
@@ -1061,13 +1075,15 @@ body {
         .main-feedback-received .section-hero-main-text,
         .main-feedback-giving .section-hero-main-text,
         .main-feedback-lead .section-hero-main-text,
-        .main-feedback-dash .section-hero-main-text {
+        .main-feedback-dash .section-hero-main-text,
+        .main-feedback-test .section-hero-main-text {
           font-size: 1.7rem; } }
       @media (max-width: 769px) {
         .main-feedback-received .section-hero-main-text,
         .main-feedback-giving .section-hero-main-text,
         .main-feedback-lead .section-hero-main-text,
-        .main-feedback-dash .section-hero-main-text {
+        .main-feedback-dash .section-hero-main-text,
+        .main-feedback-test .section-hero-main-text {
           margin-right: 0;
           min-width: 0;
           margin-bottom: 3rem;
@@ -1078,7 +1094,8 @@ body {
         .main-feedback-received .section-hero-main-text,
         .main-feedback-giving .section-hero-main-text,
         .main-feedback-lead .section-hero-main-text,
-        .main-feedback-dash .section-hero-main-text {
+        .main-feedback-dash .section-hero-main-text,
+        .main-feedback-test .section-hero-main-text {
           margin-left: auto;
           margin-right: auto;
           font-family: CircularStd-Book;
@@ -1088,7 +1105,8 @@ body {
   .main-feedback-received .section-hero-img,
   .main-feedback-giving .section-hero-img,
   .main-feedback-lead .section-hero-img,
-  .main-feedback-dash .section-hero-img {
+  .main-feedback-dash .section-hero-img,
+  .main-feedback-test .section-hero-img {
     align-self: center;
     max-width: 54.7rem;
     width: 100%;
@@ -1097,7 +1115,8 @@ body {
       .main-feedback-received .section-hero-img,
       .main-feedback-giving .section-hero-img,
       .main-feedback-lead .section-hero-img,
-      .main-feedback-dash .section-hero-img {
+      .main-feedback-dash .section-hero-img,
+      .main-feedback-test .section-hero-img {
         display: none; } }
 
 .main-feedback-received .section-stats,
@@ -1108,7 +1127,6 @@ body {
   padding-bottom: 11.2rem;
   display: flex;
   align-items: center;
-  max-width: 110.7rem;
   align-items: center;
   justify-content: space-between; }
   @media (max-width: 769px) {
@@ -1132,7 +1150,6 @@ body {
   .main-feedback-giving .section-stats-img,
   .main-feedback-lead .section-stats-img,
   .main-feedback-dash .section-stats-img {
-    margin-right: 2rem;
     max-width: 50.7rem;
     width: 100%;
     min-width: 0; }
@@ -1319,7 +1336,6 @@ body {
   .main-feedback-giving .section-feat-card.card-01,
   .main-feedback-lead .section-feat-card.card-01,
   .main-feedback-dash .section-feat-card.card-01 {
-    padding: 0 calc((100% - 107rem) / 2);
     padding-top: 3.35rem;
     padding-bottom: 4.25rem;
     border-top: 1.5px solid #F2F0F2;
@@ -1338,40 +1354,50 @@ body {
       .main-feedback-dash .section-feat-card.card-01 {
         padding-top: 3.4rem;
         padding-bottom: 3.6rem; } }
-    .main-feedback-received .section-feat-card.card-01 .section-feat-card-main-title,
-    .main-feedback-giving .section-feat-card.card-01 .section-feat-card-main-title,
-    .main-feedback-lead .section-feat-card.card-01 .section-feat-card-main-title,
-    .main-feedback-dash .section-feat-card.card-01 .section-feat-card-main-title {
-      max-width: 35.1rem; }
+    .main-feedback-received .section-feat-card.card-01 .section-feat-card-main,
+    .main-feedback-giving .section-feat-card.card-01 .section-feat-card-main,
+    .main-feedback-lead .section-feat-card.card-01 .section-feat-card-main,
+    .main-feedback-dash .section-feat-card.card-01 .section-feat-card-main {
+      margin-right: 4rem; }
       @media (max-width: 769px) {
-        .main-feedback-received .section-feat-card.card-01 .section-feat-card-main-title,
-        .main-feedback-giving .section-feat-card.card-01 .section-feat-card-main-title,
-        .main-feedback-lead .section-feat-card.card-01 .section-feat-card-main-title,
-        .main-feedback-dash .section-feat-card.card-01 .section-feat-card-main-title {
-          max-width: 100%; } }
-      @media (max-width: 575px) {
-        .main-feedback-received .section-feat-card.card-01 .section-feat-card-main-title,
-        .main-feedback-giving .section-feat-card.card-01 .section-feat-card-main-title,
-        .main-feedback-lead .section-feat-card.card-01 .section-feat-card-main-title,
-        .main-feedback-dash .section-feat-card.card-01 .section-feat-card-main-title {
-          margin-left: 0;
-          margin-right: 0;
-          max-width: 32rem; } }
-    .main-feedback-received .section-feat-card.card-01 .section-feat-card-main-text,
-    .main-feedback-giving .section-feat-card.card-01 .section-feat-card-main-text,
-    .main-feedback-lead .section-feat-card.card-01 .section-feat-card-main-text,
-    .main-feedback-dash .section-feat-card.card-01 .section-feat-card-main-text {
-      margin-right: 2rem;
-      max-width: 45.7rem;
-      min-width: 42.7rem; }
-      @media (max-width: 769px) {
-        .main-feedback-received .section-feat-card.card-01 .section-feat-card-main-text,
-        .main-feedback-giving .section-feat-card.card-01 .section-feat-card-main-text,
-        .main-feedback-lead .section-feat-card.card-01 .section-feat-card-main-text,
-        .main-feedback-dash .section-feat-card.card-01 .section-feat-card-main-text {
-          margin-right: auto;
-          max-width: 43.2rem;
-          min-width: 0; } }
+        .main-feedback-received .section-feat-card.card-01 .section-feat-card-main,
+        .main-feedback-giving .section-feat-card.card-01 .section-feat-card-main,
+        .main-feedback-lead .section-feat-card.card-01 .section-feat-card-main,
+        .main-feedback-dash .section-feat-card.card-01 .section-feat-card-main {
+          margin-right: 0; } }
+      .main-feedback-received .section-feat-card.card-01 .section-feat-card-main-title,
+      .main-feedback-giving .section-feat-card.card-01 .section-feat-card-main-title,
+      .main-feedback-lead .section-feat-card.card-01 .section-feat-card-main-title,
+      .main-feedback-dash .section-feat-card.card-01 .section-feat-card-main-title {
+        max-width: 35.1rem; }
+        @media (max-width: 769px) {
+          .main-feedback-received .section-feat-card.card-01 .section-feat-card-main-title,
+          .main-feedback-giving .section-feat-card.card-01 .section-feat-card-main-title,
+          .main-feedback-lead .section-feat-card.card-01 .section-feat-card-main-title,
+          .main-feedback-dash .section-feat-card.card-01 .section-feat-card-main-title {
+            max-width: 100%; } }
+        @media (max-width: 575px) {
+          .main-feedback-received .section-feat-card.card-01 .section-feat-card-main-title,
+          .main-feedback-giving .section-feat-card.card-01 .section-feat-card-main-title,
+          .main-feedback-lead .section-feat-card.card-01 .section-feat-card-main-title,
+          .main-feedback-dash .section-feat-card.card-01 .section-feat-card-main-title {
+            margin-left: 0;
+            margin-right: 0;
+            max-width: 32rem; } }
+      .main-feedback-received .section-feat-card.card-01 .section-feat-card-main-text,
+      .main-feedback-giving .section-feat-card.card-01 .section-feat-card-main-text,
+      .main-feedback-lead .section-feat-card.card-01 .section-feat-card-main-text,
+      .main-feedback-dash .section-feat-card.card-01 .section-feat-card-main-text {
+        max-width: 45.7rem;
+        min-width: 42.7rem; }
+        @media (max-width: 769px) {
+          .main-feedback-received .section-feat-card.card-01 .section-feat-card-main-text,
+          .main-feedback-giving .section-feat-card.card-01 .section-feat-card-main-text,
+          .main-feedback-lead .section-feat-card.card-01 .section-feat-card-main-text,
+          .main-feedback-dash .section-feat-card.card-01 .section-feat-card-main-text {
+            margin-right: auto;
+            max-width: 43.2rem;
+            min-width: 0; } }
     .main-feedback-received .section-feat-card.card-01 .section-feat-card-img,
     .main-feedback-giving .section-feat-card.card-01 .section-feat-card-img,
     .main-feedback-lead .section-feat-card.card-01 .section-feat-card-img,
@@ -1387,7 +1413,6 @@ body {
   .main-feedback-giving .section-feat-card.card-02,
   .main-feedback-lead .section-feat-card.card-02,
   .main-feedback-dash .section-feat-card.card-02 {
-    padding: 0 calc((100% - 78.6rem) / 2);
     padding-top: 4.95rem;
     padding-bottom: 5.9rem;
     flex-direction: row-reverse; }
@@ -1405,38 +1430,49 @@ body {
       .main-feedback-dash .section-feat-card.card-02 {
         padding-top: 3.6rem;
         padding-bottom: 5.4rem; } }
-    .main-feedback-received .section-feat-card.card-02 .section-feat-card-main-title,
-    .main-feedback-giving .section-feat-card.card-02 .section-feat-card-main-title,
-    .main-feedback-lead .section-feat-card.card-02 .section-feat-card-main-title,
-    .main-feedback-dash .section-feat-card.card-02 .section-feat-card-main-title {
-      max-width: 36rem; }
+    .main-feedback-received .section-feat-card.card-02 .section-feat-card-main,
+    .main-feedback-giving .section-feat-card.card-02 .section-feat-card-main,
+    .main-feedback-lead .section-feat-card.card-02 .section-feat-card-main,
+    .main-feedback-dash .section-feat-card.card-02 .section-feat-card-main {
+      margin-left: 4rem; }
       @media (max-width: 769px) {
-        .main-feedback-received .section-feat-card.card-02 .section-feat-card-main-title,
-        .main-feedback-giving .section-feat-card.card-02 .section-feat-card-main-title,
-        .main-feedback-lead .section-feat-card.card-02 .section-feat-card-main-title,
-        .main-feedback-dash .section-feat-card.card-02 .section-feat-card-main-title {
-          max-width: 100%; } }
-      @media (max-width: 575px) {
-        .main-feedback-received .section-feat-card.card-02 .section-feat-card-main-title,
-        .main-feedback-giving .section-feat-card.card-02 .section-feat-card-main-title,
-        .main-feedback-lead .section-feat-card.card-02 .section-feat-card-main-title,
-        .main-feedback-dash .section-feat-card.card-02 .section-feat-card-main-title {
-          margin-left: 0;
-          margin-right: 0;
-          max-width: 32rem; } }
-    .main-feedback-received .section-feat-card.card-02 .section-feat-card-main-text,
-    .main-feedback-giving .section-feat-card.card-02 .section-feat-card-main-text,
-    .main-feedback-lead .section-feat-card.card-02 .section-feat-card-main-text,
-    .main-feedback-dash .section-feat-card.card-02 .section-feat-card-main-text {
-      max-width: 44.4rem;
-      min-width: 44.4rem; }
-      @media (max-width: 769px) {
-        .main-feedback-received .section-feat-card.card-02 .section-feat-card-main-text,
-        .main-feedback-giving .section-feat-card.card-02 .section-feat-card-main-text,
-        .main-feedback-lead .section-feat-card.card-02 .section-feat-card-main-text,
-        .main-feedback-dash .section-feat-card.card-02 .section-feat-card-main-text {
-          max-width: 43.2rem;
-          min-width: 0; } }
+        .main-feedback-received .section-feat-card.card-02 .section-feat-card-main,
+        .main-feedback-giving .section-feat-card.card-02 .section-feat-card-main,
+        .main-feedback-lead .section-feat-card.card-02 .section-feat-card-main,
+        .main-feedback-dash .section-feat-card.card-02 .section-feat-card-main {
+          margin-left: 0; } }
+      .main-feedback-received .section-feat-card.card-02 .section-feat-card-main-title,
+      .main-feedback-giving .section-feat-card.card-02 .section-feat-card-main-title,
+      .main-feedback-lead .section-feat-card.card-02 .section-feat-card-main-title,
+      .main-feedback-dash .section-feat-card.card-02 .section-feat-card-main-title {
+        max-width: 36rem; }
+        @media (max-width: 769px) {
+          .main-feedback-received .section-feat-card.card-02 .section-feat-card-main-title,
+          .main-feedback-giving .section-feat-card.card-02 .section-feat-card-main-title,
+          .main-feedback-lead .section-feat-card.card-02 .section-feat-card-main-title,
+          .main-feedback-dash .section-feat-card.card-02 .section-feat-card-main-title {
+            max-width: 100%; } }
+        @media (max-width: 575px) {
+          .main-feedback-received .section-feat-card.card-02 .section-feat-card-main-title,
+          .main-feedback-giving .section-feat-card.card-02 .section-feat-card-main-title,
+          .main-feedback-lead .section-feat-card.card-02 .section-feat-card-main-title,
+          .main-feedback-dash .section-feat-card.card-02 .section-feat-card-main-title {
+            margin-left: 0;
+            margin-right: 0;
+            max-width: 32rem; } }
+      .main-feedback-received .section-feat-card.card-02 .section-feat-card-main-text,
+      .main-feedback-giving .section-feat-card.card-02 .section-feat-card-main-text,
+      .main-feedback-lead .section-feat-card.card-02 .section-feat-card-main-text,
+      .main-feedback-dash .section-feat-card.card-02 .section-feat-card-main-text {
+        max-width: 44.4rem;
+        min-width: 44.4rem; }
+        @media (max-width: 769px) {
+          .main-feedback-received .section-feat-card.card-02 .section-feat-card-main-text,
+          .main-feedback-giving .section-feat-card.card-02 .section-feat-card-main-text,
+          .main-feedback-lead .section-feat-card.card-02 .section-feat-card-main-text,
+          .main-feedback-dash .section-feat-card.card-02 .section-feat-card-main-text {
+            max-width: 43.2rem;
+            min-width: 0; } }
     .main-feedback-received .section-feat-card.card-02 .section-feat-card-img,
     .main-feedback-giving .section-feat-card.card-02 .section-feat-card-img,
     .main-feedback-lead .section-feat-card.card-02 .section-feat-card-img,
@@ -1452,7 +1488,8 @@ body {
 .main-feedback-received .section-banner,
 .main-feedback-giving .section-banner,
 .main-feedback-lead .section-banner,
-.main-feedback-dash .section-banner {
+.main-feedback-dash .section-banner,
+.main-feedback-test .section-banner {
   padding: 8.3rem 0;
   display: flex;
   align-items: center;
@@ -1464,20 +1501,23 @@ body {
     .main-feedback-received .section-banner,
     .main-feedback-giving .section-banner,
     .main-feedback-lead .section-banner,
-    .main-feedback-dash .section-banner {
+    .main-feedback-dash .section-banner,
+    .main-feedback-test .section-banner {
       padding-top: 4.9rem;
       padding-bottom: 6.1rem; } }
   @media (max-width: 575px) {
     .main-feedback-received .section-banner,
     .main-feedback-giving .section-banner,
     .main-feedback-lead .section-banner,
-    .main-feedback-dash .section-banner {
+    .main-feedback-dash .section-banner,
+    .main-feedback-test .section-banner {
       padding-top: 3.4rem;
       padding-bottom: 4rem; } }
   .main-feedback-received .section-banner-title,
   .main-feedback-giving .section-banner-title,
   .main-feedback-lead .section-banner-title,
-  .main-feedback-dash .section-banner-title {
+  .main-feedback-dash .section-banner-title,
+  .main-feedback-test .section-banner-title {
     font-family: Arial;
     margin-bottom: 2.2rem;
     font-size: 3.9rem;
@@ -1488,7 +1528,8 @@ body {
       .main-feedback-received .section-banner-title,
       .main-feedback-giving .section-banner-title,
       .main-feedback-lead .section-banner-title,
-      .main-feedback-dash .section-banner-title {
+      .main-feedback-dash .section-banner-title,
+      .main-feedback-test .section-banner-title {
         margin-bottom: 1.5rem;
         font-size: 3.8rem;
         line-height: 1.11; } }
@@ -1496,14 +1537,16 @@ body {
       .main-feedback-received .section-banner-title,
       .main-feedback-giving .section-banner-title,
       .main-feedback-lead .section-banner-title,
-      .main-feedback-dash .section-banner-title {
+      .main-feedback-dash .section-banner-title,
+      .main-feedback-test .section-banner-title {
         margin-bottom: 1.7rem;
         font-size: 3.1rem;
         line-height: 1.35; } }
   .main-feedback-received .section-banner-text,
   .main-feedback-giving .section-banner-text,
   .main-feedback-lead .section-banner-text,
-  .main-feedback-dash .section-banner-text {
+  .main-feedback-dash .section-banner-text,
+  .main-feedback-test .section-banner-text {
     font-family: CircularStd-Book;
     padding: 0 2.2rem;
     max-width: 66.4rem;
@@ -1515,7 +1558,8 @@ body {
       .main-feedback-received .section-banner-text,
       .main-feedback-giving .section-banner-text,
       .main-feedback-lead .section-banner-text,
-      .main-feedback-dash .section-banner-text {
+      .main-feedback-dash .section-banner-text,
+      .main-feedback-test .section-banner-text {
         max-width: 60.2rem;
         font-size: 1.8rem;
         line-height: 1.44; } }
@@ -1523,7 +1567,8 @@ body {
       .main-feedback-received .section-banner-text,
       .main-feedback-giving .section-banner-text,
       .main-feedback-lead .section-banner-text,
-      .main-feedback-dash .section-banner-text {
+      .main-feedback-dash .section-banner-text,
+      .main-feedback-test .section-banner-text {
         max-width: 39.3rem;
         font-size: 1.75rem;
         line-height: 1.61; } }
@@ -1531,7 +1576,8 @@ body {
 .main-feedback-received .section-cards,
 .main-feedback-giving .section-cards,
 .main-feedback-lead .section-cards,
-.main-feedback-dash .section-cards {
+.main-feedback-dash .section-cards,
+.main-feedback-test .section-cards {
   padding-top: 5.8rem;
   padding-bottom: 7.6rem;
   margin: 0 auto;
@@ -1542,7 +1588,8 @@ body {
     .main-feedback-received .section-cards,
     .main-feedback-giving .section-cards,
     .main-feedback-lead .section-cards,
-    .main-feedback-dash .section-cards {
+    .main-feedback-dash .section-cards,
+    .main-feedback-test .section-cards {
       padding: 0;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(1, 1fr); } }
@@ -1550,41 +1597,48 @@ body {
     .main-feedback-received .section-cards,
     .main-feedback-giving .section-cards,
     .main-feedback-lead .section-cards,
-    .main-feedback-dash .section-cards {
+    .main-feedback-dash .section-cards,
+    .main-feedback-test .section-cards {
       display: none; } }
   .main-feedback-received .section-cards-card,
   .main-feedback-giving .section-cards-card,
   .main-feedback-lead .section-cards-card,
-  .main-feedback-dash .section-cards-card {
+  .main-feedback-dash .section-cards-card,
+  .main-feedback-test .section-cards-card {
     padding: 4.2rem 0;
     text-align: center; }
     .main-feedback-received .section-cards-card:nth-of-type(2),
     .main-feedback-giving .section-cards-card:nth-of-type(2),
     .main-feedback-lead .section-cards-card:nth-of-type(2),
-    .main-feedback-dash .section-cards-card:nth-of-type(2) {
+    .main-feedback-dash .section-cards-card:nth-of-type(2),
+    .main-feedback-test .section-cards-card:nth-of-type(2) {
       border-right: 2px solid #F4F4F4;
       border-left: 2px solid #F4F4F4; }
     @media (max-width: 769px) {
       .main-feedback-received .section-cards-card,
       .main-feedback-giving .section-cards-card,
       .main-feedback-lead .section-cards-card,
-      .main-feedback-dash .section-cards-card {
+      .main-feedback-dash .section-cards-card,
+      .main-feedback-test .section-cards-card {
         padding-top: 6.1rem;
         padding-bottom: 4.85rem; }
         .main-feedback-received .section-cards-card:nth-of-type(3),
         .main-feedback-giving .section-cards-card:nth-of-type(3),
         .main-feedback-lead .section-cards-card:nth-of-type(3),
-        .main-feedback-dash .section-cards-card:nth-of-type(3) {
+        .main-feedback-dash .section-cards-card:nth-of-type(3),
+        .main-feedback-test .section-cards-card:nth-of-type(3) {
           border-left: 2px solid #F4F4F4; }
         .main-feedback-received .section-cards-card:last-of-type,
         .main-feedback-giving .section-cards-card:last-of-type,
         .main-feedback-lead .section-cards-card:last-of-type,
-        .main-feedback-dash .section-cards-card:last-of-type {
+        .main-feedback-dash .section-cards-card:last-of-type,
+        .main-feedback-test .section-cards-card:last-of-type {
           display: none; } }
     .main-feedback-received .section-cards-card-title,
     .main-feedback-giving .section-cards-card-title,
     .main-feedback-lead .section-cards-card-title,
-    .main-feedback-dash .section-cards-card-title {
+    .main-feedback-dash .section-cards-card-title,
+    .main-feedback-test .section-cards-card-title {
       margin-bottom: 1.4rem;
       font-size: 2.6rem;
       font-weight: 600;
@@ -1593,28 +1647,32 @@ body {
       .main-feedback-received .section-cards-card-title::first-letter,
       .main-feedback-giving .section-cards-card-title::first-letter,
       .main-feedback-lead .section-cards-card-title::first-letter,
-      .main-feedback-dash .section-cards-card-title::first-letter {
+      .main-feedback-dash .section-cards-card-title::first-letter,
+      .main-feedback-test .section-cards-card-title::first-letter {
         text-transform: uppercase; }
       @media (max-width: 991px) {
         .main-feedback-received .section-cards-card-title span,
         .main-feedback-giving .section-cards-card-title span,
         .main-feedback-lead .section-cards-card-title span,
-        .main-feedback-dash .section-cards-card-title span {
+        .main-feedback-dash .section-cards-card-title span,
+        .main-feedback-test .section-cards-card-title span {
           display: none; } }
       @media (max-width: 769px) {
         .main-feedback-received .section-cards-card-title span,
         .main-feedback-giving .section-cards-card-title span,
         .main-feedback-lead .section-cards-card-title span,
-        .main-feedback-dash .section-cards-card-title span {
+        .main-feedback-dash .section-cards-card-title span,
+        .main-feedback-test .section-cards-card-title span {
           display: inline; } }
     .main-feedback-received .section-cards-card-text,
     .main-feedback-giving .section-cards-card-text,
     .main-feedback-lead .section-cards-card-text,
-    .main-feedback-dash .section-cards-card-text {
+    .main-feedback-dash .section-cards-card-text,
+    .main-feedback-test .section-cards-card-text {
       margin: 0 auto;
       margin-bottom: 2.5rem;
       max-width: 25.6rem;
-      font-family: 'Roboto', sans-serif;
+      font-family: CircularStd-Book;
       font-size: 1.5rem;
       font-weight: 400;
       line-height: 1.6;
@@ -1678,25 +1736,21 @@ body {
   padding: 0 calc((100% - 107rem) / 2);
   padding-top: 3.5rem;
   padding-bottom: 3rem; }
-  #main-feedback-lead .section-feat-card.card-01 .section-feat-card-main {
-    margin-right: 5rem; }
-    @media (max-width: 769px) {
-      #main-feedback-lead .section-feat-card.card-01 .section-feat-card-main {
-        margin-right: 0; } }
-    #main-feedback-lead .section-feat-card.card-01 .section-feat-card-main-title {
-      max-width: 26.4rem; }
-    #main-feedback-lead .section-feat-card.card-01 .section-feat-card-main-text {
-      margin-right: 0rem;
-      max-width: 48.7rem; }
+  @media (max-width: 769px) {
+    #main-feedback-lead .section-feat-card.card-01 .section-feat-card-main {
+      margin-right: 0; } }
+  #main-feedback-lead .section-feat-card.card-01 .section-feat-card-main-title {
+    max-width: 26.4rem; }
+  #main-feedback-lead .section-feat-card.card-01 .section-feat-card-main-text {
+    margin-right: 0rem;
+    max-width: 48.7rem; }
 #main-feedback-lead .section-feat-card.card-02 {
   padding: 0 calc((100% - 104rem) / 2);
   padding-top: 3.2rem;
   padding-bottom: 7.9rem; }
-  #main-feedback-lead .section-feat-card.card-02 .section-feat-card-main {
-    margin-left: 5rem; }
-    @media (max-width: 769px) {
-      #main-feedback-lead .section-feat-card.card-02 .section-feat-card-main {
-        margin-left: 0; } }
+  @media (max-width: 769px) {
+    #main-feedback-lead .section-feat-card.card-02 .section-feat-card-main {
+      margin-left: 0; } }
 
 #main-feedback-dash .section-hero-img {
   max-width: 58.9rem; }
@@ -1708,21 +1762,19 @@ body {
 #main-feedback-dash .section-hero-main-text {
   margin-left: auto;
   margin-right: auto; }
-#main-feedback-dash .section-stats {
-  max-width: 112.8rem; }
-  #main-feedback-dash .section-stats-img {
-    max-width: 54rem; }
-    @media (max-width: 769px) {
-      #main-feedback-dash .section-stats-img {
-        max-width: 43rem; } }
-  #main-feedback-dash .section-stats-main-title {
-    max-width: 32.7rem; }
-    @media (max-width: 769px) {
-      #main-feedback-dash .section-stats-main-title {
-        margin-left: auto;
-        margin-right: auto; } }
-  #main-feedback-dash .section-stats-main-text {
-    max-width: 46.8rem; }
+#main-feedback-dash .section-stats-img {
+  max-width: 54rem; }
+  @media (max-width: 769px) {
+    #main-feedback-dash .section-stats-img {
+      max-width: 43rem; } }
+#main-feedback-dash .section-stats-main-title {
+  max-width: 32.7rem; }
+  @media (max-width: 769px) {
+    #main-feedback-dash .section-stats-main-title {
+      margin-left: auto;
+      margin-right: auto; } }
+#main-feedback-dash .section-stats-main-text {
+  max-width: 46.8rem; }
 #main-feedback-dash .section-feat .card-01 {
   padding-top: 10.3rem;
   padding-bottom: 9.76rem; }
@@ -1733,16 +1785,13 @@ body {
         max-width: 43rem; } }
   #main-feedback-dash .section-feat .card-01 .section-feat-card-main-title {
     max-width: 32.7rem; }
-#main-feedback-dash .section-feat .card-02 {
-  padding-left: calc((100% - 105rem) / 2);
-  padding-right: calc((100% - 105rem) / 2); }
-  #main-feedback-dash .section-feat .card-02 .section-feat-card-img {
-    max-width: 46.2rem; }
-    @media (max-width: 769px) {
-      #main-feedback-dash .section-feat .card-02 .section-feat-card-img {
-        max-width: 43rem; } }
-  #main-feedback-dash .section-feat .card-02 .section-feat-card-main-title {
-    max-width: 32.7rem; }
+#main-feedback-dash .section-feat .card-02 .section-feat-card-img {
+  max-width: 46.2rem; }
+  @media (max-width: 769px) {
+    #main-feedback-dash .section-feat .card-02 .section-feat-card-img {
+      max-width: 43rem; } }
+#main-feedback-dash .section-feat .card-02 .section-feat-card-main-title {
+  max-width: 32.7rem; }
 
 .section-title {
   font-family: Arial !important;
@@ -1755,6 +1804,103 @@ body {
 @media (max-width: 575px) {
   .section-small {
     font-size: 1.7rem !important; } }
+
+.main-feedback-received .card,
+.main-feedback-giving .card,
+.main-feedback-lead .card,
+.main-feedback-dash .card {
+  justify-content: center; }
+  .main-feedback-received .card-reverse .card-main,
+  .main-feedback-giving .card-reverse .card-main,
+  .main-feedback-lead .card-reverse .card-main,
+  .main-feedback-dash .card-reverse .card-main {
+    margin-left: 0 !important;
+    margin-right: 5% !important; }
+    @media (max-width: 769px) {
+      .main-feedback-received .card-reverse .card-main,
+      .main-feedback-giving .card-reverse .card-main,
+      .main-feedback-lead .card-reverse .card-main,
+      .main-feedback-dash .card-reverse .card-main {
+        margin-right: 0 !important;
+        margin-left: 0 !important; } }
+  .main-feedback-received .card-main,
+  .main-feedback-giving .card-main,
+  .main-feedback-lead .card-main,
+  .main-feedback-dash .card-main {
+    margin-left: 5% !important;
+    width: 100% !important;
+    max-width: 50rem !important; }
+    @media (max-width: 769px) {
+      .main-feedback-received .card-main,
+      .main-feedback-giving .card-main,
+      .main-feedback-lead .card-main,
+      .main-feedback-dash .card-main {
+        margin-right: 0 !important;
+        margin-left: 0 !important; } }
+    .main-feedback-received .card-main-title,
+    .main-feedback-giving .card-main-title,
+    .main-feedback-lead .card-main-title,
+    .main-feedback-dash .card-main-title {
+      max-width: 100% !important; }
+    .main-feedback-received .card-main-text,
+    .main-feedback-giving .card-main-text,
+    .main-feedback-lead .card-main-text,
+    .main-feedback-dash .card-main-text {
+      max-width: 100% !important; }
+
+.section-features {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.card {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .card:not(:last-of-type) {
+    border-bottom: 1.5px solid #F2F0F2; }
+  @media (max-width: 769px) {
+    .card {
+      flex-direction: column;
+      text-align: center; } }
+  .card-reverse {
+    flex-direction: row-reverse; }
+    .card-reverse .card-main {
+      margin-right: 5%;
+      margin-left: 0; }
+      @media (max-width: 769px) {
+        .card-reverse .card-main {
+          margin-right: 0;
+          margin-left: 0; } }
+    @media (max-width: 769px) {
+      .card-reverse {
+        flex-direction: column; } }
+  .card-main {
+    max-width: 50rem;
+    margin-left: 5%; }
+    @media (max-width: 769px) {
+      .card-main {
+        margin-top: 5rem;
+        margin-right: 0;
+        margin-left: 0; } }
+    .card-main-title {
+      margin-bottom: 2.7rem;
+      font-family: Arial;
+      font-size: 2.8rem;
+      font-weight: bold;
+      line-height: 1.5;
+      color: #1d1d1d; }
+    .card-main-text {
+      font-family: CircularStd-Book;
+      font-size: 1.8rem;
+      font-weight: normal;
+      line-height: 1.44;
+      color: #484848; }
+  .card-img {
+    width: 100%;
+    min-width: 0;
+    max-width: 50rem; }
 
 .menu-open {
   transform: translate(0, 0) !important; }
