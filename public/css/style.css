@@ -1109,6 +1109,9 @@ body {
       .main-feedback-test .section-hero-img {
         display: none; } }
 
+.main-feedback-giving .section-hero-img {
+  max-width: 53.5rem; }
+
 .main-feedback-received .section-features,
 .main-feedback-giving .section-features,
 .main-feedback-lead .section-features,
