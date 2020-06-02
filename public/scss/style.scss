@@ -116,7 +116,7 @@ html {
       font-size: 62.5%;
     }
 
-    @include respond(desktop-xsm) {
+    @include respond(desktop-xxsm) {
       font-size: 52.5%;
     }
 }
@@ -625,7 +625,7 @@ body {
 
   &-list {
     padding-right: 5.2rem!important;
-    max-width: 120.8rem ;
+    max-width: 122.8rem ;
     height: 5.6rem;
     display: flex;
     align-items: center;
@@ -649,7 +649,7 @@ body {
 
     &-item {
       &:not(:last-of-type) {
-        margin-right: 2.8rem;
+        margin-right: 3.4rem;
       }
 
       &-link {
@@ -693,8 +693,8 @@ body {
 
   //MOBILE
   @include respond(desktop-xsm) {
-    padding-top: 4.5rem;
-    padding-bottom: 5rem;
+    padding-top: 3.95rem;
+    padding-bottom: 3.95rem;
   }
 
   &-logo {
@@ -711,8 +711,8 @@ body {
 
       //MOBILE
       @include respond(desktop-xsm) {
-        height: 5.55rem;
-        margin-bottom: 1.3rem;
+        height: 4.6rem;
+        margin-bottom: .8rem;
       }
     }
   }
@@ -738,21 +738,16 @@ body {
 
     //MOBILE
     @include respond(desktop-xsm) {
-      margin-bottom: 2.9rem;
-      font-size: 3.2rem;
-      font-weight: 600;
-      color: #1c1c1c;
-
-      max-width: 40rem;
-      font-family: Arial;
+      margin-bottom: 2.4rem;
+      font-size: 2.7rem;
       line-height: 1.26;
       letter-spacing: -0.54px;
     }
 
-    //EXTRA SMALL
-    @include respond(desktop-xxsm) {
-      font-size: 2.4rem;
-    }
+    // //EXTRA SMALL
+    // @include respond(desktop-xxsm) {
+    //   font-size: 2.4rem;
+    // }
   }
 
   &-text {
@@ -761,7 +756,7 @@ body {
     max-width: 74.8rem;
     font-size: 2rem;
     line-height: 1.45;
-    color: #1d1d1d;
+    color: #5A5A5A;
     text-align: center;
 
     //TABLET
@@ -772,13 +767,11 @@ body {
 
     //MOBILE
     @include respond(desktop-xsm) {
-      margin-bottom: 3.1rem;
-      max-width: 30rem;
-      max-width: 40rem;
-      font-size: 1.8rem;
+      margin-bottom: 2.8rem;
+      max-width: 90%;
+      font-size: 1.5rem;
       line-height: 1.47;
       letter-spacing: 0.15px;
-      color: #65696d;
     }
 
     
@@ -800,9 +793,9 @@ body {
 
     //MOBILE
     @include respond(desktop-xsm) {
-      padding: 1rem 1.65rem;
-      font-size: 2rem;
-      margin-bottom: 1.8rem;
+      padding: .75rem 1.65rem;
+      margin-bottom: 1.4rem;
+      font-size: 1.8rem;
       width: 90%;
     }
   }
@@ -815,13 +808,12 @@ body {
     //TABLET
     @include respond(desktop-md) {
       font-size: 1.3rem;
-      font-weight: 600;
     }
 
-    // //MOBILE
-    // @include respond(desktop-xsm) {
-    //   font-size: 1.4rem;
-    // }
+    //MOBILE
+    @include respond(desktop-xsm) {
+      font-size: 1.4rem;
+    }
   }
 }
 
@@ -1075,6 +1067,7 @@ body {
   padding-left: 3.82%;
   padding-right: 3.82%;
 
+  //TABLET
   @include respond(desktop-md) {
     padding-top: 0;
     padding-bottom: 0;
@@ -1082,11 +1075,18 @@ body {
     align-items: center;
   }
 
+  //MOBILE
+  @include respond(desktop-xsm) {
+    padding-top: 1.4rem;
+    padding-bottom: 3.4rem;
+  }
+
   &-card {
     min-width: 33rem;
     width: 29.2%;
     text-align: center;
 
+    //TABLET
     @include respond(desktop-md) {
       padding-top: 6.2rem;
       padding-bottom: 6.2rem;
@@ -1094,6 +1094,14 @@ body {
       max-width: 55.1rem;
       display: flex;
       justify-content: space-between;
+    }
+
+    //MOBILE
+    @include respond(desktop-xsm) {
+      padding-top: 2.6rem;
+      padding-bottom: 2.6rem;
+      flex-direction: column;
+      text-align: center;
       align-items: center;
     }
 
@@ -1103,10 +1111,19 @@ body {
       border-radius: 2.86%;
       border: 7px solid #F6F6F6;
 
+      //TABLET
       @include respond(desktop-md) {
         margin-bottom: 0;
         width: auto;
         max-width: 22.78rem;
+      }
+
+      //MOBILE
+      @include respond(desktop-xsm) {
+        margin-bottom: 3.8rem;
+        object-fit: cover;
+        width: 100%;
+        max-width: 18.1rem;
       }
     }
 
@@ -1117,10 +1134,18 @@ body {
       align-items: center;
       justify-content: center;
 
+      //TABLET
       @include respond(desktop-md) {
         margin-left: 4rem;
         max-width: 28rem;
         text-align: left;
+      }
+
+      //MOBILE
+      @include respond(desktop-xsm) {
+        margin-left: 0;
+        max-width: 100%;
+        text-align: center;
       }
 
       &-title {
@@ -1138,6 +1163,7 @@ body {
           font-size: 2.3rem;
         }
 
+        //TABLET
         @include respond(desktop-md) {
           margin-bottom: 2rem;
           font-size: 2.4rem;
@@ -1145,9 +1171,16 @@ body {
           line-height: 1.25;
           white-space: normal;
         }
+
+        //MOBILE
+        @include respond(desktop-xsm) {
+          margin-bottom: 1.1rem;
+          font-size: 2rem;
+        }
       }
 
       &-text {
+        font-family: CircularStd-Book;
         margin-bottom: 5.48%;
         font-size: 1.22vw;
         line-height: 1.49;
@@ -1157,10 +1190,19 @@ body {
           font-size: 1.75rem;
         }
 
+        //TABLET
         @include respond(desktop-md) {
           margin-bottom: 2.5rem;
           font-size: 1.4rem;
           line-height: 1.57;
+        }
+
+        //MOBILE
+        @include respond(desktop-xsm) {
+          margin-bottom: 2.1rem;
+          max-width: 28.6rem;
+          font-size: 1.45rem;
+          line-height: 1.52;
         }
       }
 
@@ -1176,21 +1218,37 @@ body {
           font-size: 1.7rem;
         }
 
+        //TABLET
         @include respond(desktop-md) {
           align-self: flex-start;
           font-size: 1.4rem;
+        }
+
+        //MOBILE
+        @include respond(desktop-xsm) {
+          align-self: center;
         }
       }
     }
 
     &.reversed {
 
+      //TABLET
       @include respond(desktop-md) {
         flex-direction: row-reverse;
 
         .section-info-card-body {
           margin-left: 0;
           margin-right: 4rem;
+        }
+      }
+
+      //MOBILE
+      @include respond(desktop-xsm) {
+        flex-direction: column;
+
+        .section-info-card-body {
+          margin-right: 0;
         }
       }
     }
@@ -1205,8 +1263,8 @@ body {
   padding-bottom: 8.95rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  max-width: 111.1rem;
+  justify-content: center;
+  max-width: 111.5rem;
 
   //TABLET
   @include respond(desktop-md) {
@@ -1227,7 +1285,7 @@ body {
   }
 
   &-img {
-    margin-right: 6.67rem;
+    margin-right: 5.2rem;
     max-width: 61.2rem;
 
     //TABLET
@@ -1251,12 +1309,9 @@ body {
 
   &-body {
 
-    //MOBILE
-    @include respond(desktop-xsm) {
-      max-width: 50rem!important;
-    }
 
     &-title {
+      font-family: Arial;
       margin-bottom: 2.3rem;
       max-width: 34.7rem;
       font-size: 3rem;
@@ -1272,10 +1327,10 @@ body {
 
        //MOBILE
        @include respond(desktop-xsm) {
-         margin-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
         margin-left: auto;
         margin-right: auto;
-         font-size: 2.4rem;
+        font-size: 2.4rem;
         max-width: 30rem;
         line-height: 1.5;
         text-align: center;
@@ -1283,7 +1338,9 @@ body {
     }
   
     &-text {
+      font-family: CircularStd-Book;
       margin-bottom: 2rem;
+      width: 100%;
       max-width: 40.6rem;
       font-size: 1.75rem;
       line-height: 1.49;
@@ -1396,7 +1453,7 @@ body {
 
     //MOBILE
     @include respond(desktop-xsm) {
-      margin-bottom: 2rem;
+      max-width: 31.8rem;
     }
   }
 
@@ -1414,10 +1471,11 @@ body {
     //   font-size: 1.4rem;
     // }
 
-    // //MOBILE
-    // @include respond(desktop-xsm) {
-    //  font-size: 1.6rem;
-    // }
+    //MOBILE
+    @include respond(desktop-xsm) {
+      padding: .7rem  2.3rem;
+      font-size: 1.6rem;
+    }
   }
 
   &-info {
@@ -1677,18 +1735,16 @@ body {
 .main-feedback-lead .section-hero,
 .main-feedback-dash .section-hero,
 .main-feedback-test .section-hero {
-  // padding-top: 8rem;//!!!
-  // padding-bottom: 9.2rem;//!!!
   display: flex;
   align-items: flex-start;//!!!
   justify-content: space-between;
-  max-width: 120.8rem ;
+  max-width: 122.8rem ;
   height: 54.6rem;//!!!
   border-bottom: 1.5px solid #F2F0F2;
 
   //TABLET
-  @include respond(desktop-sm) {
-    padding-top: 6.8rem;
+  @include respond(desktop-md) {
+    padding-top: 7.25rem;
     padding-bottom: 6.3rem;
     flex-direction: column;
     text-align: center;
@@ -1696,131 +1752,244 @@ body {
     height: auto;//!!!
   }
 
-  //TABLET
+  //MOBILE
   @include respond(desktop-xsm) {
-    padding-top: 5.4rem;
-    padding-bottom: 5.4rem;
+    padding-top: 5.75rem;
+    padding-bottom: 4.15rem;
   }
 
 
   &-main {
-    padding-top: 10.4rem;//!!!
-
+    padding-top: 9.8rem;//!!!
+   
     //TABLET
-    @include respond(desktop-sm) {
+    @include respond(desktop-md) {
+      width: 100%;
       padding-top: 0;//!!!
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     &-subtitle {
       margin-bottom: .5rem;
       font-size: 1.7rem;
-      font-weight: 600;
+      font-family: Arial;
+      font-weight: bold;
       line-height: 1.94;
       color: #222426;
 
-      //TEAM LEAD PAGE TESTING
-      @include respond(desktop-md) {
-        font-size: 1.65rem;//@@@
-      }
-
       //TABLET
-      @include respond(desktop-sm) {
-        margin-bottom: .8rem;
-        font-size: 1.9rem;
-        line-height: 1.74;
+      @include respond(desktop-md) {
+        margin-bottom: 1.1rem;
       }
 
       //MOBILE
       @include respond(desktop-xsm) {
-        margin-bottom: 2rem;
-        font-size: 2.1rem;
-        line-height: 1.53;
+        margin-bottom: 1.5rem;
+        font-size: 1.6rem;
+        line-height: 1.63;
       }
     }
 
     &-title {
       font-family: Arial;
-      //font-family: CircularStd-Book!important;
-      margin-bottom: 2.7rem;
+      margin-bottom: 3.2rem;
       max-width: 43rem;
       font-size: 4rem;
       font-weight: 600;
       line-height: 1.2;
       color: #000000;
 
-      //TEAM LEAD PAGE TESTING
-      @include respond(desktop-md) {
-        font-size: 3.7rem;//@@@
-      }
-
       //TABLET
-      @include respond(desktop-sm) {
-        margin: 0 auto;
-        margin-bottom: 2.2rem;
-        max-width: 41.4rem;
-        font-size: 4.4rem;
-        line-height: 1.14;
+      @include respond(desktop-md) {
+        margin-bottom: 3.2rem;
+        max-width: 100%;
+        font-size: 4.2rem;
+        line-height: 1.19;
       }
 
       //MOBILE
       @include respond(desktop-xsm) {
-        margin-bottom: 2.8rem;
-        max-width: 100%;
-        font-size: 3.4rem;
-        font-size: 4rem;
+        margin-bottom: 1.8rem;
+        font-size: 3.2rem;
+        line-height: 1.22;
       }
     }
 
     &-text {
       margin-right: 2rem;
-      margin-bottom: 2.4rem;
+      margin-bottom: 3.6rem;
       max-width: 46rem;
       min-width: 37.7rem;
+      font-family: 'Source Sans Pro', sans-serif;
       font-size: 1.8rem;
       font-weight: 400;
       line-height: 1.44;
       color: #414448;
 
-      //TEAM LEAD PAGE TESTING
-      @include respond(desktop-md) {
-        font-size: 1.7rem;//@@@
-      }
+      // //TEAM LEAD PAGE TESTING
+      // @include respond(desktop-md) {
+      //   font-size: 1.7rem;//@@@
+      // }
 
       //TABLET
-      @include respond(desktop-sm) {
+      @include respond(desktop-md) {
         margin-right: 0;
+        margin-bottom: 2.8rem;
         min-width: 0;
-        margin-bottom: 3rem;
-        max-width: 48.6rem;
-        font-size: 1.9rem;
-        line-height: 1.47;
+        max-width: 47rem;
+        font-family: CircularStd-Book;
+        font-size: 1.7rem;
+        line-height: 1.65;
+        color: #5f6368;
       }
 
       //MOBILE
       @include respond(desktop-xsm) {
-        margin-left: auto;
-        margin-right: auto;
-        font-family: CircularStd-Book;
-        margin-bottom: 2rem;
-        max-width: 100%;
-        font-size: 1.75rem;
+        margin-bottom: 1.3rem;
+        max-width: 333px;
+        font-size: 1.4rem;
+        line-height: 1.5;
+      }
+    }
+
+    & .btn {
+      padding: .95rem 2.15rem;
+      font-size: 1.9rem;
+
+      //MOBILE
+      @include respond(desktop-xsm) {
+        padding: .8rem 2rem;
+        font-size: 1.4rem;
       }
     }
   }
 
   &-img {
     align-self: center;//!!!
-    max-width: 54.7rem;
+    max-width: 57.5rem;
     width: 100%;
     min-width: 0;
 
      //TABLET
-     @include respond(desktop-sm) {
+     @include respond(desktop-md) {
      display: none;
     }
   }
 }
 
+//=====================================
+//FEATURES SECTION
+//=====================================
+.main-feedback-received .section-features,
+.main-feedback-giving .section-features,
+.main-feedback-lead .section-features,
+.main-feedback-dash .section-features {
+  padding-top: 8.85rem;
+  padding-bottom: 8.85rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  //TABLET
+  @include respond(desktop-md) {
+    padding-top: 5.1rem;
+  }
+
+  //MOBILE
+  @include respond(desktop-xsm) {
+    padding-top: 3.4rem;
+  }
+
+  &-card {
+    width: 100%;
+    max-width: 108.55rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    //TABLET
+    @include respond(desktop-md) {
+      flex-direction: column;
+    }
+
+    &-img {
+      max-width: 48.1rem;
+      width: 100%;
+      min-width: 0;
+
+      //TABLET
+      @include respond(desktop-md) {
+        max-width: 43.3rem;
+        margin-bottom: 2.4rem;
+      }
+
+      //MOBILE
+      @include respond(desktop-xsm) {
+        max-width: 35.1rem;
+        margin-bottom: 4.1rem;
+      }
+    }
+
+    &-main {
+      width: 100%;
+      max-width: 48.3rem;
+      margin-left: 12.15rem;
+
+      //TABLET
+      @include respond(desktop-md) {
+        margin-left: 0;
+        text-align: center;
+      }
+
+      //MOBILE
+      @include respond(desktop-xsm) {
+        text-align: left;
+      }
+
+      &-title {
+        margin-bottom: 1.6rem;
+        font-family: Arial;
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: 1.4;
+        color: #1d1d1d;
+
+        //MOBILE
+        @include respond(desktop-xsm) {
+          margin-bottom: 1.8rem;
+          font-size: 2.3rem;
+          line-height: 1.3;
+        }
+      }
+
+      &-text {
+        //width: 483px;
+        font-family: CircularStd-Book;
+        font-size: 1.8rem;
+        font-weight: normal;
+        line-height: 1.44;
+        color: #5a5a5a;
+
+        //TABLET
+        @include respond(desktop-md) {
+          max-width: 47.6rem;
+          font-size: 1.7rem;
+          line-height: 1.53;
+        }
+
+        //MOBILE
+        @include respond(desktop-xsm) {
+          max-width: 100%;
+          font-size: 1.55rem;
+          line-height: 1.61;
+        }
+      }
+    }
+  }
+}
 //=====================================
 //STATS SECTION
 //=====================================
@@ -2614,117 +2783,117 @@ body {
 //   }
 // }
 
-.main-feedback-received .card,
-.main-feedback-giving .card,
-.main-feedback-lead .card,
-.main-feedback-dash .card {
-  justify-content: center;
+// .main-feedback-received .card,
+// .main-feedback-giving .card,
+// .main-feedback-lead .card,
+// .main-feedback-dash .card {
+//   justify-content: center;
 
-  &-reverse {
+//   &-reverse {
 
-    & .card-main {
-      margin-left: 0!important;
-      margin-right: 5%!important;
+//     & .card-main {
+//       margin-left: 0!important;
+//       margin-right: 5%!important;
 
-      @include respond(desktop-sm) {
-        margin-right: 0!important;
-        margin-left: 0!important;
-      }
-    }
-  }
+//       @include respond(desktop-sm) {
+//         margin-right: 0!important;
+//         margin-left: 0!important;
+//       }
+//     }
+//   }
 
-  &-main {
-    margin-left: 5%!important;
-    width: 100%!important;
-    max-width: 50rem!important;
+//   &-main {
+//     margin-left: 5%!important;
+//     width: 100%!important;
+//     max-width: 50rem!important;
 
-    @include respond(desktop-sm) {
-      margin-right: 0!important;
-      margin-left: 0!important;
-    }
+//     @include respond(desktop-sm) {
+//       margin-right: 0!important;
+//       margin-left: 0!important;
+//     }
 
-    &-title {
-      max-width: 100%!important;
-    }
+//     &-title {
+//       max-width: 100%!important;
+//     }
 
-    &-text {
-      max-width: 100%!important;
-    }
-  }
-}
+//     &-text {
+//       max-width: 100%!important;
+//     }
+//   }
+// }
 
-.section-features {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
+// .section-features {
+//   padding-top: 3rem;
+//   padding-bottom: 3rem;
+// }
 
-.card {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+// .card {
+//   padding-top: 5rem;
+//   padding-bottom: 5rem;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
 
-  &:not(:last-of-type) {
-    border-bottom: 1.5px solid #F2F0F2;
-  }
+//   &:not(:last-of-type) {
+//     border-bottom: 1.5px solid #F2F0F2;
+//   }
 
-  @include respond(desktop-sm) {
-    flex-direction: column;
-    text-align: center;
-  }
+//   @include respond(desktop-sm) {
+//     flex-direction: column;
+//     text-align: center;
+//   }
 
-  &-reverse {
-    flex-direction: row-reverse;
-    & .card-main {
-      margin-right: 5%;
-      margin-left: 0;
+//   &-reverse {
+//     flex-direction: row-reverse;
+//     & .card-main {
+//       margin-right: 5%;
+//       margin-left: 0;
 
-      @include respond(desktop-sm) {
-        margin-right: 0;
-        margin-left: 0;
-      }
-    }
+//       @include respond(desktop-sm) {
+//         margin-right: 0;
+//         margin-left: 0;
+//       }
+//     }
 
-    @include respond(desktop-sm) {
-      flex-direction: column;
-    }
-  }
+//     @include respond(desktop-sm) {
+//       flex-direction: column;
+//     }
+//   }
 
-  &-main {
-    max-width: 50rem;
-    margin-left: 5%;
+//   &-main {
+//     max-width: 50rem;
+//     margin-left: 5%;
 
-    @include respond(desktop-sm) {
-      margin-top: 5rem;
-      margin-right: 0;
-      margin-left: 0;
-    }
+//     @include respond(desktop-sm) {
+//       margin-top: 5rem;
+//       margin-right: 0;
+//       margin-left: 0;
+//     }
 
-    &-title {
-      margin-bottom: 2.7rem;
-      font-family: Arial;
-      font-size: 2.8rem;
-      font-weight: bold;
-      line-height: 1.5;
-      color: #1d1d1d;
-    }
+//     &-title {
+//       margin-bottom: 2.7rem;
+//       font-family: Arial;
+//       font-size: 2.8rem;
+//       font-weight: bold;
+//       line-height: 1.5;
+//       color: #1d1d1d;
+//     }
 
-    &-text {
-      font-family: CircularStd-Book;
-      font-size: 1.8rem;
-      font-weight: normal;
-      line-height: 1.44;
-      color: #484848;
-    }
-  }
+//     &-text {
+//       font-family: CircularStd-Book;
+//       font-size: 1.8rem;
+//       font-weight: normal;
+//       line-height: 1.44;
+//       color: #484848;
+//     }
+//   }
 
-  &-img {
-    width: 100%;
-    min-width: 0;
-    max-width: 50rem;
-  }
-}
+//   &-img {
+//     width: 100%;
+//     min-width: 0;
+//     max-width: 50rem;
+//   }
+// }
 
 //ADDITIONAL CLASSES
 .menu-open {
