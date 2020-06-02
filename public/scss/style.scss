@@ -273,9 +273,11 @@ body {
  }
 
 .b-b {
+  display: block;
   margin: 0 auto;
+  width: 100%;
   max-width: 121.2rem;
-  border-bottom: 1.75px solid #F2F0F2;;
+  border-bottom: 1.75px solid #F2F0F2;
 }
 
 .hide {
@@ -1910,8 +1912,8 @@ body {
   // }
 
   &-card {
-    padding-top: 8.85rem;
-    padding-bottom: 8.85rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     width: 100%;
     max-width: 108.55rem;
     display: flex;
@@ -2000,7 +2002,9 @@ body {
 
         //TABLET
         @include respond(desktop-md) {
-          margin-bottom: 1.2rem;
+          margin-bottom: .8rem;
+          font-size: 2.8rem;
+          line-height: 1.5;
         }
 
         //MOBILE
@@ -2035,13 +2039,31 @@ body {
       }
     }
 
+    &.card-02 {
+      & .section-features-card {
+        &-img {
+         
+          //TABLET
+          @include respond(desktop-md) {
+            max-width: 45.5rem;
+          }
+        }
+      }
+    }
+
     &.card-03 {
       & .section-features-card {
         &-img {
           max-width: 22.85rem;
+
+          //TABLET
+          @include respond(desktop-md) {
+            max-width: 21.84rem;
+          }
         }
       }
     }
+
   }
 }
 //=====================================
@@ -2398,7 +2420,7 @@ body {
 .main-feedback-lead .section-banner,
 .main-feedback-dash .section-banner,
 .main-feedback-test .section-banner {
-  padding: 8.3rem 0;
+  padding: 8.5rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2420,7 +2442,7 @@ body {
 
   &-title {
     font-family: Arial;
-    margin-bottom: 2.2rem;
+    margin-bottom: 3rem;
     font-size: 3.9rem;
     font-weight: 600;
     line-height: 1.08;
@@ -2444,10 +2466,10 @@ body {
   &-text {
     font-family: CircularStd-Book;
     padding: 0 2.2rem;
-    max-width: 66.4rem;
+    width: 71.4rem;
     font-size: 2rem;
     font-weight: 400;
-    line-height: 1.3;
+    line-height: 1.4;
     color: #ffffff;
 
     //TABLET
@@ -2482,7 +2504,7 @@ body {
   grid-template-rows: repeat(1, 1fr);
 
   //TABLET
-  @include respond(desktop-sm) {
+  @include respond(desktop-md) {
     padding: 0;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -2503,7 +2525,7 @@ body {
     }
 
     //TABLET
-    @include respond(desktop-sm) {
+    @include respond(desktop-md) {
       padding-top: 6.1rem;
       padding-bottom: 4.85rem;
 
@@ -2518,6 +2540,7 @@ body {
     }
 
     &-title {
+      font-size: Arial;
       margin-bottom: 1.4rem;
       font-size: 2.6rem;
       font-weight: 600;
