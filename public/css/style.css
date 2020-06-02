@@ -45,6 +45,10 @@ body {
   padding-left: 2.2rem;
   padding-right: 2.2rem;
   max-width: 132.4rem; }
+  @media (max-width: 575px) {
+    .container {
+      padding-left: 6%;
+      padding-right: 6%; } }
 
 .container-fluid {
   margin: 0 auto;
@@ -112,7 +116,6 @@ body {
 
 .b-b {
   margin: 0 auto;
-  display: block;
   max-width: 121.2rem;
   border-bottom: 1.75px solid #F2F0F2; }
 
@@ -1062,9 +1065,16 @@ body {
         .main-feedback-dash .section-hero-main-text,
         .main-feedback-test .section-hero-main-text {
           margin-bottom: 2.3rem;
-          max-width: 35.8rem;
+          max-width: 100%;
           font-size: 1.5rem;
           line-height: 1.43; } }
+      @media (max-width: 379px) {
+        .main-feedback-received .section-hero-main-text,
+        .main-feedback-giving .section-hero-main-text,
+        .main-feedback-lead .section-hero-main-text,
+        .main-feedback-dash .section-hero-main-text,
+        .main-feedback-test .section-hero-main-text {
+          max-width: 100%; } }
     .main-feedback-received .section-hero-main .btn,
     .main-feedback-giving .section-hero-main .btn,
     .main-feedback-lead .section-hero-main .btn,
@@ -1101,30 +1111,16 @@ body {
 .main-feedback-giving .section-features,
 .main-feedback-lead .section-features,
 .main-feedback-dash .section-features {
-  padding-top: 8.85rem;
-  padding-bottom: 8.85rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; }
-  @media (max-width: 991px) {
-    .main-feedback-received .section-features,
-    .main-feedback-giving .section-features,
-    .main-feedback-lead .section-features,
-    .main-feedback-dash .section-features {
-      padding-top: 6.3rem;
-      padding-bottom: 6.3rem; } }
-  @media (max-width: 575px) {
-    .main-feedback-received .section-features,
-    .main-feedback-giving .section-features,
-    .main-feedback-lead .section-features,
-    .main-feedback-dash .section-features {
-      padding-top: 4rem;
-      padding-bottom: 4rem; } }
   .main-feedback-received .section-features-card,
   .main-feedback-giving .section-features-card,
   .main-feedback-lead .section-features-card,
   .main-feedback-dash .section-features-card {
+    padding-top: 8.85rem;
+    padding-bottom: 8.85rem;
     width: 100%;
     max-width: 108.55rem;
     display: flex;
@@ -1135,7 +1131,39 @@ body {
       .main-feedback-giving .section-features-card,
       .main-feedback-lead .section-features-card,
       .main-feedback-dash .section-features-card {
-        flex-direction: column; } }
+        flex-direction: column;
+        padding-top: 6.3rem;
+        padding-bottom: 6.3rem; } }
+    @media (max-width: 575px) {
+      .main-feedback-received .section-features-card,
+      .main-feedback-giving .section-features-card,
+      .main-feedback-lead .section-features-card,
+      .main-feedback-dash .section-features-card {
+        padding-top: 4rem;
+        padding-bottom: 4rem; } }
+    .main-feedback-received .section-features-card.reversed,
+    .main-feedback-giving .section-features-card.reversed,
+    .main-feedback-lead .section-features-card.reversed,
+    .main-feedback-dash .section-features-card.reversed {
+      flex-direction: row-reverse; }
+      .main-feedback-received .section-features-card.reversed .section-features-card-main,
+      .main-feedback-giving .section-features-card.reversed .section-features-card-main,
+      .main-feedback-lead .section-features-card.reversed .section-features-card-main,
+      .main-feedback-dash .section-features-card.reversed .section-features-card-main {
+        margin-left: 0;
+        margin-right: 12.15rem; }
+        @media (max-width: 991px) {
+          .main-feedback-received .section-features-card.reversed .section-features-card-main,
+          .main-feedback-giving .section-features-card.reversed .section-features-card-main,
+          .main-feedback-lead .section-features-card.reversed .section-features-card-main,
+          .main-feedback-dash .section-features-card.reversed .section-features-card-main {
+            margin-right: 0; } }
+      @media (max-width: 991px) {
+        .main-feedback-received .section-features-card.reversed,
+        .main-feedback-giving .section-features-card.reversed,
+        .main-feedback-lead .section-features-card.reversed,
+        .main-feedback-dash .section-features-card.reversed {
+          flex-direction: column; } }
     .main-feedback-received .section-features-card-img,
     .main-feedback-giving .section-features-card-img,
     .main-feedback-lead .section-features-card-img,
@@ -1176,8 +1204,14 @@ body {
         .main-feedback-giving .section-features-card-main,
         .main-feedback-lead .section-features-card-main,
         .main-feedback-dash .section-features-card-main {
-          max-width: 35.8rem;
+          max-width: 100%;
           text-align: left; } }
+      @media (max-width: 379px) {
+        .main-feedback-received .section-features-card-main,
+        .main-feedback-giving .section-features-card-main,
+        .main-feedback-lead .section-features-card-main,
+        .main-feedback-dash .section-features-card-main {
+          max-width: 100%; } }
       .main-feedback-received .section-features-card-main-title,
       .main-feedback-giving .section-features-card-main-title,
       .main-feedback-lead .section-features-card-main-title,
@@ -1227,6 +1261,11 @@ body {
             max-width: 100%;
             font-size: 1.5rem;
             line-height: 1.67; } }
+    .main-feedback-received .section-features-card.card-03 .section-features-card-img,
+    .main-feedback-giving .section-features-card.card-03 .section-features-card-img,
+    .main-feedback-lead .section-features-card.card-03 .section-features-card-img,
+    .main-feedback-dash .section-features-card.card-03 .section-features-card-img {
+      max-width: 22.85rem; }
 
 .main-feedback-received .section-stats,
 .main-feedback-giving .section-stats,

@@ -166,10 +166,10 @@ body {
   //   padding-right: 1.7rem;
   // }
 
-  // @include respond(desktop-xsm) {
-  //   padding-left: 1.7rem;
-  //   padding-right: 1.7rem;
-  // }
+  @include respond(desktop-xsm) {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
 }
 
 .container-fluid {
@@ -272,12 +272,11 @@ body {
   }
  }
 
- .b-b {
+.b-b {
   margin: 0 auto;
-   display: block;
-   max-width: 121.2rem;
-   border-bottom: 1.75px solid #F2F0F2;
- }
+  max-width: 121.2rem;
+  border-bottom: 1.75px solid #F2F0F2;;
+}
 
 .hide {
   display: none;
@@ -1847,9 +1846,15 @@ body {
       //MOBILE
       @include respond(desktop-xsm) {
         margin-bottom: 2.3rem;
-        max-width: 35.8rem;
+        // max-width: 35.8rem;
+        // max-width: calc(88.6% + 3rem);
+        max-width: 100%;
         font-size: 1.5rem;
         line-height: 1.43;
+      }
+
+      @include respond(desktop-xxsm) {
+        max-width: 100%;
       }
     }
 
@@ -1885,26 +1890,28 @@ body {
 .main-feedback-giving .section-features,
 .main-feedback-lead .section-features,
 .main-feedback-dash .section-features {
-  padding-top: 8.85rem;
-  padding-bottom: 8.85rem;
+  // padding-top: 8.85rem;
+  // padding-bottom: 8.85rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  //TABLET
-  @include respond(desktop-md) {
-    padding-top: 6.3rem;
-    padding-bottom: 6.3rem;
-  }
+  // //TABLET
+  // @include respond(desktop-md) {
+  //   padding-top: 6.3rem;
+  //   padding-bottom: 6.3rem;
+  // }
 
-  //MOBILE
-  @include respond(desktop-xsm) {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
+  // //MOBILE
+  // @include respond(desktop-xsm) {
+  //   padding-top: 4rem;
+  //   padding-bottom: 4rem;
+  // }
 
   &-card {
+    padding-top: 8.85rem;
+    padding-bottom: 8.85rem;
     width: 100%;
     max-width: 108.55rem;
     display: flex;
@@ -1914,6 +1921,34 @@ body {
     //TABLET
     @include respond(desktop-md) {
       flex-direction: column;
+      padding-top: 6.3rem;
+      padding-bottom: 6.3rem;
+    }
+
+    //MOBILE
+    @include respond(desktop-xsm) {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    &.reversed {
+      flex-direction: row-reverse;
+
+      & .section-features-card {
+
+        &-main {
+          margin-left: 0;
+          margin-right: 12.15rem;
+
+          @include respond(desktop-md) {
+            margin-right: 0;
+          }
+        }
+      }
+
+      @include respond(desktop-md) {
+        flex-direction: column;
+      }
     }
 
     &-img {
@@ -1947,8 +1982,12 @@ body {
 
       //MOBILE
       @include respond(desktop-xsm) {
-        max-width: 35.8rem;
+        max-width: 100%;
         text-align: left;
+      }
+
+      @include respond(desktop-xxsm) {
+        max-width: 100%;
       }
 
       &-title {
@@ -1992,6 +2031,14 @@ body {
           max-width: 100%;
           font-size: 1.5rem;
           line-height: 1.67;
+        }
+      }
+    }
+
+    &.card-03 {
+      & .section-features-card {
+        &-img {
+          max-width: 22.85rem;
         }
       }
     }
