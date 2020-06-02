@@ -111,9 +111,11 @@ body {
     color: #2376e5; }
 
 .b-b {
+  margin: 0 auto;
   display: block;
-  width: 100%;
-  border-bottom: 1.75px solid #F2F0F2; }
+  max-width: 121.2rem;
+  height: 1.75px;
+  background-color: #F2F0F2; }
 
 .hide {
   display: none; }

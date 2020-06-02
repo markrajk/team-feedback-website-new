@@ -273,9 +273,12 @@ body {
  }
 
  .b-b {
+    margin: 0 auto;
    display: block;
-   width: 100%;
-   border-bottom: 1.75px solid #F2F0F2;
+   max-width: 121.2rem;
+   height: 1.75px;
+   background-color: #F2F0F2;
+   //border-bottom: 1.75px solid #F2F0F2;
  }
 
 .hide {
@@ -1738,7 +1741,7 @@ body {
   display: flex;
   align-items: flex-start;//!!!
   justify-content: space-between;
-  max-width: 122.8rem ;
+  max-width: 122.8rem;
   height: 54.6rem;//!!!
 
   //TABLET
