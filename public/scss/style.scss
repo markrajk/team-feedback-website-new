@@ -172,12 +172,13 @@ body {
 
 
 .btn {
+  font-family: CircularStd-Book;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: .93rem 1.65rem;
   font-size: 1.8rem;
-  font-weight: 600;
+  // font-weight: 600;
   text-decoration: none;
   border: solid 1.75px transparent;
   border-radius: 4px;
@@ -237,13 +238,13 @@ body {
   }
 
   &-white {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: CircularStd-Book;
     padding: 1.4rem 3.35rem;
     border-radius: 4px;
     border: solid 1px #dadce0;
     background-color: #ffffff;
     font-size: 1.4rem;
-    font-weight: 400;
+    // font-weight: 400;
     color: #2376e5;
   }
  }
@@ -1969,7 +1970,7 @@ body {
 .main-feedback-lead .section-banner,
 .main-feedback-dash .section-banner,
 .main-feedback-test .section-banner {
-  padding: 8.5rem 0;
+  padding: 7rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1987,8 +1988,8 @@ body {
 
   //MOBILE
   @include respond(desktop-xsm) {
-    padding-top: 3.4rem;
-    padding-bottom: 4rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
   }
 
   &-title {
@@ -2089,7 +2090,7 @@ body {
     }
 
     &-title {
-      font-size: Arial;
+      font-family: Arial;
       margin-bottom: 1.4rem;
       font-size: 2.6rem;
       font-weight: 600;
@@ -2118,10 +2119,15 @@ body {
       margin-bottom: 2.5rem;
       max-width: 25.6rem;
       font-family: CircularStd-Book;
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       font-weight: 400;
       line-height: 1.6;
       color: #5f6368;
+    }
+
+    & .btn {
+      padding: 1.3rem 2.75rem;
+      font-size: 1.6rem;
     }
   }
 }
