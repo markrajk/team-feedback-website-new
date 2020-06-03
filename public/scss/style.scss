@@ -100,9 +100,10 @@ $text-color-primary: #1c1c1c;
 }
 
 html {
-  min-width: 100vw;
+    min-width: 100vw;
     font-size: 62.5%;   //1rem = 10px 10px/16 62.5%
     -webkit-text-size-adjust:none;
+    scroll-behavior: smooth;
 
     @include respond(desktop-xl) {
       font-size: 56.5%;
@@ -2080,6 +2081,18 @@ body {
 
 //feedback received subpage
 #main-feedback-received .section-features {
+  & .card-01 {
+    & .section-features-card {
+      &-img {
+       
+        //TABLET
+        @include respond(desktop-md) {
+          // max-width: 45.5rem;
+        }
+      }
+    }
+  }
+
   & .card-02 {
     & .section-features-card {
       &-img {
@@ -2087,6 +2100,12 @@ body {
         //TABLET
         @include respond(desktop-md) {
           max-width: 45.5rem;
+        }
+
+        //MOBILE
+        @include respond(desktop-xsm) {
+          max-width: 30.4rem;
+
         }
       }
     }
@@ -2100,6 +2119,12 @@ body {
         //TABLET
         @include respond(desktop-md) {
           max-width: 21.84rem;
+        }
+
+        //MOBILE
+        @include respond(desktop-xsm) {
+          max-width: 14.56rem;
+
         }
       }
     }
