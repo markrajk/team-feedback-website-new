@@ -1507,12 +1507,14 @@ body {
 //=====================================
 .footer {
   border-top: 1.5px solid #F2F0F2;
+  background-color: #f6f6f6;//@@@@
 
   &-top {
     padding-top: 6.4rem;
     padding-bottom: 6.4rem;
     display: flex;
     align-items: baseline;
+
 
     @include respond(desktop-lg) {
       justify-content: space-evenly;
@@ -1605,6 +1607,7 @@ body {
 
   &-mid {
     background-color: #f5f5f5;
+    background-color: #ebeaeb;
 
     &-main {
       display: flex;
@@ -1699,6 +1702,8 @@ body {
 
   &-bot {
     background-color: #ebeaeb;
+    background-color: #e0e0e0;
+    color: white!important;
 
     &-text {
       font-family: 'Open Sans', sans-serif;
