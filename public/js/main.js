@@ -98,3 +98,34 @@ for (var i = 0; i < menuOpen.length; i++) {
 menuClose.addEventListener('click', function () {
   menu.classList.remove('menu-open');
 });
+
+function anchorLinkHandler(e) {
+  var distanceToTop = (el) => Math.floor(el.getBoundingClientRect().top);
+  var header = document.querySelector('.header').offsetHeight;
+  var subheader = document.querySelector('.subheader').offsetHeight;
+
+  e.preventDefault();
+  var targetID = this.getAttribute('href');
+  var targetAnchor = document.querySelector(targetID);
+  if (!targetAnchor) return;
+  var originalTop = distanceToTop(targetAnchor) - header - subheader + 10;
+
+  window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
+
+  var checkIfDone = setInterval(function () {
+    var atBottom =
+      window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
+    if (distanceToTop(targetAnchor) === 0 || atBottom) {
+      // targetAnchor.tabIndex = '-1';
+      // targetAnchor.focus();
+      // window.history.pushState('', '', targetID);
+      clearInterval(checkIfDone);
+    }
+  }, 100);
+}
+
+var linksToAnchors = document.querySelectorAll('a[href^="#"]');
+
+linksToAnchors.forEach((each) => (each.onclick = anchorLinkHandler));
+
+// it could probably work in two dimensions too... that'd be kinda cool.
