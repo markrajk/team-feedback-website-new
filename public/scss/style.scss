@@ -1121,6 +1121,7 @@ body {
       margin-bottom: 8.81%;
       border-radius: 2.86%;
       border: 7px solid #F6F6F6;
+      object-fit: cover;
 
       //TABLET
       @include respond(desktop-md) {
@@ -1132,7 +1133,6 @@ body {
       //MOBILE
       @include respond(desktop-xsm) {
         margin-bottom: 3.8rem;
-        object-fit: cover;
         width: 100%;
         max-width: 18.1rem;
       }
