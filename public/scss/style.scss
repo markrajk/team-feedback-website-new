@@ -293,6 +293,14 @@ body {
   }
 }
 
+.show-xsm-flex {
+  display: none;
+
+  @include respond(desktop-xsm) {
+    display: flex;
+  }
+}
+
 .show-xsm-inline-block {
   display: none;
 
@@ -1375,7 +1383,7 @@ body {
 //=====================================
 //BANNER SECTION
 //=====================================
-.main-overview .section-banner {
+.section-banner {
   max-width: 100%;
   padding-top: 7.9rem;
   padding-bottom: 7.15rem;
@@ -3173,12 +3181,381 @@ body {
 //     max-width: 50rem;
 //   }
 // }
+//==============================================================================================================================================
+//                                                                  ABOUT US
+//==============================================================================================================================================
+//=====================================
+//HERO SECTION
+//=====================================
+.main-about-us .inner {
+  margin: 0 auto;
+  max-width: 118rem;
+}
+.main-about-us .section-hero {
+  padding-top: 12.4rem;
+  padding-bottom: 4.4rem;
+  text-align: center;
+
+  //TABLET
+  @include respond(desktop-md) {
+    padding-top: 11rem;
+    padding-bottom: 5rem;
+  }
+
+  //MOBILE
+  @include respond(desktop-xsm) {
+    padding-top: 5.75rem;
+    padding-bottom: 4rem;
+  }
+
+  &-subtitle {
+    //MOBILE
+    margin-bottom: 2.1rem;
+    font-family: Arial;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.63;
+    color: #222426;
+  }
+
+  &-title {
+    margin-bottom: 4.2rem;
+    font-family: Arial;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 1.27;
+    letter-spacing: -1.3px;
+    color: #000000;
+
+    //TABLET
+    @include respond(desktop-md) {
+      margin-bottom: 3.3rem;
+      font-size: 4.2rem;
+      line-height: 1.19;
+    }
+
+    //MOBILE
+    @include respond(desktop-xsm) {
+      margin-bottom: 2.9rem;
+      font-size: 3.2rem;
+      line-height: 1.22;
+    }
+  }
+
+  &-text {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4.2rem;
+    max-width: 68.8rem;
+    font-family: CircularStd-Book;
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 1.45;
+    color: #484848;
+
+    //TABLET
+    @include respond(desktop-md) {
+      margin-bottom: 3.6rem;
+      max-width: 47.4rem;
+      font-size: 1.7rem;
+      line-height: 1.53;
+      color: #5f6368;
+    }
+
+    //MOBILE
+    @include respond(desktop-xsm) {
+      margin-bottom: 2.8rem;
+      max-width: 35.2rem;
+      font-size: 15px;
+      line-height: 1.4;
+    }
+  }
+
+  & .btn {
+    padding: .95rem 1.9rem;
+    font-size: 1.9rem;
+
+    //MOBILE
+    @include respond(desktop-xsm) {
+      padding: 1rem 2.2rem;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+//=====================================
+//FOUNDER SECTION
+//=====================================
+.main-about-us .section-founder {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  display: flex;
+  align-items: center;
+
+  //TABLET
+  @include respond(desktop-md) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  //MOBILE
+  @include respond(desktop-xsm) {
+    padding-top: 4.1rem;
+    padding-bottom: 4.1rem;
+  }
+
+  &-img {
+    max-width: 58.8rem;
+    width: 100%;
+    min-width: 0;
+
+    //TABLET
+    @include respond(desktop-md) {
+      margin-bottom: 5rem;
+      max-width: 37.4rem;
+    }
+
+    //MOBILE
+    @include respond(desktop-xsm) {
+      margin-bottom: 4rem;
+      max-width: 81%;
+    }
+  }
+
+  &-main {
+    margin-left: 7rem;
+
+    //TABLET
+    @include respond(desktop-md) {
+      margin-left: 0;
+    }
+
+    //MOBILE
+    @include respond(desktop-xsm) {
+      text-align: left;
+    }
+
+    &-title {
+      margin-bottom: 2.7rem;
+      font-family: Arial;
+      font-size: 3rem;
+      font-weight: bold;
+      line-height: 1.4;
+      color: #1d1d1d;
+
+      //TABLET
+      @include respond(desktop-md) {
+        margin-bottom: 1.7rem;
+        font-size: 2.8rem;
+        line-height: 1.5;
+      }
+
+      //MOBILE
+      @include respond(desktop-xsm) {
+        margin-bottom: 1.9rem;
+        font-size: 2.2rem;
+        line-height: 1.36;
+      }
+    }
+
+    &-text {
+      margin-bottom: 2.5rem;
+      max-width: 52.1rem;
+      font-family: CircularStd-Book;
+      font-size: 1.8rem;
+      font-weight: normal;
+      line-height: 1.44;
+      color: #5a5a5a;
+
+      //TABLET
+      @include respond(desktop-md) {
+        margin-bottom: 2.4rem;
+        max-width: 53rem;
+        font-size: 1.6rem;
+        line-height: 1.5;
+      }
+
+      //MOBILE
+      @include respond(desktop-xsm) {
+        margin-bottom: 3rem;
+        font-size: 1.5rem;
+        line-height: 1.67;
+      }
+
+      &:nth-last-of-type(2) {
+        //MOBILE
+        @include respond(desktop-xsm) {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &-info {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 1.7rem;
+      font-weight: 600;
+      line-height: 1.53;
+      color: #1d1d1d;
+
+      //TABLET
+      @include respond(desktop-md) {
+        font-size: 1.6rem;
+        line-height: 1.63;
+      }
+    }
+  }
+
+  &.reversed {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+    //TABLET
+    @include respond(desktop-md) {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    & .section-founder-main {
+      margin-left: 0;
+      margin-right: 6rem;
+
+      //TABLET
+      @include respond(desktop-md) {
+        margin-right: 0;
+      }
+
+      &-text {
+        max-width: 49.8rem;
+        
+        //TABLET
+        @include respond(desktop-md) {
+          max-width: 53rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+//=====================================
+//TEAM SECTION
+//=====================================
+.main-about-us .section-team {
+  padding-top: 9.65rem;
+  padding-bottom: 9.65rem;
+
+  //TABLET
+  @include respond(desktop-md) {
+    padding-top: 4.65rem;
+    padding-bottom: 9.9rem;
+  }
+
+  &-title {
+    margin-bottom: 4.3rem;
+    font-family: Arial;
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 0.84;
+    color: #1d1d1d;
+
+    //TABLET
+    @include respond(desktop-md) {
+      padding-left: 2.5rem;
+      margin-bottom: 3rem;
+      font-size: 33px;
+      line-height: 1.27;
+      letter-spacing: normal;
+    }
+  }
+
+  &-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 5rem 6rem;
+    flex-wrap: wrap;
+    align-items: center;
+
+    //TABLET
+    @include respond(desktop-md) {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 4rem 5rem;
+    }
+
+    &-card {
+      font-family: 'Source Sans Pro', sans-serif;
+
+      &-img {
+        margin-bottom: 1.6rem;
+        max-width: 100%;
+      }
+
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      &-title {
+        margin-bottom: .5rem;
+        font-size: 2.1rem;
+        font-weight: 600;
+        line-height: 1.43;
+        color: #000000;
+
+        //TABLET
+        @include respond(desktop-md) {
+          font-size: 1.7rem;
+          font-weight: 600;
+          line-height: 1.41;
+        }
+      }
+
+      &-position {
+        margin-bottom: .5rem;
+        font-size: 1.7rem;
+        font-weight: normal;
+        line-height: 1.76;
+        color: #647281;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        //TABLET
+        @include respond(desktop-md) {
+          font-size: 1.4rem;
+          line-height: 1.79;
+        }
+      }
+
+      &-bio {
+        font-size: 1.6rem;
+        font-weight: normal;
+        line-height: 1.88;
+        color: #647281;
+
+        //TABLET
+        @include respond(desktop-md) {
+          font-size: 1.3rem;
+          line-height: 1.85;
+        }
+      }
+    }
+  }
+}
+
+.about-us-banner {
+  margin-top: 4rem;
+}
 
 //ADDITIONAL CLASSES
 .menu-open {
   transform: translate(0,0)!important;
 }
 
+//font-family: CircularStd-Book;
 // font-family: 'Open Sans', sans-serif;
 // font-family: 'Source Sans Pro', sans-serif;
 // font-family: 'Roboto', sans-serif;
