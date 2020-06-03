@@ -1121,7 +1121,6 @@ body {
       margin-bottom: 8.81%;
       border-radius: 2.86%;
       border: 7px solid #F6F6F6;
-      object-fit: cover;
 
       //TABLET
       @include respond(desktop-md) {
@@ -1133,6 +1132,7 @@ body {
       //MOBILE
       @include respond(desktop-xsm) {
         margin-bottom: 3.8rem;
+        object-fit: cover;
         width: 100%;
         max-width: 18.1rem;
       }
@@ -1422,6 +1422,7 @@ body {
 
   &-title {
     margin-bottom: 3.2rem;
+    font-family: Arial;
     font-size: 4.2rem;
     font-weight: 600;
     line-height: 1.19;
@@ -1447,7 +1448,7 @@ body {
   &-text {
     margin: 0 auto;
     margin-bottom: 3.8rem;
-
+    font-family: CircularStd-Book;
     max-width: 70.6rem;
     font-size: 1.9rem;
     line-height: 1.47;
@@ -1507,14 +1508,12 @@ body {
 //=====================================
 .footer {
   border-top: 1.5px solid #F2F0F2;
-  background-color: #f6f6f6;//@@@@
 
   &-top {
     padding-top: 6.4rem;
     padding-bottom: 6.4rem;
     display: flex;
     align-items: baseline;
-
 
     @include respond(desktop-lg) {
       justify-content: space-evenly;
@@ -1607,7 +1606,6 @@ body {
 
   &-mid {
     background-color: #f5f5f5;
-    background-color: #ebeaeb;
 
     &-main {
       display: flex;
@@ -1702,8 +1700,6 @@ body {
 
   &-bot {
     background-color: #ebeaeb;
-    background-color: #e0e0e0;
-    color: white!important;
 
     &-text {
       font-family: 'Open Sans', sans-serif;
