@@ -498,7 +498,8 @@ body {
       padding-top: 0;
       padding-bottom: 0;
       flex-direction: column;
-      align-items: center; } }
+      align-items: center;
+      justify-content: center; } }
   @media (max-width: 575px) {
     .main-overview .section-info {
       padding-top: 1.4rem;
