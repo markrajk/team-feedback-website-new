@@ -1352,6 +1352,8 @@ body {
     .main-feedback-lead .section-banner,
     .main-feedback-dash .section-banner,
     .main-feedback-test .section-banner {
+      padding-left: 5%;
+      padding-right: 5%;
       padding-top: 4.9rem;
       padding-bottom: 6.1rem; } }
   @media (max-width: 575px) {
@@ -1397,7 +1399,6 @@ body {
   .main-feedback-dash .section-banner-text,
   .main-feedback-test .section-banner-text {
     font-family: CircularStd-Book;
-    padding: 0 2.2rem;
     max-width: 71.4rem;
     font-size: 2rem;
     font-weight: 400;
@@ -1418,9 +1419,9 @@ body {
       .main-feedback-lead .section-banner-text,
       .main-feedback-dash .section-banner-text,
       .main-feedback-test .section-banner-text {
-        max-width: 39.3rem;
-        font-size: 1.75rem;
-        line-height: 1.61; } }
+        max-width: 100%;
+        font-size: 1.5rem;
+        line-height: 1.67; } }
 
 .main-feedback-received .section-cards,
 .main-feedback-giving .section-cards,

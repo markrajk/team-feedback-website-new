@@ -110,7 +110,12 @@ function anchorLinkHandler(e) {
   if (!targetAnchor) return;
   var originalTop = distanceToTop(targetAnchor) - header - subheader + 10;
 
-  window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
+  window.scrollBy({
+    top: originalTop,
+    left: 0,
+    duration: 5000,
+    behavior: 'smooth',
+  });
 
   var checkIfDone = setInterval(function () {
     var atBottom =

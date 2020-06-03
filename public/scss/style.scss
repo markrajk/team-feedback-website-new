@@ -2632,6 +2632,8 @@ body {
 
   //TABLET
   @include respond(desktop-sm) {
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 4.9rem;
     padding-bottom: 6.1rem;
   }
@@ -2667,7 +2669,6 @@ body {
 
   &-text {
     font-family: CircularStd-Book;
-    padding: 0 2.2rem;
     max-width: 71.4rem;
     font-size: 2rem;
     font-weight: 400;
@@ -2683,9 +2684,9 @@ body {
 
     //MOBILE
     @include respond(desktop-xsm) {
-      max-width: 39.3rem;
-      font-size: 1.75rem;
-      line-height: 1.61;
+      max-width: 100%;
+      font-size: 1.5rem;
+      line-height: 1.67;
     }
   }
 }
