@@ -533,6 +533,7 @@ body {
           &-item {
             
             &-link {
+              font-family: CircularStd-Book;
               padding-top: 1.8rem;
               padding-bottom: 1.8rem;
               display: flex;
@@ -544,7 +545,7 @@ body {
               text-decoration: none;
 
               &.active {
-                font-weight: 600;
+                font-family: CircularStd-Medium;
                 color: #070707;
               }
 

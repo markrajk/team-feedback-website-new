@@ -307,6 +307,7 @@ body {
       .header .nav-menu-body-list {
         list-style: none; }
         .header .nav-menu-body-list-item-link {
+          font-family: CircularStd-Book;
           padding-top: 1.8rem;
           padding-bottom: 1.8rem;
           display: flex;
@@ -317,7 +318,7 @@ body {
           color: #2f2f2f;
           text-decoration: none; }
           .header .nav-menu-body-list-item-link.active {
-            font-weight: 600;
+            font-family: CircularStd-Medium;
             color: #070707; }
           .header .nav-menu-body-list-item-link:hover, .header .nav-menu-body-list-item-link:focus {
             background-color: #f1f1f1; }
