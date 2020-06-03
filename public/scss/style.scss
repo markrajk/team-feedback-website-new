@@ -2053,7 +2053,7 @@ body {
 
 //feedback giving subpage
 #main-feedback-giving .section-features {
-  & .card-01 {
+  & .card-01 { //single
     & .section-features-card {
       &-img {
         max-width: 22.85rem;
@@ -2064,7 +2064,28 @@ body {
 
         //MOBILE
         @include respond(desktop-xsm) {
-          max-width: 14.56rem;
+          //max-width: 14.56rem;
+          max-width: 39.1%;
+
+        }
+        
+      }
+    }
+  }
+
+  & .card-02 { //half
+    & .section-features-card {
+      &-img {
+        //max-width: 22.85rem;
+        //TABLET
+        // @include respond(desktop-md) {
+        //   max-width: 21.84rem;
+        // }
+
+        //MOBILE
+        @include respond(desktop-xsm) {
+          //max-width: 14.56rem;
+          max-width: 74.1%;
 
         }
         
@@ -2084,8 +2105,8 @@ body {
 
         //MOBILE
         @include respond(desktop-xsm) {
-          max-width: 14.56rem;
-
+          //max-width: 14.56rem;
+          max-width: 39.1%;
         }
       }
     }
@@ -2094,7 +2115,7 @@ body {
 
 //feedback received subpage
 #main-feedback-received .section-features {
-  & .card-01 {
+  & .card-01 { //stats
     & .section-features-card {
       &-img {
        
@@ -2106,7 +2127,7 @@ body {
     }
   }
 
-  & .card-02 {
+  & .card-02 { //double
     & .section-features-card {
       &-img {
        
@@ -2117,14 +2138,14 @@ body {
 
         //MOBILE
         @include respond(desktop-xsm) {
-          max-width: 30.4rem;
+          // max-width: 30.4rem;
           max-width: 81.5%;
         }
       }
     }
   }
 
-  & .card-03 {
+  & .card-03 { //single
     & .section-features-card {
       &-img {
         max-width: 22.85rem;
@@ -2136,7 +2157,7 @@ body {
 
         //MOBILE
         @include respond(desktop-xsm) {
-          max-width: 14.56rem;
+          // max-width: 14.56rem;
           max-width: 39.1%;
         }
       }
@@ -2144,6 +2165,108 @@ body {
   }
 }
 
+//feedback team lead subpage
+#main-feedback-lead .section-features {
+
+  & .card-01 { //half
+    & .section-features-card {
+      &-img {
+        //max-width: 22.85rem;
+        //TABLET
+        // @include respond(desktop-md) {
+        //   max-width: 21.84rem;
+        // }
+
+        //MOBILE
+        @include respond(desktop-xsm) {
+          //max-width: 14.56rem;
+          max-width: 74.1%;
+
+        }
+        
+      }
+    }
+  }
+
+  & .card-02 { //double
+    & .section-features-card {
+      &-img {
+       
+        //TABLET
+        @include respond(desktop-md) {
+          max-width: 45.5rem;
+        }
+
+        //MOBILE
+        @include respond(desktop-xsm) {
+          // max-width: 30.4rem;
+          max-width: 81.5%;
+        }
+      }
+    }
+  }
+
+  & .card-03 { //double
+    & .section-features-card {
+      &-img {
+       
+        //TABLET
+        @include respond(desktop-md) {
+          max-width: 45.5rem;
+        }
+
+        //MOBILE
+        @include respond(desktop-xsm) {
+          // max-width: 30.4rem;
+          max-width: 81.5%;
+        }
+      }
+    }
+  }
+}
+
+//feedback dashboard subpage
+#main-feedback-dash .section-features {
+
+  & .card-01 { //dash
+    & .section-features-card {
+      &-img {
+
+        //MOBILE
+        @include respond(desktop-xsm) {
+          //max-width: 14.56rem;
+          max-width: 100%;
+
+        }
+        
+      }
+    }
+  }
+
+  & .card-02 { //dash
+    & .section-features-card {
+      &-img {
+
+        //MOBILE
+        @include respond(desktop-xsm) {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  & .card-03 {
+    & .section-features-card {
+      &-img {
+
+        //MOBILE
+        @include respond(desktop-xsm) {
+          max-width: 76.2%;
+        }
+      }
+    }
+  }
+}
 
 //=====================================
 //STATS SECTION
