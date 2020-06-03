@@ -84,6 +84,8 @@ body {
     .btn-link:hover, .btn-link:focus {
       text-decoration: underline; }
   .btn-primary {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
     color: #FFF;
     background-color: #48bc20;
     border-color: #48bc20; }
