@@ -93,6 +93,8 @@ body {
       background-color: #76dd53;
       border-color: #76dd53; }
     .btn-primary-outlined {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 600;
       background-color: transparent;
       color: #48bc20;
       border-color: #48bc20; }
