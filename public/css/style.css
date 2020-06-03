@@ -1361,17 +1361,15 @@ body {
     .main-feedback-dash .section-banner,
     .main-feedback-test .section-banner {
       padding-left: 6%;
-      padding-right: 6%;
-      padding-top: 4.9rem;
-      padding-bottom: 6.1rem; } }
+      padding-right: 6%; } }
   @media (max-width: 575px) {
     .main-feedback-received .section-banner,
     .main-feedback-giving .section-banner,
     .main-feedback-lead .section-banner,
     .main-feedback-dash .section-banner,
     .main-feedback-test .section-banner {
-      padding-top: 7rem;
-      padding-bottom: 7rem; } }
+      padding-top: 4rem;
+      padding-bottom: 4rem; } }
   .main-feedback-received .section-banner-title,
   .main-feedback-giving .section-banner-title,
   .main-feedback-lead .section-banner-title,
