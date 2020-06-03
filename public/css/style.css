@@ -531,13 +531,12 @@ body {
         .main-overview .section-info-card-img {
           margin-bottom: 0;
           height: auto;
-          width: auto;
+          width: 100%;
           max-width: 22.78rem; } }
       @media (max-width: 575px) {
         .main-overview .section-info-card-img {
           margin-bottom: 3.8rem;
           object-fit: cover;
-          width: 100%;
           max-width: 18.1rem; } }
     .main-overview .section-info-card-body {
       width: 100%;

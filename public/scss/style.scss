@@ -851,7 +851,7 @@ body {
       @include respond(desktop-md) {
         margin-bottom: 0;
         height: auto;
-        width: auto;
+        width: 100%;
         max-width: 22.78rem;
       }
 
@@ -859,7 +859,6 @@ body {
       @include respond(desktop-xsm) {
         margin-bottom: 3.8rem;
         object-fit: cover;
-        width: 100%;
         max-width: 18.1rem;
       }
     }
