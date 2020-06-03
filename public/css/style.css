@@ -1275,18 +1275,28 @@ body {
   @media (max-width: 991px) {
     #main-feedback-giving .section-features .card-01 .section-features-card-img {
       max-width: 21.84rem; } }
+  @media (max-width: 575px) {
+    #main-feedback-giving .section-features .card-01 .section-features-card-img {
+      max-width: 14.56rem; } }
 #main-feedback-giving .section-features .card-03 .section-features-card-img {
   max-width: 22.85rem; }
   @media (max-width: 991px) {
     #main-feedback-giving .section-features .card-03 .section-features-card-img {
       max-width: 21.84rem; } }
+  @media (max-width: 575px) {
+    #main-feedback-giving .section-features .card-03 .section-features-card-img {
+      max-width: 14.56rem; } }
 
+@media (max-width: 575px) {
+  #main-feedback-received .section-features .card-01 .section-features-card-img {
+    max-width: 89.1%; } }
 @media (max-width: 991px) {
   #main-feedback-received .section-features .card-02 .section-features-card-img {
     max-width: 45.5rem; } }
 @media (max-width: 575px) {
   #main-feedback-received .section-features .card-02 .section-features-card-img {
-    max-width: 30.4rem; } }
+    max-width: 30.4rem;
+    max-width: 81.5%; } }
 #main-feedback-received .section-features .card-03 .section-features-card-img {
   max-width: 22.85rem; }
   @media (max-width: 991px) {
@@ -1294,7 +1304,8 @@ body {
       max-width: 21.84rem; } }
   @media (max-width: 575px) {
     #main-feedback-received .section-features .card-03 .section-features-card-img {
-      max-width: 14.56rem; } }
+      max-width: 14.56rem;
+      max-width: 39.1%; } }
 
 .main-feedback-received .section-banner,
 .main-feedback-giving .section-banner,
