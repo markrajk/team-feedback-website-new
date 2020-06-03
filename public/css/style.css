@@ -786,7 +786,7 @@ body {
 .footer {
   border-top: 1.5px solid #F2F0F2; }
   .footer-top {
-    padding-top: 8.8rem;
+    padding-top: 6.4rem;
     padding-bottom: 6.4rem;
     display: flex;
     align-items: baseline; }
@@ -1117,7 +1117,8 @@ body {
         display: none; } }
 
 .main-feedback-giving .section-hero-img {
-  max-width: 53.5rem; }
+  max-width: 50rem;
+  margin-right: 5rem; }
 
 .main-feedback-received .section-features,
 .main-feedback-giving .section-features,
@@ -1541,12 +1542,11 @@ body {
 
 .main-about-us .section-hero {
   padding-top: 12.4rem;
-  padding-bottom: 4.4rem;
+  padding-bottom: 8rem;
   text-align: center; }
   @media (max-width: 991px) {
     .main-about-us .section-hero {
-      padding-top: 11rem;
-      padding-bottom: 5rem; } }
+      padding-top: 11rem; } }
   @media (max-width: 575px) {
     .main-about-us .section-hero {
       padding-top: 5.75rem;
