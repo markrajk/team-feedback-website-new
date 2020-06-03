@@ -515,7 +515,8 @@ body {
         width: 100%;
         max-width: 55.1rem;
         display: flex;
-        justify-content: center; } }
+        justify-content: center;
+        align-items: center; } }
     @media (max-width: 575px) {
       .main-overview .section-info-card {
         padding-top: 2.6rem;
