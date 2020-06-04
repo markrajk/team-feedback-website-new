@@ -678,7 +678,7 @@ body {
     transform: scale(1.1);
   }
 
-  @include custom-respond(850) {
+  @include custom-respond(891) {
     transform: scale(1);
   }
 
@@ -851,7 +851,7 @@ body {
       transform: scale(1.1);
     }
 
-    @include custom-respond(850) {
+    @include custom-respond(891) {
       padding-top: 6.2rem;
       padding-bottom: 6.2rem;
       transform: scale(1);

@@ -400,7 +400,7 @@ body {
       padding-top: 6.5rem;
       padding-bottom: 6.5rem;
       transform: scale(1.1); } }
-  @media (max-width: 850px) {
+  @media (max-width: 891px) {
     .main-overview .section-hero {
       transform: scale(1); } }
   @media (max-width: 575px) {
@@ -524,7 +524,7 @@ body {
         justify-content: center;
         align-items: center;
         transform: scale(1.1); } }
-    @media (max-width: 850px) {
+    @media (max-width: 891px) {
       .main-overview .section-info-card {
         padding-top: 6.2rem;
         padding-bottom: 6.2rem;
