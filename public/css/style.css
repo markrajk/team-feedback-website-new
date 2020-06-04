@@ -214,7 +214,7 @@ body {
   width: 100%;
   background-color: #FFF;
   border-bottom: 1.5px solid #f1f1f1;
-  z-index: 1000; }
+  z-index: 2000; }
   .header .nav {
     padding-bottom: .3rem;
     height: 6.9rem;
@@ -285,7 +285,7 @@ body {
       transform: translate(100%, 0);
       transition: all .5s ease-in-out;
       background-color: #FFF;
-      z-index: 1500; }
+      z-index: 3000; }
       @media (max-width: 991px) {
         .header .nav-menu {
           display: block; } }

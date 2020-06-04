@@ -390,7 +390,7 @@ body {
   width: 100%;
   background-color: #FFF;
   border-bottom: 1.5px solid #f1f1f1;
-  z-index: 1000;
+  z-index: 2000;
 
   & .nav {
     // padding: 1.8rem 8rem;
@@ -500,7 +500,7 @@ body {
       transform: translate(100%, 0);
       transition: all .5s ease-in-out;
       background-color: #FFF;
-      z-index: 1500;
+      z-index: 3000;
 
       @include respond(desktop-md) {
         display: block;
@@ -596,7 +596,6 @@ body {
   width: 100%;
   background-color: #FFF;
   border-bottom: 1.5px solid #F4F4F4;
-
   z-index: 1000;
 
   //TABLET
