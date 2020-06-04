@@ -136,3 +136,51 @@ var linksToAnchors = document.querySelectorAll('a[href^="#"]');
 linksToAnchors.forEach((each) => (each.onclick = anchorLinkHandler));
 
 // it could probably work in two dimensions too... that'd be kinda cool.
+
+// var subheaderList = document.querySelector('.subheader-list');
+// var subheaderItem = document.querySelector('.subheader-list-item-link.active');
+// console.log(subheaderItem.offsetLeft);
+
+// subheaderList.scrollLeft = 500;
+
+// setTimeout(function () {
+//   var subheaderList = document.querySelector('.subheader-list');
+//   var subheaderItem = document.querySelector(
+//     '.subheader-list-item-link.active'
+//   );
+
+//   console.log(subheaderItem.offsetLeft);
+//   console.log(subheaderList.offsetWidth);
+//   subheaderList.scrollLeft =
+//     subheaderItem.offsetLeft -
+//     subheaderList.offsetWidth / 2 +
+//     subheaderItem.offsetWidth / 2;
+// }, 100);
+
+function docReady(fn) {
+  // see if DOM is already available
+  if (
+    document.readyState === 'complete' ||
+    document.readyState === 'interactive'
+  ) {
+    // call on next available tick
+    setTimeout(fn, 1);
+  } else {
+    //document.addEventListener('DOMContentLoaded', fn);
+    setTimeout(fn, 100);
+  }
+}
+
+docReady(function () {
+  var subheaderList = document.querySelector('.subheader-list');
+  var subheaderItem = document.querySelector(
+    '.subheader-list-item-link.active'
+  );
+
+  console.log(subheaderItem.offsetLeft);
+  console.log(subheaderList.offsetWidth);
+  subheaderList.scrollLeft =
+    subheaderItem.offsetLeft -
+    subheaderList.offsetWidth / 2 +
+    subheaderItem.offsetWidth / 2;
+});
