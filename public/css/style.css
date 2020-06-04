@@ -344,7 +344,8 @@ body {
   left: 0;
   width: 100%;
   background-color: #FFF;
-  border-bottom: 1.5px solid #F4F4F4; }
+  border-bottom: 1.5px solid #F4F4F4;
+  z-index: 1000; }
   @media (max-width: 991px) {
     .subheader {
       padding-left: 0; } }
@@ -1825,3 +1826,10 @@ body {
 
 .menu-open {
   transform: translate(0, 0) !important; }
+
+[aos="new"] {
+  opacity: 0;
+  transition-property: opacity; }
+
+[aos="new"].aos-animate {
+  opacity: 1; }

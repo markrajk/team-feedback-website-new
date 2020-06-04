@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11" />
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
     <script
@@ -146,7 +147,15 @@
       <div class="section-hero-wrapper">
         <section class="section-hero container">
 
-          <div class="section-hero-main">
+          <div class="section-hero-main"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="600"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          >
             <h3 class="section-hero-main-subtitle">Giving feedback</h3>
             <h1 class="section-hero-main-title">The new simple way <br class="show-md"> to give feedback</h1>
             <p class="section-hero-main-text">
@@ -155,7 +164,15 @@
             </p>
             <a href="#learn-more" class="btn btn-primary-outlined">Learn more</a>
           </div>
-          <img src="./public/img/fb-g-01.png" alt="Team feedback app features" class="section-hero-img">
+          <img src="./public/img/fb-g-01.png" alt="Team feedback app features" class="section-hero-img"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-delay="150"
+          data-aos-duration="600"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          >
         </section>
       </div>
 
@@ -164,10 +181,28 @@
       </div>
 
       <!-- SECTION FEATURES -->
-      <section class="section-features container" id="learn-more">
+      <section class="section-features container" id="learn-more" aos="">
         <div class="section-features-card card-01">
-          <img src="./public/img/fb-g-02.png" alt="Feedback statistic" class="section-features-card-img">
-          <div class="section-features-card-main">
+          <img src="./public/img/fb-g-02.png" alt="Feedback statistic" class="section-features-card-img"
+            data-aos="fade-down"
+            data-aos-offset="300"
+            data-aos-delay="50"
+            data-aos-duration="600"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+          <div class="section-features-card-main"
+            
+            data-aos="fade-down"
+            data-aos-offset="150"
+            data-aos-delay="150"
+            data-aos-duration="600"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+        
+          >
             <h2 class="section-features-card-main-title">Peer to peer feedback</h2>
             <p class="section-features-card-main-text">
               One peer to peer feedback contains of three star ratings for the categories attitude, productivity and team working. In addition to that compliments or improvement ideas can be added. Giving feedback for example to five colleagues takes
@@ -179,8 +214,24 @@
           <span class="b-b"></span>
 
         <div class="section-features-card reversed card-02">
-          <img src="./public/img/fb-g-03.png" alt="Feedback application screenshot" class="section-features-card-img">
-          <div class="section-features-card-main">
+          <img src="./public/img/fb-g-03.png" alt="Feedback application screenshot" class="section-features-card-img"
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-delay="50"
+          data-aos-duration="600"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          >
+          <div class="section-features-card-main"
+          data-aos="fade-right"
+          data-aos-offset="150"
+          data-aos-delay="50"
+          data-aos-duration="600"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          >
             <h2 class="section-features-card-main-title">Feedback routines</h2>
             <p class="section-features-card-main-text">
               To increase the amount of given feedback team leaders
@@ -195,8 +246,24 @@
         <div class="b-b"></div>
 
         <div class="section-features-card card-03">
-          <img src="./public/img/fb-g-04.png" alt="Feedback application screenshot" class="section-features-card-img">
-          <div class="section-features-card-main">
+          <img src="./public/img/fb-g-04.png" alt="Feedback application screenshot" class="section-features-card-img"
+          data-aos="fade-down"
+          data-aos-offset="300"
+          data-aos-delay="50"
+          data-aos-duration="600"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          >
+          <div class="section-features-card-main"
+          data-aos="fade-down"
+          data-aos-offset="200"
+          data-aos-delay="150"
+          data-aos-duration="600"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          >
             <h2 class="section-features-card-main-title">Short term and longterm development</h2>
             <p class="section-features-card-main-text">
               The vertical bars show the average of the latest feedbacks,
@@ -443,6 +510,7 @@
 
    </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./public/js/main.js"></script>
   </body>
 </html>

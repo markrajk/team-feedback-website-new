@@ -184,3 +184,5 @@ docReady(function () {
     subheaderList.offsetWidth / 2 +
     subheaderItem.offsetWidth / 2;
 });
+
+AOS.init();
