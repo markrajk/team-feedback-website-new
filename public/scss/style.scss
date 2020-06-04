@@ -792,6 +792,9 @@ body {
   }
 }
 
+//=====================================
+//INFO SECTION
+//=====================================
 .main-overview .section-info {
   margin: 0 auto;
   padding-top: 7.5rem;
@@ -827,11 +830,14 @@ body {
     @include respond(desktop-md) {
       padding-top: 6.2rem;
       padding-bottom: 6.2rem;
+      padding-top: 8rem;
+      padding-bottom: 8rem;
       width: 100%;
       max-width: 55.1rem;
       display: flex;
       justify-content: center;
       align-items: center;
+      transform: scale(1.2);
     }
 
     //MOBILE
@@ -841,6 +847,12 @@ body {
       flex-direction: column;
       text-align: center;
       align-items: center;
+    }
+
+    @include respond(desktop-sm) {
+      padding-top: 6.2rem;
+      padding-bottom: 6.2rem;
+      transform: scale(1);
     }
 
     &-img {
@@ -877,6 +889,7 @@ body {
         margin-left: 4rem;
         max-width: 28rem;
         text-align: left;
+
       }
 
       //MOBILE

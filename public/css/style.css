@@ -512,11 +512,14 @@ body {
       .main-overview .section-info-card {
         padding-top: 6.2rem;
         padding-bottom: 6.2rem;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
         width: 100%;
         max-width: 55.1rem;
         display: flex;
         justify-content: center;
-        align-items: center; } }
+        align-items: center;
+        transform: scale(1.2); } }
     @media (max-width: 575px) {
       .main-overview .section-info-card {
         padding-top: 2.6rem;
@@ -524,6 +527,11 @@ body {
         flex-direction: column;
         text-align: center;
         align-items: center; } }
+    @media (max-width: 769px) {
+      .main-overview .section-info-card {
+        padding-top: 6.2rem;
+        padding-bottom: 6.2rem;
+        transform: scale(1); } }
     .main-overview .section-info-card-img {
       width: 58.6%;
       margin-bottom: 8.81%;
