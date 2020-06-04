@@ -103,6 +103,8 @@ body {
         background-color: #48bc20;
         border-color: #48bc20; }
   .btn-secondary-outlined {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
     background-color: #FFF;
     color: #2678e5;
     border: solid 2px #2678e5; }
@@ -328,7 +330,8 @@ body {
         justify-content: space-between;
         flex-wrap: wrap; }
         .header .nav-menu-footer .btn {
-          width: 49%; }
+          width: 49%;
+          padding: 1.3rem 1.65rem; }
           @media (max-width: 575px) {
             .header .nav-menu-footer .btn {
               width: 100%; }
@@ -785,14 +788,14 @@ body {
       .section-banner-text {
         max-width: 31.8rem; } }
   .section-banner .btn {
-    margin-bottom: .8rem; }
-    .section-banner .btn.show-md-inline-flex {
-      padding: .75rem 2.2rem;
-      font-size: 1.4rem; }
+    margin-bottom: .8rem;
+    padding: .95rem 2.15rem;
+    font-size: 1.9rem; }
     @media (max-width: 575px) {
       .section-banner .btn {
-        padding: .7rem  2.3rem;
-        font-size: 1.6rem; } }
+        margin-bottom: 0;
+        padding: .95rem 2.4rem;
+        font-size: 1.55rem; } }
   .section-banner-info {
     font-size: 1.6rem;
     font-weight: 600;
@@ -876,7 +879,7 @@ body {
       align-items: center;
       justify-content: space-between;
       height: 7.1rem; }
-      @media (max-width: 575px) {
+      @media (max-width: 769px) {
         .footer-mid-main {
           height: 10rem;
           flex-wrap: wrap;
@@ -884,10 +887,11 @@ body {
       @media (max-width: 379px) {
         .footer-mid-main {
           height: 15.1rem; } }
-      @media (max-width: 575px) {
+      @media (max-width: 769px) {
         .footer-mid-main-links {
           width: 100%;
-          text-align: center; } }
+          text-align: center;
+          margin-bottom: -1rem; } }
       @media (max-width: 379px) {
         .footer-mid-main-links > *:not(:first-of-type) {
           margin-right: 0 !important; } }
@@ -916,6 +920,9 @@ body {
         .footer-mid-main-links .show-inline-block {
           margin-top: 2.5rem;
           display: block !important; } }
+      @media (max-width: 769px) {
+        .footer-mid-main-social {
+          margin-top: -2rem; } }
       .footer-mid-main-social-icon {
         font-size: 2.2rem;
         color: #333;
@@ -1117,7 +1124,7 @@ body {
         .main-feedback-dash .section-hero-main .btn,
         .main-feedback-test .section-hero-main .btn {
           padding: .95rem 2.4rem;
-          font-size: 1.4rem; } }
+          font-size: 1.55rem; } }
   .main-feedback-received .section-hero-img,
   .main-feedback-giving .section-hero-img,
   .main-feedback-lead .section-hero-img,
@@ -1436,7 +1443,7 @@ body {
       .main-feedback-dash .section-banner-text,
       .main-feedback-test .section-banner-text {
         max-width: 60.2rem;
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         line-height: 1.44; } }
     @media (max-width: 575px) {
       .main-feedback-received .section-banner-text,

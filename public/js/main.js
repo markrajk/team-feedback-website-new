@@ -102,7 +102,9 @@ menuClose.addEventListener('click', function () {
 function anchorLinkHandler(e) {
   var distanceToTop = (el) => Math.floor(el.getBoundingClientRect().top);
   var header = document.querySelector('.header').offsetHeight;
-  var subheader = document.querySelector('.subheader').offsetHeight;
+  var subheader = document.querySelector('.subheader')
+    ? document.querySelector('.subheader').offsetHeight
+    : 0;
 
   e.preventDefault();
   var targetID = this.getAttribute('href');
