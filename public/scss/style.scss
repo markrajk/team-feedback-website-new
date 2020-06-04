@@ -31,6 +31,12 @@ $text-color-primary: #1c1c1c;
   display: flex;
 }
 
+@mixin custom-respond($value) {
+  @media(max-width: $value * 1px) {
+    @content;
+  }
+}
+
 @mixin respond($breakpoint) {
   @if $breakpoint == desktop-xxsm {
     @media (max-width: 379px) {
@@ -669,6 +675,11 @@ body {
   @include respond(desktop-md) {
     padding-top: 6.5rem;
     padding-bottom: 6.5rem;
+    transform: scale(1.1);
+  }
+
+  @include custom-respond(850) {
+    transform: scale(1);
   }
 
   //MOBILE
@@ -837,7 +848,13 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      transform: scale(1.2);
+      transform: scale(1.1);
+    }
+
+    @include custom-respond(850) {
+      padding-top: 6.2rem;
+      padding-bottom: 6.2rem;
+      transform: scale(1);
     }
 
     //MOBILE
@@ -847,12 +864,6 @@ body {
       flex-direction: column;
       text-align: center;
       align-items: center;
-    }
-
-    @include respond(desktop-sm) {
-      padding-top: 6.2rem;
-      padding-bottom: 6.2rem;
-      transform: scale(1);
     }
 
     &-img {
