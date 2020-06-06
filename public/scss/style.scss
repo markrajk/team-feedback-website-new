@@ -116,7 +116,7 @@ html {
     // }
 
     @include respond(desktop-xl) {
-      font-size: 56.5%;
+      font-size: 58%;
     }
 
     @include respond(desktop-lg) {
@@ -1034,6 +1034,16 @@ body {
 
         .section-info-card-body {
           margin-right: 0;
+        }
+      }
+    }
+
+    &.card-01 {
+      
+      & .section-info-card-body {
+        &-text {
+         
+          @include custom-respond(1280) {}
         }
       }
     }
