@@ -394,104 +394,6 @@ body {
       .subheader-list-item-link:focus, .subheader-list-item-link:hover {
         text-decoration: underline; }
 
-.main-overview .section-hero {
-  padding-top: 9.6rem;
-  padding-bottom: 7.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  @media (max-width: 991px) {
-    .main-overview .section-hero {
-      padding-top: 6.5rem;
-      padding-bottom: 6.5rem;
-      transform: scale(1.1); } }
-  @media (max-width: 891px) {
-    .main-overview .section-hero {
-      transform: scale(1); } }
-  @media (max-width: 575px) {
-    .main-overview .section-hero {
-      padding-top: 3.95rem;
-      padding-bottom: 3.95rem; } }
-  .main-overview .section-hero-logo-img {
-    margin-bottom: 3.2rem;
-    height: 5.5rem; }
-    @media (max-width: 991px) {
-      .main-overview .section-hero-logo-img {
-        margin-bottom: 2.3rem;
-        height: 4.4rem; } }
-    @media (max-width: 575px) {
-      .main-overview .section-hero-logo-img {
-        height: 4.6rem;
-        margin-bottom: .8rem; } }
-  .main-overview .section-hero-title {
-    font-family: Arial;
-    font-weight: bold;
-    margin-bottom: 4.2rem;
-    max-width: 85.6rem;
-    font-size: 5.2rem;
-    line-height: 1.13;
-    color: #000000;
-    text-align: center; }
-    @media (max-width: 991px) {
-      .main-overview .section-hero-title {
-        margin-bottom: 2.3rem;
-        max-width: 70rem;
-        font-size: 3.7rem;
-        font-weight: 600;
-        line-height: 1.3; } }
-    @media (max-width: 575px) {
-      .main-overview .section-hero-title {
-        margin-bottom: 2.4rem;
-        font-size: 2.7rem;
-        line-height: 1.26;
-        letter-spacing: -0.54px; } }
-  .main-overview .section-hero-text {
-    font-family: CircularStd-Book;
-    margin-bottom: 4.4rem;
-    max-width: 74.8rem;
-    font-size: 2rem;
-    line-height: 1.45;
-    color: #5A5A5A;
-    text-align: center; }
-    @media (max-width: 991px) {
-      .main-overview .section-hero-text {
-        margin-bottom: 2.2rem;
-        font-size: 1.6rem; } }
-    @media (max-width: 575px) {
-      .main-overview .section-hero-text {
-        margin-bottom: 2.8rem;
-        max-width: 90%;
-        font-size: 1.5rem;
-        line-height: 1.47;
-        letter-spacing: 0.15px; } }
-  .main-overview .section-hero .btn {
-    padding: 1.05rem 2.7rem;
-    font-size: 1.95rem;
-    margin-bottom: 2.72rem;
-    letter-spacing: 0.39px; }
-    @media (max-width: 991px) {
-      .main-overview .section-hero .btn {
-        margin-bottom: 1.6rem;
-        padding: .78rem 1.65rem;
-        font-size: 1.6rem;
-        letter-spacing: normal; } }
-    @media (max-width: 575px) {
-      .main-overview .section-hero .btn {
-        padding: .75rem 1.65rem;
-        margin-bottom: 1.4rem;
-        font-size: 1.8rem;
-        width: 90%; } }
-  .main-overview .section-hero-info {
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: #888888; }
-    @media (max-width: 991px) {
-      .main-overview .section-hero-info {
-        font-size: 1.3rem; } }
-    @media (max-width: 575px) {
-      .main-overview .section-hero-info {
-        font-size: 1.4rem; } }
-
 .main-overview .section-info {
   margin: 0 auto;
   padding-top: 7.5rem;
@@ -574,22 +476,21 @@ body {
           max-width: 100%;
           text-align: center; } }
       .main-overview .section-info-card-body-title {
-        font-family: Arial;
+        font-family: 'Inter', Arial, sans-serif;
         width: 100%;
         margin-bottom: 4.52%;
-        font-size: 1.58vw;
-        font-weight: bold;
+        font-size: 1.45vw;
+        font-weight: 400;
         line-height: 1.3;
         color: #000000;
         white-space: nowrap; }
         @media (min-width: 1440px) {
           .main-overview .section-info-card-body-title {
-            font-size: 2.3rem; } }
+            font-size: 2.1rem; } }
         @media (max-width: 991px) {
           .main-overview .section-info-card-body-title {
             margin-bottom: 2rem;
             font-size: 2.4rem;
-            font-weight: bold;
             line-height: 1.25;
             white-space: normal; } }
         @media (max-width: 575px) {
@@ -599,12 +500,12 @@ body {
       .main-overview .section-info-card-body-text {
         font-family: CircularStd-Book;
         margin-bottom: 5.48%;
-        font-size: 1.22vw;
+        font-size: 1.11vw;
         line-height: 1.49;
         color: #5f6368; }
         @media (min-width: 1440px) {
           .main-overview .section-info-card-body-text {
-            font-size: 1.75rem; } }
+            font-size: 1.6rem; } }
         @media (max-width: 991px) {
           .main-overview .section-info-card-body-text {
             margin-bottom: 2.5rem;
@@ -683,10 +584,11 @@ body {
         margin-left: 0;
         max-width: 95%; } }
   .main-overview .section-dash-body-title {
-    font-family: Arial;
+    font-family: 'Inter', Arial, sans-serif;
     margin-bottom: 2.3rem;
     max-width: 34.7rem;
     font-size: 3rem;
+    font-weight: 400;
     line-height: 1.17;
     color: #000000; }
     @media (max-width: 991px) {
@@ -754,7 +656,7 @@ body {
         height: 4.68rem; } }
   .section-banner-title {
     margin-bottom: 3.2rem;
-    font-family: Arial;
+    font-family: 'Inter', Arial, sans-serif;
     font-size: 4.2rem;
     font-weight: 600;
     line-height: 1.19;
@@ -866,7 +768,7 @@ body {
           line-height: 1.73;
           color: #313131; }
         .footer-top-list-item-link {
-          font-family: Arial;
+          font-family: 'Inter', Arial, sans-serif;
           font-size: 1.4rem;
           font-weight: 400;
           line-height: 1.86;
@@ -899,7 +801,7 @@ body {
           margin-right: 0 !important; } }
       .footer-mid-main-links .btn-link {
         margin-right: 2.9rem;
-        font-family: Arial;
+        font-family: 'Inter', Arial, sans-serif;
         font-size: 1.4rem;
         font-weight: bold;
         line-height: 1.57;
@@ -907,7 +809,7 @@ body {
       .footer-mid-main-links .dd-custom {
         display: inline-flex;
         align-items: center;
-        font-family: Arial;
+        font-family: 'Inter', Arial, sans-serif;
         font-size: 1.4rem;
         font-weight: normal;
         line-height: 1.57;
@@ -963,6 +865,7 @@ body {
 .main-feedback-dash {
   padding-top: 5.6rem; }
 
+.main-overview .section-hero,
 .main-feedback-received .section-hero,
 .main-feedback-giving .section-hero,
 .main-feedback-lead .section-hero,
@@ -974,6 +877,7 @@ body {
   max-width: 122.8rem;
   height: 54.6rem; }
   @media (max-width: 991px) {
+    .main-overview .section-hero,
     .main-feedback-received .section-hero,
     .main-feedback-giving .section-hero,
     .main-feedback-lead .section-hero,
@@ -986,6 +890,7 @@ body {
       align-items: center;
       height: auto; } }
   @media (max-width: 575px) {
+    .main-overview .section-hero,
     .main-feedback-received .section-hero,
     .main-feedback-giving .section-hero,
     .main-feedback-lead .section-hero,
@@ -993,6 +898,7 @@ body {
     .main-feedback-test .section-hero {
       padding-top: 5.75rem;
       padding-bottom: 4rem; } }
+  .main-overview .section-hero-main,
   .main-feedback-received .section-hero-main,
   .main-feedback-giving .section-hero-main,
   .main-feedback-lead .section-hero-main,
@@ -1000,6 +906,7 @@ body {
   .main-feedback-test .section-hero-main {
     padding-top: 9.8rem; }
     @media (max-width: 991px) {
+      .main-overview .section-hero-main,
       .main-feedback-received .section-hero-main,
       .main-feedback-giving .section-hero-main,
       .main-feedback-lead .section-hero-main,
@@ -1010,6 +917,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center; } }
+    .main-overview .section-hero-main-subtitle,
     .main-feedback-received .section-hero-main-subtitle,
     .main-feedback-giving .section-hero-main-subtitle,
     .main-feedback-lead .section-hero-main-subtitle,
@@ -1017,11 +925,12 @@ body {
     .main-feedback-test .section-hero-main-subtitle {
       margin-bottom: .5rem;
       font-size: 1.7rem;
-      font-family: Arial;
+      font-family: 'Inter', Arial, sans-serif;
       font-weight: bold;
       line-height: 1.94;
       color: #222426; }
       @media (max-width: 991px) {
+        .main-overview .section-hero-main-subtitle,
         .main-feedback-received .section-hero-main-subtitle,
         .main-feedback-giving .section-hero-main-subtitle,
         .main-feedback-lead .section-hero-main-subtitle,
@@ -1029,6 +938,7 @@ body {
         .main-feedback-test .section-hero-main-subtitle {
           margin-bottom: 1.1rem; } }
       @media (max-width: 575px) {
+        .main-overview .section-hero-main-subtitle,
         .main-feedback-received .section-hero-main-subtitle,
         .main-feedback-giving .section-hero-main-subtitle,
         .main-feedback-lead .section-hero-main-subtitle,
@@ -1037,12 +947,13 @@ body {
           margin-bottom: 1.5rem;
           font-size: 1.6rem;
           line-height: 1.63; } }
+    .main-overview .section-hero-main-title,
     .main-feedback-received .section-hero-main-title,
     .main-feedback-giving .section-hero-main-title,
     .main-feedback-lead .section-hero-main-title,
     .main-feedback-dash .section-hero-main-title,
     .main-feedback-test .section-hero-main-title {
-      font-family: Arial;
+      font-family: 'Inter', Arial, sans-serif;
       margin-bottom: 3.2rem;
       max-width: 45rem;
       font-size: 4rem;
@@ -1050,6 +961,7 @@ body {
       line-height: 1.2;
       color: #000000; }
       @media (max-width: 991px) {
+        .main-overview .section-hero-main-title,
         .main-feedback-received .section-hero-main-title,
         .main-feedback-giving .section-hero-main-title,
         .main-feedback-lead .section-hero-main-title,
@@ -1060,6 +972,7 @@ body {
           font-size: 4.2rem;
           line-height: 1.19; } }
       @media (max-width: 575px) {
+        .main-overview .section-hero-main-title,
         .main-feedback-received .section-hero-main-title,
         .main-feedback-giving .section-hero-main-title,
         .main-feedback-lead .section-hero-main-title,
@@ -1068,6 +981,7 @@ body {
           margin-bottom: 2rem;
           font-size: 3.2rem;
           line-height: 1.22; } }
+    .main-overview .section-hero-main-text,
     .main-feedback-received .section-hero-main-text,
     .main-feedback-giving .section-hero-main-text,
     .main-feedback-lead .section-hero-main-text,
@@ -1083,6 +997,7 @@ body {
       line-height: 1.44;
       color: #414448; }
       @media (max-width: 991px) {
+        .main-overview .section-hero-main-text,
         .main-feedback-received .section-hero-main-text,
         .main-feedback-giving .section-hero-main-text,
         .main-feedback-lead .section-hero-main-text,
@@ -1096,6 +1011,7 @@ body {
           line-height: 1.53;
           color: #5f6368; } }
       @media (max-width: 575px) {
+        .main-overview .section-hero-main-text,
         .main-feedback-received .section-hero-main-text,
         .main-feedback-giving .section-hero-main-text,
         .main-feedback-lead .section-hero-main-text,
@@ -1106,12 +1022,14 @@ body {
           font-size: 1.5rem;
           line-height: 1.43; } }
       @media (max-width: 379px) {
+        .main-overview .section-hero-main-text,
         .main-feedback-received .section-hero-main-text,
         .main-feedback-giving .section-hero-main-text,
         .main-feedback-lead .section-hero-main-text,
         .main-feedback-dash .section-hero-main-text,
         .main-feedback-test .section-hero-main-text {
           max-width: 100%; } }
+    .main-overview .section-hero-main .btn,
     .main-feedback-received .section-hero-main .btn,
     .main-feedback-giving .section-hero-main .btn,
     .main-feedback-lead .section-hero-main .btn,
@@ -1120,6 +1038,7 @@ body {
       padding: .95rem 2.15rem;
       font-size: 1.9rem; }
       @media (max-width: 575px) {
+        .main-overview .section-hero-main .btn,
         .main-feedback-received .section-hero-main .btn,
         .main-feedback-giving .section-hero-main .btn,
         .main-feedback-lead .section-hero-main .btn,
@@ -1127,6 +1046,7 @@ body {
         .main-feedback-test .section-hero-main .btn {
           padding: .95rem 2.4rem;
           font-size: 1.55rem; } }
+  .main-overview .section-hero-img,
   .main-feedback-received .section-hero-img,
   .main-feedback-giving .section-hero-img,
   .main-feedback-lead .section-hero-img,
@@ -1137,12 +1057,41 @@ body {
     width: 100%;
     min-width: 0; }
     @media (max-width: 991px) {
+      .main-overview .section-hero-img,
       .main-feedback-received .section-hero-img,
       .main-feedback-giving .section-hero-img,
       .main-feedback-lead .section-hero-img,
       .main-feedback-dash .section-hero-img,
       .main-feedback-test .section-hero-img {
         display: none; } }
+
+.main-overview .section-hero {
+  max-width: 132.4rem; }
+  .main-overview .section-hero-main-title {
+    max-width: 58.7rem; }
+    @media (max-width: 991px) {
+      .main-overview .section-hero-main-title {
+        max-width: 100%; } }
+  @media (max-width: 575px) {
+    .main-overview .section-hero-main-buttons {
+      width: 70%; } }
+  @media (max-width: 379px) {
+    .main-overview .section-hero-main-buttons {
+      width: 100%; } }
+  .main-overview .section-hero-main-buttons .btn {
+    padding: 1.2rem 3.2rem;
+    font-size: 2rem; }
+    @media (max-width: 575px) {
+      .main-overview .section-hero-main-buttons .btn {
+        display: block; } }
+  .main-overview .section-hero-main-buttons .btn:nth-of-type(1) {
+    margin-right: 1.6rem; }
+    @media (max-width: 575px) {
+      .main-overview .section-hero-main-buttons .btn:nth-of-type(1) {
+        margin-right: 0;
+        margin-bottom: 1.6rem; } }
+  .main-overview .section-hero-img {
+    max-width: 58.1rem; }
 
 .main-feedback-giving .section-hero-img {
   max-width: 50rem;
@@ -1258,7 +1207,7 @@ body {
       .main-feedback-lead .section-features-card-main-title,
       .main-feedback-dash .section-features-card-main-title {
         margin-bottom: 1.6rem;
-        font-family: Arial;
+        font-family: 'Inter', Arial, sans-serif;
         font-size: 3rem;
         font-weight: bold;
         line-height: 1.4;
@@ -1402,7 +1351,7 @@ body {
   .main-feedback-lead .section-banner-title,
   .main-feedback-dash .section-banner-title,
   .main-feedback-test .section-banner-title {
-    font-family: Arial;
+    font-family: 'Inter', Arial, sans-serif;
     margin-bottom: 3rem;
     font-size: 3.9rem;
     font-weight: 600;
@@ -1523,7 +1472,7 @@ body {
     .main-feedback-lead .section-cards-card-title,
     .main-feedback-dash .section-cards-card-title,
     .main-feedback-test .section-cards-card-title {
-      font-family: Arial;
+      font-family: 'Inter', Arial, sans-serif;
       margin-bottom: 1.4rem;
       font-size: 2.6rem;
       font-weight: 600;
@@ -1587,14 +1536,14 @@ body {
       padding-bottom: 4rem; } }
   .main-about-us .section-hero-subtitle {
     margin-bottom: 2.1rem;
-    font-family: Arial;
+    font-family: 'Inter', Arial, sans-serif;
     font-size: 1.6rem;
     font-weight: bold;
     line-height: 1.63;
     color: #222426; }
   .main-about-us .section-hero-title {
     margin-bottom: 4.2rem;
-    font-family: Arial;
+    font-family: 'Inter', Arial, sans-serif;
     font-size: 5.2rem;
     font-weight: bold;
     line-height: 1.27;
@@ -1679,7 +1628,7 @@ body {
         text-align: left; } }
     .main-about-us .section-founder-main-title {
       margin-bottom: 2.7rem;
-      font-family: Arial;
+      font-family: 'Inter', Arial, sans-serif;
       font-size: 3rem;
       font-weight: bold;
       line-height: 1.4;
@@ -1755,7 +1704,7 @@ body {
       padding-bottom: 9.9rem; } }
   .main-about-us .section-team-title {
     margin-bottom: 4.3rem;
-    font-family: Arial;
+    font-family: 'Inter', Arial, sans-serif;
     font-size: 5rem;
     font-weight: bold;
     line-height: 0.84;
