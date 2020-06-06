@@ -928,7 +928,7 @@ body {
         font-family: 'Inter', Arial, sans-serif;
         width: 100%;
         margin-bottom: 4.52%;
-        font-size: 1.45vw;
+        font-size: 1.49vw;
         font-weight: 600;
         line-height: 1.3;
         color: #000000;
@@ -936,11 +936,11 @@ body {
       
 
         @include respond(desktop-default) {
-          font-size: 2.1rem;
+          font-size: 2.15rem;
         }
 
         @include respond(desktop-lg) {
-          font-size: 2.1rem;
+          font-size: 2.15rem;
           white-space: normal;
         }
 
@@ -963,12 +963,12 @@ body {
       &-text {
         font-family: CircularStd-Book;
         margin-bottom: 5.48%;
-        font-size: 1.11vw;
+        font-size: 1.18vw;
         line-height: 1.49;
         color: #5f6368;
 
         @include respond(desktop-default) {
-          font-size: 1.6rem;
+          font-size: 1.7rem;
         }
 
         @include custom-respond(1230) {
