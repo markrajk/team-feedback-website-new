@@ -107,9 +107,13 @@ $text-color-primary: #1c1c1c;
 
 html {
     min-width: 100vw;
-    font-size: 62.5%;   //1rem = 10px 10px/16 62.5%
+    font-size: 60%;   //1rem = 10px 10px/16 62.5%
     -webkit-text-size-adjust:none;
     scroll-behavior: smooth;
+
+    // @include custom-respond(1439) {
+    //   font-size: 60%;
+    // }
 
     @include respond(desktop-xl) {
       font-size: 56.5%;
