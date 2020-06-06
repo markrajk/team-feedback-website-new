@@ -669,13 +669,14 @@ body {
     margin-bottom: 3.2rem;
     font-family: 'Inter', Arial, sans-serif;
     font-size: 4.2rem;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.19;
     color: #000000; }
     @media (max-width: 991px) {
       .section-banner-title {
         margin-bottom: 1.5rem;
         font-size: 3.1rem;
+        font-weight: 700;
         line-height: 1.39;
         letter-spacing: -0.22px; } }
     @media (max-width: 575px) {
